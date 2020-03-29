@@ -70,9 +70,9 @@
 </nav>
 	<!-- navigation buttons -->
 <div class="container">
-<div class="alert alert-warning" role="alert">
-  <strong>This page is under construction.</strong>
-</div>
+	<div class="alert alert-warning" role="alert">
+	  <strong>This page is under construction.</strong>
+	</div>
 <div id="button-container-bg"
 	style="
 		margin:20px 0px 20px 0px;
@@ -102,7 +102,134 @@
 			</li>
 		</ul>
 </div>
-	<!-- footer -->
+    <!-- 1st level tabs -->
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+		<a href="#storyMorianaPlains" class="nav-link active" data-toggle="tab">Moriana Plains</a>
+		</li>
+		<li class="nav-item">
+		<a href="#storyKaldinaRuins" class="nav-link" data-toggle="tab">Kaldina Ruins</a>
+		</li>
+		<li class="nav-item">
+		<a href="#storyHardDrops" class="nav-link disabled" data-toggle="tab">Gorde Mines</a>
+		</li>
+	</ul>
+	<!-- 1st level tab-content -->
+	<div class="tab-content">
+		<!-- Moriana Plains: 2nd level tabs -->
+		<div class="tab-pane fade show active" id="storyMorianaPlains">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#storyMorianaPlainsHeroInTheHeart" class="nav-link active" data-toggle="tab">Hero in the Heart</a>
+				</li>
+				<li class="nav-item">
+					<a href="#storyMorianaPlainsYourAverageVacation" class="nav-link" data-toggle="tab">Your Average Vacation</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled" data-toggle="tab">StageName</a>
+				</li>
+			</ul>
+			<!-- Moriana Plains: 2nd level tab-content -->
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="storyMorianaPlainsHeroInTheHeart">
+					<table 
+					id="table" 
+					data-toggle="table" 
+					data-search="true"
+					table-layout="fixed"
+					class="table table-hover">
+					<thead class="thead-light">
+					<tr>
+					  <th data=field="difficulty" scope="col"></th>
+					  <th data=field="material" data-formatter="itemNameFormat" scope="col">Material</th>
+					  <th scope="col">Drop rate</th>
+					  <th scope="col">Expected<br />quantity</th>
+					</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="storyMorianaPlainsYourAverageVacation">
+					<table 
+					id="table" 
+					data-toggle="table" 
+					data-search="true"
+					table-layout="fixed"
+					class="table table-hover">
+					<thead class="thead-light">
+					<tr>
+					  <th data=field="difficulty" scope="col"></th>
+					  <th data=field="material" data-formatter="itemNameFormat" scope="col">Material</th>
+					  <th scope="col">Drop rate</th>
+					  <th scope="col">Expected<br />quantity</th>
+					</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Kaldina Ruins: 2nd level tabs -->
+		<div class="tab-pane fade" id="storyKaldinaRuins">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#storyKaldinaToStandAgainstaDeity" class="nav-link active" data-toggle="tab">To Stand Against a Deity</a>
+				</li>
+				<li class="nav-item">
+					<a href="#storyKaldinaStayingPositive" class="nav-link" data-toggle="tab">Staying Positive</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link disabled" data-toggle="tab">StageName</a>
+				</li>
+			</ul>
+			<!-- Kaldina Ruins: 2nd level tab-content -->
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="storyKaldinaToStandAgainstaDeity">
+					<table 
+					id="table" 
+					data-toggle="table" 
+					data-search="true"
+					table-layout="fixed"
+					class="table table-hover">
+					<thead class="thead-light">
+					<tr>
+					  <th data=field="difficulty" scope="col"></th>
+					  <th data=field="material" data-formatter="itemNameFormat" scope="col">Material</th>
+					  <th scope="col">Drop rate</th>
+					  <th scope="col">Expected<br />quantity</th>
+					</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					</table>
+				</div>
+				<div class="tab-pane fade" id="storyKaldinaStayingPositive">
+					<table 
+					id="table" 
+					data-toggle="table" 
+					data-search="true"
+					table-layout="fixed"
+					class="table table-hover">
+					<thead class="thead-light">
+					<tr>
+					  <th data=field="difficulty" scope="col"></th>
+					  <th data=field="material" data-formatter="itemNameFormat" scope="col">Material</th>
+					  <th scope="col">Drop rate</th>
+					  <th scope="col">Expected<br />quantity</th>
+					</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer -->
 	<footer class="footer font-small lighten-5">
 		<div class="container">
 			<span class="text-muted">© 2020. Made by potato.</span>
