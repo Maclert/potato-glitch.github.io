@@ -28,10 +28,10 @@
 
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link" href="./index">Home</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link" href="./loottable">Loot table</a>
       </li>
       <li class="nav-item dropdown">
@@ -56,7 +56,7 @@
           <a class="dropdown-item disabled" href="#">Lore</a>
         </div>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link" href="./todo">Website to-do</a>
       </li>
     </ul>
@@ -68,8 +68,13 @@
 		<p><h1>Loot tables</h1></p>
 		<p>This page contain the top 5 locations of each farmable material, sorted by difficulty and type.</p>
 		<ul>
-			<li><strong>For extended use:</strong> The <a href="https://docs.google.com/spreadsheets/u/1/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">spreadsheet</a> has custom search functions (Query) and the translated dataset. <br />Make a copy while signed into your Google account to get started.</li>
-			<li><strong>Data source:</strong> <a href="https://docs.google.com/spreadsheets/d/1kTrokbSyxHwolQ-m6Bp4L9_wgHIrfCOeYzBlBcGWncY/edit">JP loot table datamine.</a></li>
+			<li><p><strong>For extended use:</strong> The <a href="https://docs.google.com/spreadsheets/u/1/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">loot table spreadsheet</a> has custom search functions (Query) and the translated dataset. <br />Make a copy while signed into your Google account to get started.</p></li>
+			<li><strong>List of data sources</strong>
+				<ul>
+					<li><a href="https://docs.google.com/spreadsheets/d/1kTrokbSyxHwolQ-m6Bp4L9_wgHIrfCOeYzBlBcGWncY/edit">JP loot table datamine</a> – Warning: 40000+ row tables.</li>
+					<li><a href="https://docs.google.com/spreadsheets/d/1MxMkjta23A059SNgBUi9CVpPcv15gk_WlCtsijGGu_g/edit">Toshy's translated Unit story stages</a></li>
+				</ul>
+			</li>
 		</ul>
 </div>
     <!-- tabs -->
@@ -83,6 +88,9 @@
     </li>
     <li class="nav-item">
         <a href="#eventDrops" class="nav-link" data-toggle="tab">Daily events</a>
+    </li>
+    <li class="nav-item">
+        <a href="#unitStoryDrops" class="nav-link" data-toggle="tab">Unit story stages</a>
     </li>
 </ul>
     <!-- tab content -->
@@ -170,75 +178,63 @@
 			  <th scope="col">Expected<br />quantity</th>
 			</tr>
 		  </thead>
-        <tbody>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Foreign light</td><td>2.00%</td><td>0.02</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Foreign light</td><td>0.25%</td><td>0.00</td></tr>
+        <tbody> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Foreign light</td><td>2.00%</td><td>0.02</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Foreign light</td><td>0.25%</td><td>0.00</td></tr>
 
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Light of the world</td><td>3.00%</td><td>0.03</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Light of the world</td><td>1.00%</td><td>0.01</td></tr>
+<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Light of the world</td><td>3.00%</td><td>0.03</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Light of the world</td><td>1.00%</td><td>0.01</td></tr>
 
 
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>The large hand of time</td><td>14.42%</td><td>0.15</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>The large hand of time</td><td>3.11%</td><td>0.03</td></tr>
+<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>The large hand of time</td><td>14.42%</td><td>0.15</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>The large hand of time</td><td>3.11%</td><td>0.03</td></tr>
 
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Otherworldly matter</td><td>15.67%</td><td>0.16</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Otherworldly matter</td><td>3.16%</td><td>0.03</td></tr>
+<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Otherworldly matter</td><td>15.67%</td><td>0.16</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Otherworldly matter</td><td>3.16%</td><td>0.03</td></tr>
 
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Sacred gem</td><td>15.98%</td><td>0.16</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Sacred gem</td><td>3.47%</td><td>0.04</td></tr>
+<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Sacred gem</td><td>15.98%</td><td>0.16</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Sacred gem</td><td>3.47%</td><td>0.04</td></tr>
 
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>God-sealing stone</td><td>14.77%</td><td>0.15</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>God-sealing stone</td><td>3.26%</td><td>0.03</td></tr>
+<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>God-sealing stone</td><td>14.77%</td><td>0.15</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>God-sealing stone</td><td>3.26%</td><td>0.03</td></tr>
 
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Dragoneye</td><td>14.79%</td><td>0.15</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Dragoneye</td><td>3.21%</td><td>0.03</td></tr>
+<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Dragoneye</td><td>14.79%</td><td>0.15</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Dragoneye</td><td>3.21%</td><td>0.03</td></tr>
 
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Specter Tears</td><td>14.78%</td><td>0.15</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Specter Tears</td><td>3.21%</td><td>0.03</td></tr>
+<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Specter Tears</td><td>14.78%</td><td>0.15</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Specter Tears</td><td>3.21%</td><td>0.03</td></tr>
 
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Galaxias crystal</td><td>14.24%</td><td>0.14</td></tr>
-<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Galaxias crystal</td><td>3.11%</td><td>0.03</td></tr>
+<tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Nightmare</td><td>Galaxias crystal</td><td>14.24%</td><td>0.14</td></tr> <tr><td>Transcendent Gate / Daily</td><td>Transcendental Gate / Advanced</td><td>Galaxias crystal</td><td>3.11%</td><td>0.03</td></tr>
 
-<tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Nightmare</td><td>Red crystal cluster</td><td>23.77%</td><td>0.26</td></tr>
-<tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Hard</td><td>Red crystal cluster</td><td>5.46%</td><td>0.06</td></tr>
+<tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Nightmare</td><td>Red crystal cluster</td><td>23.77%</td><td>0.26</td></tr> <tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Hard</td><td>Red crystal cluster</td><td>5.46%</td><td>0.06</td></tr>
 
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Blue crystal cluster</td><td>25.01%</td><td>0.27</td></tr>
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Hard</td><td>Blue crystal cluster</td><td>5.56%</td><td>0.06</td></tr>
+<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Blue crystal cluster</td><td>25.01%</td><td>0.27</td></tr> <tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Hard</td><td>Blue crystal cluster</td><td>5.56%</td><td>0.06</td></tr>
 
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Green crystal cluster</td><td>24.16%</td><td>0.26</td></tr>
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Hard</td><td>Green crystal cluster</td><td>5.46%</td><td>0.06</td></tr>
+<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Green crystal cluster</td><td>24.16%</td><td>0.26</td></tr> <tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Hard</td><td>Green crystal cluster</td><td>5.46%</td><td>0.06</td></tr>
 
-<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Purple crystal cluster</td><td>24.16%</td><td>0.26</td></tr>
-<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Hard</td><td>Purple crystal cluster</td><td>5.56%</td><td>0.06</td></tr>
+<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Purple crystal cluster</td><td>24.16%</td><td>0.26</td></tr> <tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Hard</td><td>Purple crystal cluster</td><td>5.56%</td><td>0.06</td></tr>
 
-<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Rainbow crystal cluster</td><td>2.26%</td><td>0.02</td></tr>
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Rainbow crystal cluster</td><td>2.26%</td><td>0.02</td></tr>
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Rainbow crystal cluster</td><td>2.26%</td><td>0.02</td></tr>
-<tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Hard</td><td>Red crystal</td><td>99.40%</td><td>4.85</td></tr>
-<tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Nightmare</td><td>Red crystal</td><td>99.39%</td><td>4.74</td></tr>
-<tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Intermediate</td><td>Red crystal</td><td>93.20%</td><td>2.43</td></tr>
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Blue crystal</td><td>99.80%</td><td>5.72</td></tr>
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Hard</td><td>Blue crystal</td><td>99.66%</td><td>5.31</td></tr>
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Intermediate</td><td>Blue crystal</td><td>92.46%</td><td>2.33</td></tr>
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Green crystal</td><td>99.44%</td><td>5.05</td></tr>
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Hard</td><td>Green crystal</td><td>99.25%</td><td>4.68</td></tr>
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Intermediate</td><td>Green crystal</td><td>92.82%</td><td>2.37</td></tr>
-<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Purple crystal</td><td>99.60%</td><td>5.05</td></tr>
-<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Hard</td><td>Purple crystal</td><td>99.39%</td><td>4.78</td></tr>
-<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Intermediate</td><td>Purple crystal</td><td>92.69%</td><td>2.35</td></tr>
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Rainbow crystal</td><td>43.26%</td><td>0.54</td></tr>
-<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Rainbow crystal</td><td>41.32%</td><td>0.51</td></tr>
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Rainbow crystal</td><td>41.28%</td><td>0.51</td></tr>
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Skill book</td><td>10.36%</td><td>0.11</td></tr>
-<tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Nightmare</td><td>Skill book</td><td>10.36%</td><td>0.11</td></tr>
-<tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Hard</td><td>Skill book</td><td>7.99%</td><td>0.08</td></tr>
-<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Magic book</td><td>10.36%</td><td>0.11</td></tr>
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Magic book</td><td>10.36%</td><td>0.11</td></tr>
-<tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Hard</td><td>Magic book</td><td>8.08%</td><td>0.08</td></tr>
-</tbody>
+<tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Rainbow crystal cluster</td><td>2.26%</td><td>0.02</td></tr> <tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Rainbow crystal cluster</td><td>2.26%</td><td>0.02</td></tr> <tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Rainbow crystal cluster</td><td>2.26%</td><td>0.02</td></tr> <tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Hard</td><td>Red crystal</td><td>99.40%</td><td>4.85</td></tr> <tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Nightmare</td><td>Red crystal</td><td>99.39%</td><td>4.74</td></tr> <tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Intermediate</td><td>Red crystal</td><td>93.20%</td><td>2.43</td></tr> <tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Blue crystal</td><td>99.80%</td><td>5.72</td></tr> <tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Hard</td><td>Blue crystal</td><td>99.66%</td><td>5.31</td></tr> <tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Intermediate</td><td>Blue crystal</td><td>92.46%</td><td>2.33</td></tr> <tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Green crystal</td><td>99.44%</td><td>5.05</td></tr> <tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Hard</td><td>Green crystal</td><td>99.25%</td><td>4.68</td></tr> <tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Intermediate</td><td>Green crystal</td><td>92.82%</td><td>2.37</td></tr> <tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Purple crystal</td><td>99.60%</td><td>5.05</td></tr> <tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Hard</td><td>Purple crystal</td><td>99.39%</td><td>4.78</td></tr> <tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Intermediate</td><td>Purple crystal</td><td>92.69%</td><td>2.35</td></tr> <tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Rainbow crystal</td><td>43.26%</td><td>0.54</td></tr> <tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Rainbow crystal</td><td>41.32%</td><td>0.51</td></tr> <tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Rainbow crystal</td><td>41.28%</td><td>0.51</td></tr> <tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Nightmare</td><td>Skill book</td><td>10.36%</td><td>0.11</td></tr> <tr><td>Red ability gate / Daily</td><td>Red Ability Gate / Nightmare</td><td>Skill book</td><td>10.36%</td><td>0.11</td></tr> <tr><td>Green ability gate / Daily</td><td>Green Ability Gate / Hard</td><td>Skill book</td><td>7.99%</td><td>0.08</td></tr> <tr><td>Purple ability gate / Daily</td><td>Purple Ability Gate / Nightmare</td><td>Magic book</td><td>10.36%</td><td>0.11</td></tr> <tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Nightmare</td><td>Magic book</td><td>10.36%</td><td>0.11</td></tr> <tr><td>Blue ability gate / Daily</td><td>Blue Ability Gate / Hard</td><td>Magic book</td><td>8.08%</td><td>0.08</td></tr> </tbody>
 </table>
     </div>
+    <div class="tab-pane fade" id="unitStoryDrops">
+    <div class="alert alert-danger alert-dismissable">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Unit story stage data may be outdated.</strong> Last updated on 2020-03-29 using data from Toshy's sheet.
+	</div>
+    <div class="alert alert-warning alert-dismissable">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+ <strong>All the stages below are 1-wave only.</strong> That means that unit story stages exceeding 1 wave are not included, i.e. Saintly Theria's stage.
+	</div>
+		<table 
+			id="table" 
+			data-toggle="table" 
+			data-search="true"
+			table-layout="fixed" 
+			class="table table-hover">
+			<thead>
+			<tr>
+			  <th data=field="field1" data-formatter="stageNameFormat" scope="col">Stage</th>
+			  <th data=field="field2" data-formatter="itemNameFormat" scope="col">Material</th>
+			  <th scope="col">Drop rate</th>
+			  <th scope="col">Expected<br />quantity</th>
+			</tr>
+		  </thead>
+		  <tbody> <tr><td>SR Melza - Lonesome Assassin</td><td>Crystallite Fragment</td><td>61.50%</td><td>0.863</td></tr> <tr><td>Vazard - To be Strictly Better</td><td>Crystallite Fragment</td><td>54.71%</td><td>0.713</td></tr> <tr><td>Dyne - Lacking the Knack</td><td>Crystallite Fragment</td><td>49.34%</td><td>0.633</td></tr> <tr><td>Goroth - New Frontiers in Begging</td><td>Crystallite Fragment</td><td>46.72%</td><td>0.563</td></tr> <tr><td>Blood Rose - Spilling Blood</td><td>Crystallite Fragment</td><td>46.72%</td><td>0.563</td></tr> <tr><td>Hobgobl - Allies of Old</td><td>Magic Beast Meat</td><td>18.63%</td><td>0.203</td></tr> <tr><td>Gobl - Things to Protect</td><td>Magic Beast Meat</td><td>16.12%</td><td>0.173</td></tr> <tr><td>Phantom - Ally of the Weak</td><td>Magic Beast Meat</td><td>10.85%</td><td>0.113</td></tr> <tr><td>Dabourne - Mutual Understanding</td><td>Magic Beast Meat</td><td>10.85%</td><td>0.113</td></tr> <tr><td>Eliza - Strategizing</td><td>Magic Beast Meat</td><td>7.50%</td><td>0.075</td></tr> <tr><td>Sea Princess Lilah - Troubles at the Fishing Village</td><td>Drop of Life</td><td>19.40%</td><td>0.21</td></tr> <tr><td>Gravein - Taking Aim</td><td>Drop of Life</td><td>14.13%</td><td>0.15</td></tr> <tr><td>Eliza - Predicament</td><td>Drop of Life</td><td>14.02%</td><td>0.149</td></tr> <tr><td>Luger - The Annoying past</td><td>Drop of Life</td><td>13.52%</td><td>0.143</td></tr> <tr><td>Lanceveil - Memories of this Forest</td><td>Drop of Life</td><td>9.73%</td><td>0.101</td></tr> <tr><td>Sevia - Karma</td><td>Ancient Material</td><td>18.63%</td><td>0.203</td></tr> <tr><td>Skeleton - The Ardan Fort</td><td>Ancient Material</td><td>18.63%</td><td>0.203</td></tr> <tr><td>Blood Rose - Heartless, Worthless</td><td>Ancient Material</td><td>17.12%</td><td>0.185</td></tr> <tr><td>Maddine - Signs of Revival</td><td>Ancient Material</td><td>13.52%</td><td>0.143</td></tr> <tr><td>Robin - Thiefly Crisis</td><td>Ancient Material</td><td>11.91%</td><td>0.125</td></tr> <tr><td>Hobgobl - Allies of Old</td><td>Ominous Horn</td><td>15.16%</td><td>0.162</td></tr> <tr><td>Gobl - Things to Protect</td><td>Ominous Horn</td><td>13.07%</td><td>0.138</td></tr> <tr><td>Eliza - Strategizing</td><td>Ominous Horn</td><td>7.50%</td><td>0.075</td></tr> <tr><td>Lilah - What I Want to Do</td><td>Ominous Horn</td><td>7.50%</td><td>0.075</td></tr> <tr><td>Vazard - A Trial</td><td>Ominous Horn</td><td>6.00%</td><td>0.06</td></tr> <tr><td>Sevia - Plans</td><td>Branah Ore</td><td>10.93%</td><td>0.114</td></tr> <tr><td>Sevia - Karma</td><td>Branah Ore</td><td>10.33%</td><td>0.108</td></tr> <tr><td>Sahagin - The Best Laid Plans...</td><td>Branah Ore</td><td>8.74%</td><td>0.09</td></tr> <tr><td>DXR - Confirmed: Bad Guy.</td><td>Branah Ore</td><td>7.43%</td><td>0.076</td></tr> <tr><td>Robin - Thiefly Crisis</td><td>Branah Ore</td><td>7.05%</td><td>0.072</td></tr> <tr><td>Gravein - Taking Aim</td><td>Glowing Phosphate</td><td>11.44%</td><td>0.12</td></tr> <tr><td>Luger - The Annoying past</td><td>Glowing Phosphate</td><td>11.29%</td><td>0.118</td></tr> <tr><td>Sea Princess Lilah - Troubles at the Fishing Village</td><td>Glowing Phosphate</td><td>10.74%</td><td>0.112</td></tr> <tr><td>Eliza - Predicament</td><td>Glowing Phosphate</td><td>6.63%</td><td>0.068</td></tr> <tr><td>WK Melza - Declaration of Annihilation</td><td>Glowing Phosphate</td><td>6.50%</td><td>0.066</td></tr> <tr><td>Dyne - A Sage&#39;s Grimoire</td><td>Golden Fruit</td><td>6.00%</td><td>0.06</td></tr> <tr><td>PT Robin - Like a Beast</td><td>Golden Fruit</td><td>5.25%</td><td>0.053</td></tr> <tr><td>Davan - Unexpectedly Fearsome</td><td>Golden Fruit</td><td>2.80%</td><td>0.028</td></tr> <tr><td>PT Robin - Strength to Respond</td><td>Golden Fruit</td><td>2.80%</td><td>0.028</td></tr> <tr><td>Phal - Winged Being</td><td>Golden Fruit</td><td>2.80%</td><td>0.028</td></tr> <tr><td>Maddine - The Reaper&#39;s Grudge</td><td>Glowing Bone</td><td>16.12%</td><td>0.173</td></tr> <tr><td>Blood Rose - Heartless, Worthless</td><td>Glowing Bone</td><td>11.45%</td><td>0.12</td></tr> <tr><td>Skeleton - The Ardan Fort</td><td>Glowing Bone</td><td>10.33%</td><td>0.108</td></tr> <tr><td>Maddine - Signs of Revival</td><td>Glowing Bone</td><td>7.39%</td><td>0.076</td></tr> <tr><td>Dabourne - Mutual Understanding</td><td>Glowing Bone</td><td>2.97%</td><td>0.03</td></tr> <tr><td>Gravein - Taking Aim</td><td>Ancient Alchemy</td><td>2.96%</td><td>0.03</td></tr> <tr><td>Sea Princess Lilah - Troubles at the Fishing Village</td><td>Ancient Alchemy</td><td>2.77%</td><td>0.028</td></tr> <tr><td>Luger - The Annoying past</td><td>Ancient Alchemy</td><td>2.48%</td><td>0.025</td></tr> <tr><td>WK Melza - Declaration of Annihilation</td><td>Ancient Alchemy</td><td>1.64%</td><td>0.017</td></tr> <tr><td>Leena - Friends</td><td>Ancient Alchemy</td><td>1.50%</td><td>0.015</td></tr> <tr><td>Hobgobl - Allies of Old</td><td>Metal Plate</td><td>3.98%</td><td>0.041</td></tr> <tr><td>Gobl - Things to Protect</td><td>Metal Plate</td><td>3.40%</td><td>0.035</td></tr> <tr><td>Sevia - Karma</td><td>Metal Plate</td><td>2.67%</td><td>0.027</td></tr> <tr><td>Sevia - Plans</td><td>Metal Plate</td><td>1.89%</td><td>0.019</td></tr> <tr><td>DXR - Confirmed: Bad Guy.</td><td>Metal Plate</td><td>1.64%</td><td>0.017</td></tr> <tr><td>Maddine - The Reaper&#39;s Grudge</td><td>Mana Extract</td><td>3.16%</td><td>0.032</td></tr> <tr><td>Skeleton - The Ardan Fort</td><td>Mana Extract</td><td>2.67%</td><td>0.027</td></tr> <tr><td>Blood Rose - Heartless, Worthless</td><td>Mana Extract</td><td>2.23%</td><td>0.023</td></tr> <tr><td>Maddine - Signs of Revival</td><td>Mana Extract</td><td>1.89%</td><td>0.019</td></tr> <tr><td>Pokkle - Three Poison Frogs</td><td>Coagulated Saltwater</td><td>2.23%</td><td>0.023</td></tr> <tr><td>PT Robin - Like a Beast</td><td>Coagulated Saltwater</td><td>1.40%</td><td>0.014</td></tr> <tr><td>Maddine - The Reaper&#39;s Grudge</td><td>Coagulated Saltwater</td><td>1.40%</td><td>0.014</td></tr> <tr><td>PT Robin - Strength to Respond</td><td>Coagulated Saltwater</td><td>0.70%</td><td>0.007</td></tr> <tr><td>Vazard - A Trial</td><td>Stardust</td><td>1.50%</td><td>0.015</td></tr> <tr><td>Sea Princess Lilah - Troubles at the Fishing Village</td><td>Red Crystallite</td><td>42.58%</td><td>0.518</td></tr> <tr><td>Hobgobl - Allies of Old</td><td>Red Crystallite</td><td>32.38%</td><td>0.378</td></tr> <tr><td>Gobl - Things to Protect</td><td>Red Crystallite</td><td>28.37%</td><td>0.322</td></tr> <tr><td>Phantom - Ally of the Weak</td><td>Red Crystallite</td><td>25.36%</td><td>0.278</td></tr> <tr><td>Goroth - Secret Ingredient</td><td>Red Crystallite</td><td>20.00%</td><td>0.2</td></tr> <tr><td>Eliza - Predicament</td><td>Blue Crystallite</td><td>31.26%</td><td>0.36</td></tr> <tr><td>Dabourne - Mutual Understanding</td><td>Blue Crystallite</td><td>27.21%</td><td>0.3</td></tr> <tr><td>Lanceveil - Memories of this Forest</td><td>Blue Crystallite</td><td>26.27%</td><td>0.29</td></tr> <tr><td>Vazard - To be Strictly Better</td><td>Blue Crystallite</td><td>15.22%</td><td>0.162</td></tr> <tr><td>Blood Rose - Heartless, Worthless</td><td>Blue Crystallite</td><td>14.26%</td><td>0.15</td></tr> <tr><td>Phal - Desert Encounter</td><td>Green Crystallite</td><td>24.01%</td><td>0.26</td></tr> <tr><td>Sevia - Karma</td><td>Green Crystallite</td><td>23.25%</td><td>0.256</td></tr> <tr><td>SR Melza - Lonesome Assassin</td><td>Green Crystallite</td><td>18.10%</td><td>0.196</td></tr> <tr><td>Lilah - Noblesse Oblige</td><td>Green Crystallite</td><td>17.50%</td><td>0.175</td></tr> <tr><td>Maddine - Signs of Revival</td><td>Green Crystallite</td><td>14.25%</td><td>0.148</td></tr> <tr><td>Skeleton - The Ardan Fort</td><td>Purple crystallite</td><td>40.73%</td><td>0.5</td></tr> <tr><td>Dyne - Lacking the Knack</td><td>Purple crystallite</td><td>34.36%</td><td>0.403</td></tr> <tr><td>Doura - A Pirate&#39;s Resolve</td><td>Purple crystallite</td><td>27.24%</td><td>0.305</td></tr> <tr><td>Robin - Thiefly Crisis</td><td>Purple crystallite</td><td>25.08%</td><td>0.278</td></tr> <tr><td>Gravein - Taking Aim</td><td>Purple crystallite</td><td>25.03%</td><td>0.28</td></tr> <tr><td>Sevia - Plans</td><td>Rainbow Crystallite</td><td>18.63%</td><td>0.203</td></tr> <tr><td>Hobgobl - Allies of Old</td><td>Rainbow Crystallite</td><td>18.63%</td><td>0.203</td></tr> <tr><td>Maddine - The Reaper&#39;s Grudge</td><td>Rainbow Crystallite</td><td>16.12%</td><td>0.173</td></tr> <tr><td>Gobl - Things to Protect</td><td>Rainbow Crystallite</td><td>16.12%</td><td>0.173</td></tr> <tr><td>Blood Rose - Heartless, Worthless</td><td>Rainbow Crystallite</td><td>15.06%</td><td>0.161</td></tr> <tr><td>Hobgobl - Allies of Old</td><td>Red Crystal</td><td>12.77%</td><td>0.135</td></tr> <tr><td>Gobl - Things to Protect</td><td>Red Crystal</td><td>10.99%</td><td>0.115</td></tr> <tr><td>Sea Princess Lilah - Troubles at the Fishing Village</td><td>Red Crystal</td><td>9.45%</td><td>0.098</td></tr> <tr><td>Eliza - Strategizing</td><td>Red Crystal</td><td>7.50%</td><td>0.075</td></tr> <tr><td>Maddine - The Reaper&#39;s Grudge</td><td>Red Crystal</td><td>7.07%</td><td>0.072</td></tr> <tr><td>Lilah - What I Want to Do</td><td>Blue Crystal</td><td>7.50%</td><td>0.075</td></tr> <tr><td>Maddine - The Reaper&#39;s Grudge</td><td>Blue Crystal</td><td>6.30%</td><td>0.063</td></tr> <tr><td>Eliza - Predicament</td><td>Blue Crystal</td><td>5.54%</td><td>0.057</td></tr> <tr><td>Dyne - A Sage&#39;s Grimoire</td><td>Blue Crystal</td><td>5.00%</td><td>0.05</td></tr> <tr><td>Sevia - Plans</td><td>Blue Crystal</td><td>3.96%</td><td>0.04</td></tr> <tr><td>Sevia - Karma</td><td>Green Crystal</td><td>5.48%</td><td>0.056</td></tr> <tr><td>Sevia - Plans</td><td>Green Crystal</td><td>3.96%</td><td>0.04</td></tr> <tr><td>Sahagin - The Best Laid Plans...</td><td>Green Crystal</td><td>3.50%</td><td>0.035</td></tr> <tr><td>Maddine - Signs of Revival</td><td>Green Crystal</td><td>2.78%</td><td>0.028</td></tr> <tr><td>Phal - Sudden Opponent</td><td>Green Crystal</td><td>2.45%</td><td>0.025</td></tr> <tr><td>Luger - The Annoying past</td><td>Purple Crystal</td><td>12.61%</td><td>0.133</td></tr> <tr><td>Gravein - Taking Aim</td><td>Purple Crystal</td><td>9.61%</td><td>0.1</td></tr> <tr><td>Skeleton - The Ardan Fort</td><td>Purple Crystal</td><td>9.09%</td><td>0.095</td></tr> <tr><td>Pokkle - Three Poison Frogs</td><td>Purple Crystal</td><td>7.32%</td><td>0.075</td></tr> <tr><td>Maddine - The Reaper&#39;s Grudge</td><td>Purple Crystal</td><td>7.07%</td><td>0.072</td></tr> <tr><td>Maddine - The Reaper&#39;s Grudge</td><td>Rainbow Crystal</td><td>3.40%</td><td>0.035</td></tr> <tr><td>Luger - The Annoying past</td><td>Rainbow Crystal</td><td>2.72%</td><td>0.028</td></tr> <tr><td>Sevia - Plans</td><td>Rainbow Crystal</td><td>2.67%</td><td>0.027</td></tr> <tr><td>Hobgobl - Allies of Old</td><td>Rainbow Crystal</td><td>2.67%</td><td>0.027</td></tr> <tr><td>Gobl - Things to Protect</td><td>Rainbow Crystal</td><td>2.28%</td><td>0.023</td></tr> <tr><td>Gorm - Flower Blooming in the Ruins</td><td>Skill Book</td><td>3.00%</td><td>0.03</td></tr> <tr><td>Lukiel - Chance Meeting</td><td>Skill Book</td><td>1.50%</td><td>0.015</td></tr> <tr><td>Lukiel - Puzzle</td><td>Skill Book</td><td>1.50%</td><td>0.015</td></tr> <tr><td>Shin - Changes</td><td>Skill Book</td><td>1.50%</td><td>0.015</td></tr> <tr><td>Shin - A Long-Awaited Rematch</td><td>Skill Book</td><td>1.00%</td><td>0.01</td></tr> <tr><td>Sevia - Plans</td><td>Power Potion</td><td>12.77%</td><td>0.135</td></tr> <tr><td>Sevia - Karma</td><td>Power Potion</td><td>9.09%</td><td>0.095</td></tr> <tr><td>Sahagin - The Best Laid Plans...</td><td>Power Potion</td><td>7.32%</td><td>0.075</td></tr> <tr><td>SR Melza - Soul Reaper Melza</td><td>Power Potion</td><td>7.32%</td><td>0.075</td></tr> <tr><td>Romel - The Old Barrier</td><td>Power Potion</td><td>4.81%</td><td>0.048</td></tr> <tr><td>Sevia - Karma</td><td>Great Power Potion</td><td>3.98%</td><td>0.041</td></tr> <tr><td>Sevia - Plans</td><td>Great Power Potion</td><td>3.98%</td><td>0.041</td></tr> <tr><td>SR Melza - Soul Reaper Melza</td><td>Great Power Potion</td><td>2.23%</td><td>0.023</td></tr> <tr><td>Sahagin - The Best Laid Plans...</td><td>Great Power Potion</td><td>2.23%</td><td>0.023</td></tr> <tr><td>Romel - The Old Barrier</td><td>Great Power Potion</td><td>1.44%</td><td>0.014</td></tr> </tbody>
+		</table>
 </div>
+	<!-- end tab wrapper -->
 </div>
 	<!-- footer -->
 	<footer class="footer font-small lighten-5">
@@ -255,6 +251,7 @@
 	<script type="text/javascript" src="./js/bootstrap-table-sticky-header.min.js"></script>
 	<script type="text/javascript" src="./js/dropdown.js"></script>
 	<script type="text/javascript" src="./js/collapse.js"></script>
+	<script type="text/javascript" src="./js/util.js"></script>
 	<script>
   function stageNameFormat(value) {
     return '<em>' +
