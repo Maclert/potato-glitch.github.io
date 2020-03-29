@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PotatoSack</title>
+    <!-- 
+    	bootstrap for basic css
+    	bootstrap-table for table styling and search functions
+    -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/sticky-footer.css">
+    <link rel="stylesheet" href="./css/bootstrap-table.css"></head>
+<body>
+    <!-- template for header bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">
+  <!-- 
+	  icon markup
+	  <image src="./images/icon.png" width="30px" /> 
+  -->
+  PotatoSack</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./loottable.html">Loot table</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        	Guides
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item disabled" href="#">Ark ether</a>
+          <a class="dropdown-item disabled" href="#">Unit builds</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        	Datasets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item disabled" href="#">Equipment</a>
+          <a class="dropdown-item disabled" href="#">Arks</a>
+          <a class="dropdown-item disabled" href="#">Skills</a>
+          <a class="dropdown-item disabled" href="#">Units</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item disabled" href="#">Lore</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./todo.html">Website to-do</a>
+      </li>
+    </ul>
+  </div>
+  
+</nav>
+    <!-- top content -->
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<p><h1>About this site</h1></p>
+			<p>This website contains <strong>basic guides</strong> for Last Cloudia, a mobile RPG available for Android and iOS.<br />Most of these guides are manually imported from spreadsheets that I authored or co-authored.</p>
+			<p><h4>Use this website if you cannot access Google Sheets.</h4></p>
+			<p>This website was made because I wanted to learn Bootstrap.<br /><em>Modern frameworks are great! I love copy and paste templates!</em></p>
+			<p><h4>Ongoing projects for Last Cloudia</h4></p>
+	<ul>
+		<li><a href="https://docs.google.com/spreadsheets/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">LootTable Query</a> – A spreadsheet that translates Japanese to Global item names/stage maps and has custom search functions for searching by item, stage, and crystal drops.</li>
+		<li><a href="https://docs.google.com/spreadsheets/d/14aEw4EzdfiH_L6ZWnMAeQHbJPYCrNmWLUuf5A20ksdU/htmlview">Ark Ether Guide</a> – A basic guide to help players figure out which Ark they should use their Etherions (or auto-run) on.</li>
+		<li><a href="https://docs.google.com/spreadsheets/d/1NNrhtDZnvCo4gbVJ6dnWBxFBp-hmcVKGyqEJ3Dx7SUY/edit">Unit Builder, Time Management and Story Reader</a> – A catch-it-all bag of tools.
+			<ul>
+				<li>Plan your Ark levels, skill learning and unit builds</li>
+				<li>Keep track of your Ark collection</li>
+				<li>Search for Arks, skills, or equipment passives</li>
+				<li>Read the latest Ark and Unit lore, which has been edited (or rewritten) so that it isn't an obvious Google Translate job by Intern-kun</li>
+			</ul>
+		</li>
+		
+	</ul>
+		</div>
+		<div class="col d-none d-lg-block">
+			<br />
+			<div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+			<ol class="carousel-indicators">
+			<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-2" data-slide-to="1"></li>
+			<li data-target="#carousel-example-2" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+			<div class="view">
+			<img class="d-block w-100" style="opacity:0.9;" src="https://imagizer.imageshack.com/img923/7817/rmFJ6t.jpg">
+			<div class="mask rgba-black-light"></div>
+			</div>
+			<div class="carousel-caption">
+			<!-- <h3 class="h3-responsive">Heading</h3>
+			<p>First text</p> -->
+			</div>
+			</div>
+			<div class="carousel-item">
+			<div class="view">
+			<img class="d-block w-100" style="opacity:0.9;" src="https://imagizer.imageshack.com/img924/4112/uUqns1.jpg">
+			<div class="mask rgba-black-light"></div>
+			</div>
+			<div class="carousel-caption">
+			</div>
+			</div>
+			<div class="carousel-item">
+			<div class="view">
+			<img class="d-block w-100" style="opacity:0.9;" src="https://imagizer.imageshack.com/img923/133/j0Nn5H.jpg">
+			<div class="mask rgba-black-light"></div>
+			</div>
+			<div class="carousel-caption">
+			</div>
+			</div>
+			</div>
+			<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+			</a>
+			</div>
+		</div>
+	</div>
+		<p><h4>Self-help guide</h4></p>
+			<div id="accordion">
+			  <div class="card">
+				<div class="card-header" id="headingOne">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					  How do I contact you?
+					</button>
+				  </h5>
+				</div>
+
+				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				  <div class="card-body">
+					Ping @potato on <a href="https://discord.gg/hYGG9Gt">Discord</a>.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  Isn't the game dead?
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				  <div class="card-body">
+					Not yet.
+					<br />
+					<br />
+					In March alone, there's been a producer's letter reaffirming the Global side's direction, new features released in both JP and Global, and Global is now on its 2nd community manager.
+					<br />
+					<br />
+					Because of these changes, I'm in the "wait and see" camp. Feel free to join me.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingThree">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  I want the unit builder to be a webapp.
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				  <div class="card-body">
+					Your best chance of that happening is asking someone else to do it for you.
+					<br />
+					I don't have the technical expertise nor the time, energy or resources to run a server-based website for free.
+					<br />
+					<br />
+					The Unit builder was made in a spreadsheet because spreadsheets are a fantastic early prototype tool for basic webapps.<br />I went from a paper-and-pen interface mockup to a usable sheet in a matter of days after proposing it to @Throne.<br />Think of it this way: <em>the Unit builder never left the prototype stage.</em><br /><br />Whoever takes up the webapp conversion project will be redoing all the hard work that has been abstracted away by Google Sheets: 2D arrays, caches and nested calculations. It's not a small task.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingThree">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					  I want to make a webapp from your spreadsheets.
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				  <div class="card-body">
+					Contact me: @potato on <a href="https://discord.gg/hYGG9Gt">Discord</a>.
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingThree">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+					  I have other game-related questions.
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				  <div class="card-body">
+					Ask someone in #gl-help on <a href="https://discord.gg/hYGG9Gt">Discord</a> or in the questions megathread on <a href="https://old.reddit.com/r/lastcloudia/">Reddit</a>.
+				  </div>
+				</div>
+			  </div>
+			</div>
+</div>
+	<!-- footer -->
+	<footer class="footer font-small lighten-5">
+		<div class="container">
+			<span class="text-muted">© 2020. Made by potato.</span>
+		</div>
+	</footer>
+    <!-- javascript -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/@popperjs/core@2
+"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap-table.js"></script>
+	<script type="text/javascript" src="./js/dropdown.js"></script>
+	<script type="text/javascript" src="./js/collapse.js"></script>
+	<script>
+  function stageNameFormat(value) {
+    return '<em>' +
+      value.substring() +
+      '</em>'
+  }
+  function itemNameFormat(value) {
+    return '<strong>' +
+      value.substring() +
+      '</strong>'
+  }
+  function itemQuantity(value) {
+    return '<strong>' +
+      value.substring() +
+      '</strong>'
+  }
+</script>
+</body>
+</html>
