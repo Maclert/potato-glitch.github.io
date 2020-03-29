@@ -31,8 +31,14 @@
       <li class="nav-item ">
         <a class="nav-link" href="./index">Home</a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="./loottable">Loot table</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        	Drops
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./loottable">Drops by type and difficulty</a>
+          <a class="dropdown-item" href="./lootbymap">Drops by map</a>
+        </div>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,9 +69,27 @@
   </div>
   
 </nav>
-    <!-- top content -->
+	<!-- navigation buttons -->
 <div class="container">
-		<p><h1>Loot tables</h1></p>
+<div id="button-container-bg"
+	style="
+		margin:20px 0px 20px 0px;
+		padding:10px 0px 10px 0px;
+		align:center;
+		background-color: #EEE;
+		">
+<div class="row justify-content-center">
+	<h4>What drops are you after?</h4>
+	</div>
+	<div class="row justify-content-center">
+	<div class="btn-group" role="group">
+	<a href="./loottable" class="btn btn-secondary btn-lg disabled" role="button" aria-pressed="true">Drops by difficulty & type</a>
+	<a href="./lootbymap" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Drops by story stage map</a>
+	</div>
+</div>
+</div>
+    <!-- top content -->
+		<p><h1>Drops by difficulty and type</h1></p>
 		<p>This page contain the top 5 locations of each farmable material, sorted by difficulty and type.</p>
 		<ul>
 			<li><p><strong>For extended use:</strong> The <a href="https://docs.google.com/spreadsheets/u/1/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">loot table spreadsheet</a> has custom search functions (Query) and the translated dataset. <br />Make a copy while signed into your Google account to get started.</p></li>
