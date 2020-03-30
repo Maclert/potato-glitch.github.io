@@ -104,7 +104,7 @@
 		<a href="#equipMage" class="nav-link active" data-toggle="tab">Mages</a>
 		</li>
 		<li class="nav-item">
-		<a href="#equipPhysical" class="nav-link disabled" data-toggle="tab">Physical DPS</a>
+		<a href="#equipPhysical" class="nav-link" data-toggle="tab">Physical DPS</a>
 		</li>
 		<li class="nav-item">
 		<a href="#equipTank" class="nav-link disabled" data-toggle="tab">Tanks</a>
@@ -119,14 +119,75 @@
 	<!-- 1st level tab-content -->
 	<div class="tab-content">
 		<div class="tab-pane fade show active" id="equipMage">
-			<table id="table" data-toggle="table" table-layout="fixed" class="table table-hover">
+			<p><h3>Instant-casting self-help guide</h3></p>
+			<div id="accordion">
+			  <div class="card">
+				<div class="card-header" id="headingOne">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					  When is instant-cast magic useful?
+					</button>
+				  </h5>
+				</div>
+
+				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+				  <div class="card-body">
+					1. When you're farming Ark ether or EXP and you're using a T3 spell (i.e. Shining Zok) to sweep all enemies in one go.<br />
+2. When you're facing really hard content and a time-stop spell is the difference between losing and winning.<br />
+3. When you want to show off. (Like your support unit.)
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					  When do I stop using instant-cast magic?
+					</button>
+				  </h5>
+				</div>
+
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				  <div class="card-body">
+					<ol>
+						<li><strong>In certain dragged out stages.</strong> For example, take Popoi's non-timestop spells and equip Magic Aura passive (+50% mp cost for +75% increased magic damage).<br />
+	If a Magic Aura Popoi is let loose with instant casting onto HP-bloated enemies, Popoi can and will use MP like opening a fire hose (imagine 100mp used in 5 real-time seconds). Even with Popoi's Glutton talent recovering MP per kill, Popoi can sometimes hit 0mp by the 5th wave.<br />
+	The same can happen to any other mage with Magic aura equipped (I saw it happen to my Saintly Theria).<br />
+	<mark><strong>MP management is important!</strong></mark></li>
+
+						<li>Mages are SC restricted once they've accounted for element criticals, stat passives, archangel blessing, and magic aura. (Lily doesn't count. Lily is special.) You will want to save SC where you can, and an accessory can help.</li>
+						<li>Or you have 2 casters in the party, and you need to split your instant cast between both units. Like in Tower/Arena (4-man teams).</li>
+					</ol>
+				  </div>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="card-header" id="headingThree">
+				  <h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					  Is the game balanced around instant-cast magic?
+					</button>
+				  </h5>
+				</div>
+
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+				  <div class="card-body">
+					<p>Yes and no.</p>
+					<p><strong>The story stages are not balanced around instant-cast magic.</strong> You can cheese most story stage bosses with instant-cast T3 spells.</p>
+					<p><strong>The tower floors are not balanced around instant-cast magic</strong> but the higher Tower floors are arguably balanced around general Ark ether equipment.<br />You will definitely find it hard to proceed without time-stop instant-cast spells if you lack important Ark ether equipment or Ark skills/passives. Nothing is impossible, but why make life hard for yourself?</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<p><h4>Instant-cast equipment</h4></p>
+			<table id="table" data-toggle="table" table-layout="auto" class="table table-hover">
 			<thead class="thead-light">
 				<tr>
-				  <th class="col text-center w-25">Ark</th>
-				  <th class="col text-center w-25" data-formatter="equipmentNameStat">Equipment</th>
-				  <th data-formatter="equipmentNameStat" class="col text-center w-25">Stats</th>
-				  <th class="col text-center w-25">Passives</th>
-				  <th class="col text-center w-50">Notes</th>
+				  <th class="text-center">Ark</th>
+				  <th class="text-center" data-formatter="equipmentNameStat">Equipment</th>
+				  <th data-formatter="equipmentNameStat" class="text-center">Stats</th>
+				  <th class="text-center">Passives</th>
+				  <th class="text-center">Notes</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -142,6 +203,20 @@
 				<td>Magic casting speed +20%</td>
 				<td>Affects all magic, including support spells. Required for instant casting.</td>
 				</tr>
+			</tbody>
+			</table>
+			<p><h3>General equipment</h3></p>
+			<table id="table" data-toggle="table" table-layout="auto" class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center">Ark</th>
+				  <th class="text-center" data-formatter="equipmentNameStat">Equipment</th>
+				  <th data-formatter="equipmentNameStat" class="text-center">Stats</th>
+				  <th class="text-center">Passives</th>
+				  <th class="text-center">Notes</th>
+				</tr>
+			</thead>
+			<tbody>
 				<tr><td><image src="https://imagizer.imageshack.com/img924/4956/bgU5k3.jpg" /><br />Great Temple Maja (SSR)</td>
 				<td><image src="https://img.altema.jp/lastcloudia/soubi/icon/146.jpg" /><br />Maja&#39;s Wand<br />(6* Staff)</td>
 				<td>MP: 40<br />STR: 65<br />INT: 182<br />MND: 167</td>
@@ -197,6 +272,22 @@
 				<td>Covers Popoi&#39;s other half of their talent. Recommended if Popoi isn&#39;t using instant cast.</td>
 				</tr>
 				</tbody>
+			</table>
+	</div>
+		<div class="tab-pane fade" id="equipPhysical">
+			<table id="table" data-toggle="table" table-layout="fixed" class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+				  <th class="col text-center w-25">Ark</th>
+				  <th class="col text-center w-25" data-formatter="equipmentNameStat">Equipment</th>
+				  <th data-formatter="equipmentNameStat" class="col text-center w-25">Stats</th>
+				  <th class="col text-center w-25">Passives</th>
+				  <th class="col text-center w-50">Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- insert table -->
+			</tbody>
 			</table>
 	</div>
 </div>
