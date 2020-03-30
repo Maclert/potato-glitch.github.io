@@ -110,7 +110,7 @@
 		<a href="#equipTank" class="nav-link disabled" data-toggle="tab">Tanks</a>
 		</li>
 		<li class="nav-item">
-		<a href="#equipSupport" class="nav-link disabled" data-toggle="tab">Supports</a>
+		<a href="#equipSupport" class="nav-link" data-toggle="tab">Supports</a>
 		</li>
 		<li class="nav-item">
 		<a href="#equipOther" class="nav-link disabled" data-toggle="tab">Other items</a>
@@ -131,11 +131,13 @@
 				</div>
 
 				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-				  <div class="card-body">
-					1. When you're farming Ark ether or EXP and you're using a T3 spell (i.e. Shining Zok) to sweep all enemies in one go.<br />
-2. When you're facing really hard content and a time-stop spell is the difference between losing and winning.<br />
-3. When you want to show off. (Like your support unit.)
-				  </div>
+					<div class="card-body">
+						<ol>
+							<li>When you're farming Ark ether or EXP and you're using a T3 spell (i.e. Shining Zok) to sweep all enemies in one go.</li>
+							<li>When you're facing really hard content and a time-stop spell is the difference between losing and winning.</li>
+							<li>When you want to show off. (Like your support unit.)</li>
+						</ol>
+					</div>
 				</div>
 			  </div>
 			  <div class="card">
@@ -275,22 +277,78 @@
 			</table>
 	</div>
 		<div class="tab-pane fade" id="equipPhysical">
-			<table id="table" data-toggle="table" table-layout="fixed" class="table table-hover">
+			<p><h3>SCT equipment</h3></p>
+			<table id="table" data-toggle="table" table-layout="auto" class="table table-hover">
 			<thead class="thead-light">
 				<tr>
-				  <th class="col text-center w-25">Ark</th>
-				  <th class="col text-center w-25" data-formatter="equipmentNameStat">Equipment</th>
-				  <th data-formatter="equipmentNameStat" class="col text-center w-25">Stats</th>
-				  <th class="col text-center w-25">Passives</th>
-				  <th class="col text-center w-50">Notes</th>
+				  <th class="text-center">Ark</th>
+				  <th class="text-center" data-formatter="equipmentNameStat">Equipment</th>
+				  <th data-formatter="equipmentNameStat" class="text-center">Stats</th>
+				  <th class="text-center">Passives</th>
+				  <th class="text-center">Notes</th>
 				</tr>
 			</thead>
 			<tbody>
 				<!-- insert table -->
 			</tbody>
 			</table>
+			<p><h3>General equipment</h3></p>
+			<table id="table" data-toggle="table" table-layout="auto" class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center">Ark</th>
+				  <th class="text-center" data-formatter="equipmentNameStat">Equipment</th>
+				  <th data-formatter="equipmentNameStat" class="text-center">Stats</th>
+				  <th class="text-center">Passives</th>
+				  <th class="text-center">Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- insert table -->
+			</tbody>
+			</table>
+		</div>
+		<div class="tab-pane fade" id="equipSupport">
+			<p><h3>Casting speed reduction</h3></p>
+			<p>Note that casting speed does not affect God Heal, which is instant-cast regardless of your modifiers.</p>
+			<table id="table" data-toggle="table" table-layout="auto" class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center">Ark</th>
+				  <th class="text-center" data-formatter="equipmentNameStat">Equipment</th>
+				  <th data-formatter="equipmentNameStat" class="text-center">Stats</th>
+				  <th class="text-center">Passives</th>
+				  <th class="text-center">Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td><image src="https://imagizer.imageshack.com/img924/9023/ItR8z7.jpg" /><br>Radmoon Ruins (R)</td><td><image src="https://imagizer.imageshack.com/a/img924/4548/JHy3XU.jpg" /><br>Radmoon Stone<br>(4* Accessory)</td><td>MP: 30<br>FireRes: 5<br>IceRes: 5<br>ThunderRes: 5<br>DarkRes: -20</td><td>Magic casting speed +20%</td><td>Required for instant casting.</td></tr>
+			</tbody>
+			</table>
+			<p><h3>General equipment</h3></p>
+			<table id="table" data-toggle="table" table-layout="auto" class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center">Ark</th>
+				  <th class="text-center" data-formatter="equipmentNameStat">Equipment</th>
+				  <th data-formatter="equipmentNameStat" class="text-center">Stats</th>
+				  <th class="text-center">Passives</th>
+				  <th class="text-center">Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td><image src="https://imagizer.imageshack.com/img922/4619/pHzDKw.jpg" /><br>March of the Saints (SSR)</td><td><image src="https://imagizer.imageshack.com/a/img921/5471/3fKtSt.jpg" /><br>Godly Staff, Apocalypse<br>(6* Staff)</td><td>MP: 25<br>STR: 71<br>INT: 200<br>MND: 120</td><td>Element: Light<br>Criticals will occur when using healing magic<br></td><td>Healing Critical for healers that lack it (Leena has it as a talent).</td></tr>
+<tr><td><image src="https://imagizer.imageshack.com/img921/7704/UWgdS5.jpg" /><br>Vell=De=Org (SSR)</td><td><image src="https://imagizer.imageshack.com/a/img921/6428/Jt1i60.jpg" /><br>The Divine Law of Caltia Roun<br>(6* Robe)</td><td>MP: 30<br>DEF: 84<br>MND: 215<br><br>LightRes: 10</td><td>Continuous MP regeneration effect (Gradual MP recovery)</td><td>Passive MP regen (2% every 6sec). Also increases base MP.</td></tr>
+<tr><td><image src="https://imagizer.imageshack.com/img923/1920/a44736.jpg" /><br>Ghost of Zeluen (SR)</td><td><image src="https://img.altema.jp/lastcloudia/soubi/icon/157.jpg" /><br>Robe of Zeluen<br>(5* Clothes)</td><td>MP: 20<br>DEF: 43<br>INT: 80<br>MND: 148<br><br>Silence: 1<br><br>LightRes: 10</td><td></td><td>Stat stick. Silence resist is important for future content.</td></tr>
+<tr><td><image src="https://imagizer.imageshack.com/img924/248/wULfid.jpg" /><br>White Laboratory (R)</td><td><image src="https://imagizer.imageshack.com/a/img923/2406/4sVBSB.jpg" /><br>Researcher&#39;s Attire<br>(4* Clothes)</td><td>DEF: 80<br><br>FireRes: 5<br>IceRes: 5<br>EarthRes: 5<br>ThunderRes: 5<br>DarkRes: 10<br><br>SilenceRes: Nil<br>IllnessRes: Nil</td><td></td><td>Nullifies Silence.</td></tr>
+<tr><td><image src="https://imagizer.imageshack.com/img922/2660/nmUSww.jpg" /><br>Sandwyrm (SSR)</td><td><image src="https://imagizer.imageshack.com/a/img923/2126/H5p8gN.jpg" /><br>Crown of the Sun</td><td>HP: 300<br>MP: 40<br>DEF: 40<br>INT: 40<br>MND: 40</td><td></td><td>MP Stat stick. The best of its kind.</td></tr>
+<tr><td><image src="https://imagizer.imageshack.com/img923/7717/rLyluq.jpg" /><br>Wishes on a Holy Night (SSR)</td><td><image src="https://img.altema.jp/lastcloudia/soubi/icon/206.jpg" /><br>Wreath of Wishes</td><td>MP: 20<br>INT: 24<br>MND: 24<br><br>DarkRes: 5<br><br>BlindRes: 1<br>SilenceRes: 1<br>CurseRes: 1</td><td>Near Death: Recover HP greatly. Effect can only be triggered once	</td><td>Saves 9SC on Awaken, but lacks its buffs. Good for support units that don&#39;t use STR/INT.</td></tr>
+<tr><td><image src="https://imagizer.imageshack.com/img921/3544/AuI5Ni.jpg" /><br>Cavern Ale (SR)</td><td><image src="https://imagizer.imageshack.com/a/img923/9295/YuHqdY.jpg" /><br>Blessed Ale of Rigul</td><td>MP: 30<br>STR: 35<br><br>DarkRes: 10</td><td>Upon winning a battle, restores HP and MP +10%	</td><td>Maximises MP recovery at end of wave</td></tr>
+<tr><td><image src="https://imagizer.imageshack.com/img924/1710/s3kCag.jpg" /><br>Magic Mirror Pomram (SR)</td><td><image src="https://imagizer.imageshack.com/a/img921/9606/qtb6Zt.jpg" /><br>Magic Mirror Pomram</td><td>INT: 28<br>MND: 28</td><td>Duration of buffs activated by you +15%	</td><td>Increases buff duration. Required for a support Primm.</td></tr>
+			</tbody>
+			</table>
+		</div>
 	</div>
-</div>
 </div>
 	<!-- footer -->
 	<footer class="footer font-small lighten-5">
