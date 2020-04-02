@@ -13,60 +13,7 @@
     <link rel="stylesheet" href="./css/bootstrap-table.css">
 </head>
 <body>
-    <!-- template for header bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index">
-  <!-- 
-	  icon markup
-	  <image src="./images/icon.png" width="30px" /> 
-  -->
-  PotatoSack</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item ">
-        <a class="nav-link" href="./index">Home</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        	Drops
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="./loottable">Drops by item type and stage difficulty</a>
-          <a class="dropdown-item" href="./lootbymap">Drops by map</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        	Guides
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="./arkether">Ark ether</a>
-          <a class="dropdown-item disabled" href="#">Unit builds</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        	Datasets
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item disabled" href="#">Equipment</a>
-          <a class="dropdown-item disabled" href="#">Arks</a>
-          <a class="dropdown-item disabled" href="#">Skills</a>
-          <a class="dropdown-item disabled" href="#">Units</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item disabled" href="#">Lore</a>
-        </div>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link" href="./todo">Website to-do</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div data-html="./site/header"></div>
     <!-- top content -->
 <div class="container">
 	<p><h1>To-do list</h1></p>
@@ -133,5 +80,12 @@
 	<script type="text/javascript" src="./js/dropdown.js"></script>
 	<script type="text/javascript" src="./js/collapse.js"></script>
 	<script type="text/javascript" src="./js/util.js"></script>
+	<script>
+    $(document).ready(function () {
+        $("div[data-html]").each(function () {                
+            $(this).load($(this).attr("data-html"));
+        });
+    });
+	</script>
 </body>
 </html>
