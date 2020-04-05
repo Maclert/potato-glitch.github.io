@@ -36,10 +36,27 @@
 				<li>Need to transfer existing altema links to Imageshack on the Ark ether guide.</li>
 			</ul>
 		</li>
-		<li><p><h5>New loot table imports</h5></p>
-			<ul>
-				<li>Drops per map tables – all 200 of them? lawd</li>
-			</ul>
+		<li><p><h5>Loot table progress</h5></p>
+			<table id="table" data-toggle="table" class="table table-hover"> <thead class="thead-light"> <tr>  <th scope="col" class="text-center">Stage</th> <th scope="col" class="text-center">Done</th> </tr> </thead>
+			<tbody>
+				<tr>
+					<td>Moriana Plains</td>
+					<td>Done</td>
+				</tr>
+				<tr>
+					<td>Gorde Mines</td>
+					<td>Need drop tables</td>
+				</tr>
+				<tr>
+					<td>Kaldina Ruins</td>
+					<td>Need stage templates</td>
+				</tr>
+				<tr>
+					<td>Rusted Seashore</td>
+					<td>Need stage templates</td>
+				</tr>
+			</tbody>
+			</table>
 		</li>
 		<li><p><h5>New lore table imports</h5></p>
 			<ul>
@@ -62,7 +79,7 @@
 		<li><p><h5>Problems</h5></p>
 			<ul>
 				<li>Sticky header resizes itself because of Chrome injecting element.style.<br />Removed for now, fix later.</li>
-				<li>Inserting tables as separate HTML fragments doesn't work without custom JS. Solution is two-fold: can convert all data tables into json and just load it dynamically (outside scope of website), or just dump it all in the same HTML file (what we're doing now).</li>
+				<li>Inserting tables as separate HTML fragments doesn't work without custom JS. Solution is two-fold: can convert all data tables into json and just load it dynamically (outside website scope), or just dump it all in the same HTML file (what we're doing now).</li>
 				<li><s>Need to implement hover-on-menu-dropdown with jQuery extension</s> It works for now, let's just go with it.</li>
 				<li>Equipment/Ark icons refuse to cooperate for consistent sizing without custom CSS script. Solution: custom CSS that overrides Bootstrap. Much later.</li>
 				<li>Custom search to support strict item search in loot tables. Low priority.</li>
