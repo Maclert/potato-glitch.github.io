@@ -50,17 +50,38 @@
 			</li>
 		</ul>
 </div>
-    <!-- 1st level tabs -->
 <div class="container">
+<!-- 0th level tabs -->
+<ul class="nav nav-pills">
+	<li class="nav-item">
+		<a href="#continentMigal" class="nav-link disabled" data-toggle="tab">Migal Island</a>
+	</li>
+	<li class="nav-item">
+		<a href="#continentAldana" class="nav-link disabled" data-toggle="tab">Aldana Continent</a>
+	</li>
+	<li class="nav-item">
+		<a href="#continentLanzelia" class="nav-link disabled" data-toggle="tab">Lanzelia Continent</a>
+	</li>
+	<li class="nav-item">
+		<a href="#continentLadour" class="nav-link disabled" data-toggle="tab">Ladour Island</a>
+	</li>
+	<li class="nav-item">
+		<a href="#continentOdal" class="nav-link active" data-toggle="tab">Odal Continent</a>
+	</li>
+	<li class="nav-item">
+		<a href="#continentGorde" class="nav-link disabled" data-toggle="tab">Gorde Island</a>
+	</li>
+</ul>
+<div class="tab-content">
+	<!-- start Continent -->
+	<div class="tab-pane fade show active" id="continentOdal">
+    <!-- 1st level tabs -->
 	<ul class="nav nav-tabs">
 		<li class="nav-item">
 		<a href="#storyMorianaPlains" class="nav-link active" data-toggle="tab">Moriana Plains</a>
 		</li>
 		<li class="nav-item">
-		<a href="#storyKaldinaRuins" class="nav-link" data-toggle="tab">Kaldina Ruins</a>
-		</li>
-		<li class="nav-item">
-		<a href="#storyHardDrops" class="nav-link disabled" data-toggle="tab">Gorde Mines</a>
+		<a href="#storyKaldinaRuins" class="nav-link disabled" data-toggle="tab">Kaldina Ruins</a>
 		</li>
 	</ul>
 	<!-- 1st level tab-content -->
@@ -207,6 +228,44 @@
 			</div>
 		</div>
 	</div>
+	</div>
+	<!-- end Continent -->
+	<!-- start Continent -->
+	<div class="tab-pane fade" id="continentMigal">
+    <!-- 1st level tabs -->
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+		<a href="#storyRustedSeashore" class="nav-link active" data-toggle="tab">Rusted Seashore</a>
+		</li>
+		<li class="nav-item">
+		<a href="#storyDogourCaverns" class="nav-link" data-toggle="tab">Dogour Caverns</a>
+		</li>
+		<li class="nav-item">
+		<a href="#storyPortMigal" class="nav-link" data-toggle="tab">Port Migal</a>
+		</li>
+	</ul>
+	<!-- 1st level tab-content -->
+	<div class="tab-content">
+		<!-- StageMap: 2nd level tabs -->
+		<div class="tab-pane fade" id="#storyRustedSeashore">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#stageName" class="nav-link disabled" data-toggle="tab">Stagename</a>
+				</li>
+			</ul>
+			<!-- Stage: 2nd level tab-content -->
+			<div class="tab-content">
+				<div class="tab-pane fade" id="#stageName">
+				<table id="table" data-toggle="table" data-search="true" table-layout="fixed" class="table table-hover"> <thead class="thead-light"> <tr> <th data=field="difficulty" scope="col">Difficulty</th> <th data=field="material" data-formatter="itemNameFormat" scope="col">Material</th> <th scope="col">Drop rate</th> <th scope="col">Expected<br />quantity</th> </tr> </thead>
+				<tbody></tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- end Continent -->
+</div>
 </div>
 	<!-- footer -->
 	<div data-html="./site/footer"></div>
