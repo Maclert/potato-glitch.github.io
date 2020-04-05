@@ -41,13 +41,17 @@
 				<li>Drops per map tables – all 200 of them? lawd</li>
 			</ul>
 		</li>
+		<li><p><h5>New lore table imports</h5></p>
+			<ul>
+				<li>SR / SSR ark sidebar images + translator notes</li>
+			</ul>
+		</li>
 		<li><p><h5>New dataset imports</h5></p>
 			<ul>
 				<li>Equipment dataset with rendered details</li>
 				<li>Ark dataset with rendered details</li>
 				<li>Skill dataset with rendered details</li>
 				<li>Unit dataset with rendered details</li>
-				<li>Lore dataset</li>
 			</ul>
 		</li>
 		<li><p><h5>New guide imports</h5></p>
@@ -58,11 +62,11 @@
 		<li><p><h5>Problems</h5></p>
 			<ul>
 				<li>Sticky header resizes itself because of Chrome injecting element.style.<br />Removed for now, fix later.</li>
-				<li>iFrame doesn't know how to autogenerate its own height-width.<br />Fixed by inserting table code directly into the main html page. Problem: large html file.</li>
-				<li>Need to implement hover-on-menu-dropdown with jQuery extension.</li>
+				<li>Inserting tables as separate HTML fragments doesn't work without custom JS. Solution is two-fold: can convert all data tables into json and just load it dynamically (outside scope of website), or just dump it all in the same HTML file (what we're doing now).</li>
+				<li><s>Need to implement hover-on-menu-dropdown with jQuery extension</s> It works for now, let's just go with it.</li>
 				<li>Equipment/Ark icons refuse to cooperate for consistent sizing without custom CSS script. Solution: custom CSS that overrides Bootstrap. Much later.</li>
 				<li>Custom search to support strict item search in loot tables. Low priority.</li>
-				<li>Dark mode. See <a href="https://darkmodejs.learn.uno/"><https://darkmodejs.learn.uno/</a>?</li>
+				<li>Dark mode. See <a href="https://darkmodejs.learn.uno/">https://darkmodejs.learn.uno/</a></li>
 			</ul>
 		</li>
 	</ul>
