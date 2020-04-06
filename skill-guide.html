@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PotatoSack</title>
+    <!-- 
+    	bootstrap for basic css
+    	bootstrap-table for table styling and search functions
+    -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/sticky-footer.css">
+    <link rel="stylesheet" href="./css/bootstrap-table.css">
+    <style>
+    	image, img {max-width: 50px !important; height: auto !important;}
+    </style>
+</head>
+<body>
+	<!-- header -->
+	<div data-html="./site/header"></div>
+	<!-- navigation buttons -->
+<div class="container">
+	<div class="alert alert-warning" role="alert">
+	  <strong>This page is under construction.</strong>
+	</div>
+    <!-- top content -->
+		<p><h1>Skill guide</h1></p>
+		<p>This page intends to explain most skills in terms of core builds, branching builds, and recommended practices.</p>
+		<ul>
+			<li><strong>Core builds</strong> are skills that should be included unless certain circumstances demand otherwise.</li>
+			<li><strong>Branching builds</strong> represent certain popular builds that can be catered to most units.</li>
+			<li><strong>Recommended practices</strong> include recommended equipment, current/future meta, and other specifics.</li>
+		</ul>
+		<p>If you are reading this guide for an Arena (PvP) build, be aware that Arena demands certain metas to the extent of compromising basic build principles (i.e. a mage carrying healing spells is usable in Arena but not anywhere else).</p>
+		<p>I am also not an Arena player, so any Arena-specific details will elude me.</p>
+		<h4>Additional resources</h4>
+		<ul>
+			<li>Greensburg's beginner guides: <a href="https://gamepress.gg/last-cloudia-magical-dps-builds">Magical DPS builds</a> and <a href="https://gamepress.gg/last-cloudia-physical-dps-builds">Physical DPS builds</a></li>
+			<li><a href="https://docs.google.com/spreadsheets/d/1MXQkApC-pAJjPaIlWevRR_BBad4noowlGJeQJyEtwM4/edit#gid=0">Lake's spreadsheet</a>, which has information from the JP datamine as well as in-game testing.
+			<li>My <a href="https://potato-glitch.github.io/arkether">Ark ether guide</a> for recommended equipment.</li>
+			<li>Our <a href="https://docs.google.com/spreadsheets/d/1NNrhtDZnvCo4gbVJ6dnWBxFBp-hmcVKGyqEJ3Dx7SUY/edit">Unit builder</a>. All data here comes from the Unit builder. Sign into your Google account on a PC to make a copy and get started.
+		</ul>
+		<p>Have questions? Ask in #gl-help on Discord or in the Questions megathread on Reddit.</p>
+		<p>Have complaints? Ping @potato on Discord.</p>
+    <!-- 1st level tabs -->
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li class="nav-item">
+		<a href="#buildMage" class="nav-link active" data-toggle="tab">Mages</a>
+		</li>
+		<li class="nav-item">
+		<a href="#buildPhysical" class="nav-link" data-toggle="tab">Physical DPS</a>
+		</li>
+		<li class="nav-item">
+		<a href="#buildTank" class="nav-link" data-toggle="tab">Tanks</a>
+		</li>
+		<li class="nav-item">
+		<a href="#buildSupport" class="nav-link" data-toggle="tab">Supports</a>
+		</li>
+		<li class="nav-item">
+		<a href="#buildHybrid" class="nav-link" data-toggle="tab">Hybrids</a>
+		</li>
+	</ul>
+	<!-- 1st level tab-content -->
+	<div class="tab-content">
+		<div class="tab-pane fade show active" id="buildMage">
+		<br />
+		<h2>Mages</h2>
+		<p>Mages are units that focus exclusively on attack magic to the exclusion of everything else that requires MP. Pure mages are units like Popoi, Lily, Eliza and Dyne.</p>
+		<p>There are <strong>THREE</strong> things to keep in mind when building a mage.</p>
+		<ol>
+			<li>Your main elements are powerful because of stacked damage and INT buffs. Stack them as much as you can. Invest in equipment.</li>
+			<li>MP management is critical. No MP = no damage.</li>
+			<li>Element resistance is a flat damage reduction on the final damage. For example, 100 light resist = 1 light damage dealt, regardless of how many damage modifiers you have equipped. Therefore, always plan your party around the content you're facing.</li>
+		</ol>
+		<hr />
+		<div class="jumbotron">
+			<h4 class="text-center">The 30 SC Build</h4>
+			<p>This is for players who want to maximise their units without building SC. This assumes you've already learned your attack spells (every mage does).</p>
+		</div>
+		<h5 class="text-center">Learn ALL of the following skills:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/7559/kPT6JJ.jpg"></image><br />Fast Aura</td>
+					<td>Automatically activates Aura on battle start</td>
+					<td>Sorcerer's Eden</td>
+					<td>2</td>
+					<td>Your cheap INT buff. Lasts 40 seconds per wave.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/8615/LsPKul.png"></image><br />Magic Aura</td>
+					<td>Boosts magic attacks at the cost of increased MP consumption</td>
+					<td>Skyship Lonvalion</td>
+					<td>9</td>
+					<td>Boosts your damage from mediocre to acceptable.<br />Be aware of the increased MP cost.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/7997/phgh85.png"></image><br />High Level Magic Chant</td>
+					<td>Greatly increase the casting speed of all magic</td>
+					<td>Radmoon Ruins, Hidden Treasure, Makyuodyne</td>
+					<td>9</td>
+					<td>Enables instant-cast T2 spells. You need instant-cast accessories for T3 spells to be instant-cast.</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<h5 class="text-center">And ONE of the following skills:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/2572/vygSL8.png"></image><br />Light High Boost</td>
+					<td>Light magic damage +30%</td>
+					<td>Great Temple Maja</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/9923/YrmnWW.jpg"></image><br />Ice High Boost</td>
+					<td>Ice magic damage +30%</td>
+					<td>Vell=de=Org</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/9348/A2IKHE.jpg"></image><br />Flame High Boost</td>
+					<td>Fire magic damage +30%</td>
+					<td>Phoenix Blow</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/6301/I9hVC3.jpg"></image><br />Earth High Boost</td>
+					<td>Earth magic damage +30%</td>
+					<td>The Final Oath</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/5294/uaGbBU.jpg"></image><br />Thunder High Boost</td>
+					<td>Thunder magic damage +30%</td>
+					<td>Skyship Lonvalion</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<p>If you still have SC to spare after learning all these skills, read on.</p>
+		<hr />
+		<div class="jumbotron">
+			<h4 class="text-center">Core passives</h4>
+			<p>These are the passives that every mage should consider having regardless of their build. Some stack, while others don't.</p>
+		</div>
+		<h5 class="text-center">Core basic passives:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+		<thead class="thead-light">
+			<tr>
+			  <th class="text-center" data-formatter="skillName">Skill</th>
+			  <th class="text-center w-25">Description</th>
+			  <th class="text-center w-25">Ark required</th>
+			  <th class="text-center" data-formatter="skillName">SC</th>
+			  <th class="text-center small w-25"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5263/thJJHM.jpg"></image><br />Magic Up</td>
+				<td>INT +2%</td>
+				<td>Sorcerer's Eden</td>
+				<td>1</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5263/thJJHM.jpg"></image><br />Magic Up II</td>
+				<td>INT +5%</td>
+				<td>Manmade Ether, Shrine of Heresy</td>
+				<td>2</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5263/thJJHM.jpg"></image><br />Magic Up III</td>
+				<td>INT +8%</td>
+				<td>God of the Dead, Divine Beast, Loug Mekia</td>
+				<td>3</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5263/thJJHM.jpg"></image><br />Magic Up MAX</td>
+				<td>INT +15%</td>
+				<td>Sorcerer's Eden</td>
+				<td>6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/7893/Z7OxYl.jpg"></image><br />MP Up</td>
+				<td>MP +5%</td>
+				<td>Flower of Falnia</td>
+				<td>1</td>
+				<td>If you are low on SC, remove this.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/7893/Z7OxYl.jpg"></image><br />MP Up II</td>
+				<td>MP +8%</td>
+				<td>Maiden's Prayer</td>
+				<td>2</td>
+				<td>If you are low on SC, remove this.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/7893/Z7OxYl.jpg"></image><br />MP Up III</td>
+				<td>MP +12%</td>
+				<td>March of the Saints, Wishes on a Holy Night</td>
+				<td>2</td>
+				<td>If you are low on SC, keep this and remove the other MP Ups.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/7893/Z7OxYl.jpg"></image><br />MP Up II</td>
+				<td>MP +20%</td>
+				<td>Flower of Falnia</td>
+				<td>4</td>
+				<td>If you are low on SC, remove this.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/7559/kPT6JJ.jpg"></image><br />Fast Aura</td>
+				<td>Automatically activates Aura on battle start</td>
+				<td>Sorcerer's Eden</td>
+				<td>2</td>
+				<td>Fast Aura timer lasts 40 seconds. Does not stack with Fast Vacation or Auto Aura.</td>
+			</tr>
+			<tr>
+				<td><image src="https://img.altema.jp/lastcloudia/gino/icon/210.jpg"></image><br />Fast Vacation</td>
+				<td>Automatically activate Brave, Aura, Protection, and Magic Barrier at the start of battle</td>
+				<td>White Knight's Vacation</td>
+				<td>5</td>
+				<td>Saves 1 SC if you are already running Fast Aura, Fast Protection and Fast Barrier (for challenging content). Saves 3SC for Phase Change builds. Does not stack with Fast/Auto Aura.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/5961/Dm185g.jpg"></image><br />Auto Aura</td>
+				<td>Continuous Aura effect. Magic increases.</td>
+				<td>Great Temple Maja</td>
+				<td>7</td>
+				<td>The only reason you'd have Auto Aura over Fast Aura/Vacation is if you're facing long stages, the enemy likes wiping your buffs, or if it comes free with the unit (i.e. Eliza, Lily). Does not stack with Fast Aura/Vacation.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/2075/IzMqSp.jpg"></image><br />Archangel's Blessing</td>
+				<td>Battle end: recovers MP +30%</td>
+				<td>Archangel Smile</td>
+				<td>9</td>
+				<td>The superior MP recovery passive. This can be stacked with Ale of Honor and Cavern Ale's ether reward (see Ark ether guide)</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/2673/nLXOdi.jpg"></image><br />Ale of Honor</td>
+				<td>Battle end: recovers MP +10%</td>
+				<td>Holy Flag of Norlean</td>
+				<td>4</td>
+				<td>The cheap MP recovery passive. This can be stacked with Archangel Blessing and Cavern Ale's ether reward (see Ark ether guide). Recommended for new players.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/8615/LsPKul.png"></image><br />Magic Aura</td>
+				<td>Boosts magic attacks at the cost of increased MP consumption</td>
+				<td>Skyship Lonvalion</td>
+				<td>9</td>
+				<td>Boosts all elements' magic. Recommended for almost any scenario.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/7997/phgh85.png"></image><br />High Level Magic Chant</td>
+				<td>Greatly increase the casting speed of all magic</td>
+				<td>Radmoon Ruins, Hidden Treasure, Makyuodyne</td>
+				<td>9</td>
+				<td>Boosts casting speed. Makes any T2 spell instant-cast, but needs instant-cast accessories for T3 to be instant-cast.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/2402/0CJw1b.png"></image><br />Immovable Object</td>
+				<td>Spellcaster will not be interrupted by most attacks</td>
+				<td>March of the Saints</td>
+				<td>11</td>
+				<td>Required for harder content where mages are often flinched.<br />Certain units (i.e. Zekus) have Immovable Object baked into their talents, so check before you learn it.</td>
+			</tr>
+		</tbody>
+		</table>
+		<br />
+		<h5 class="text-center">Core element passives:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/2572/vygSL8.png"></image><br />Light Boost</td>
+					<td>Light magic damage +10%</td>
+					<td>Manmade Ether, Archangel Smile</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/8063/ZilS06.jpg"></image><br />Dark Boost</td>
+					<td>Dark magic damage +10%</td>
+					<td>God of the Dead</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/9923/YrmnWW.jpg"></image><br />Ice Boost</td>
+					<td>Ice magic damage +10%</td>
+					<td>Treasured Sword Eliud</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/9348/A2IKHE.jpg"></image><br />Flame Boost</td>
+					<td>Fire magic damage +10%</td>
+					<td>Altar of the Forbidden Book</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/6301/I9hVC3.jpg"></image><br />Earth Boost</td>
+					<td>Earth magic damage +10%</td>
+					<td>Sandwyrm</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/5294/uaGbBU.jpg"></image><br />Thunder Boost</td>
+					<td>Thunder magic damage +10%</td>
+					<td>God of Storms</td>
+					<td>3</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/2572/vygSL8.png"></image><br />Light High Boost</td>
+					<td>Light magic damage +30%</td>
+					<td>Great Temple Maja</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/9923/YrmnWW.jpg"></image><br />Ice High Boost</td>
+					<td>Ice magic damage +30%</td>
+					<td>Vell=de=Org</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/9348/A2IKHE.jpg"></image><br />Flame High Boost</td>
+					<td>Fire magic damage +30%</td>
+					<td>Phoenix Blow</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/6301/I9hVC3.jpg"></image><br />Earth High Boost</td>
+					<td>Earth magic damage +30%</td>
+					<td>The Final Oath</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/5294/uaGbBU.jpg"></image><br />Thunder High Boost</td>
+					<td>Thunder magic damage +30%</td>
+					<td>Skyship Lonvalion</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<hr />
+		<div class="jumbotron">
+			<h4 class="text-center">Branch: Mages with element critical</h4>
+			<p>Mages often opt-in to building element criticals. However, element crit requires significant SC investment. For a light build, skip the Critical Ups and only equip Fast Critical + Aim Vitals. Fast Critical buffs for 40 seconds, and most stages are cleared in less than 40 seconds.</p>
+			<p>The Ark Ether reward from Forbidden Book SR Ark can save 6SC for any fire mage. See the <a href="https://potato-glitch.github.io/arkether">Ark ether guide</a> for more details.</p>
+		</div>
+		<h5 class="text-center">Core passives for crit build:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+		<thead class="thead-light">
+			<tr>
+			  <th class="text-center" data-formatter="skillName">Skill</th>
+			  <th class="text-center w-25">Description</th>
+			  <th class="text-center w-25">Ark required</th>
+			  <th class="text-center" data-formatter="skillName">SC</th>
+			  <th class="text-center small w-25"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5070/3pcaZK.jpg"></image><br />Critical Up</td>
+				<td>Critical hit rate +2%</td>
+				<td>Broken Sword at the Shore</td>
+				<td>2</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5070/3pcaZK.jpg"></image><br />Critical Up II</td>
+				<td>Critical hit rate +5%</td>
+				<td>Moonlit Murder, Flaming Hero</td>
+				<td>3</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5070/3pcaZK.jpg"></image><br />Critical Up III</td>
+				<td>Critical hit rate +8%</td>
+				<td>Beast Hunter</td>
+				<td>7</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/567/iFys9d.jpg"></image><br />Aim: Vitals</td>
+				<td>Critical hit power +30%</td>
+				<td>Divine Beast Hunter, Foreign Land Megrona</td>
+				<td>4</td>
+				<td>Mandatory for boosting Critical damage. Stack this with Heaven's Cry staff (+30% critical damage) and Aim Vitals 2 (+50% Critical damage, coming soon).</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/7014/qMgdRl.png"></image><br />Fast Critical</td>
+				<td>Automatically activate Critical at the start of the battle</td>
+				<td>Foreign Land Megrona</td>
+				<td>2</td>
+				<td>+15% Critical rate for 40 seconds. Can be stacked with Critical Ups, but watch your SC.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/8620/kWTwj3.jpg"></image><br />Proud Force</td>
+				<td>Critical hits recovers HP</td>
+				<td>Broken Sword at the Shore</td>
+				<td>4</td>
+				<td>Proud Force scales off MND, and provides free healing for any Crit mage. It's recommended, but not necessary.</td>
+			</tr>
+		</tbody>
+		</table>
+		<br />
+		<h5 class="text-center">Element criticals:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/6563/sYBEFy.jpg"></image><br />Light Critical</td>
+				<td>Light magic attacks have a chance of dealing critical damage</td>
+				<td>Sylmiria Torch</td>
+				<td>6</td>
+				<td>For two months, players with Saintly Theria scrambled to upgrade Sylmiria Torch for Light Critical. Then she got unnerfed.<br /><s>I was one of them.</s></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/2529/6fK4N4.jpg"></image><br />Dark Critical</td>
+				<td>Dark magic attacks have a chance of dealing critical damage</td>
+				<td>Shrine of Heresy</td>
+				<td>6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/3954/BisCxF.jpg"></image><br />Flame Critical</td>
+				<td>Fire magic attacks have a chance of dealing critical damage</td>
+				<td>Egg of Remy the Firebird</td>
+				<td>6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/6407/5PEGyn.jpg"></image><br />Ice Critical</td>
+				<td>Ice magic attacks have a chance of dealing critical damage</td>
+				<td>Aurora Glacier</td>
+				<td>6</td>
+				<td>Sea Princess Lilah learns this for free in her talent.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/8195/4KdTTe.png"></image><br />Earth Critical</td>
+				<td>Earth magic attacks have a chance of dealing critical damage</td>
+				<td>Sand Tower Mirage</td>
+				<td>6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/2173/dGObRo.jpg"></image><br />Thunder Critical</td>
+				<td>Thunder magic attacks have a chance of dealing critical damage</td>
+				<td>Thunderstone Luster</td>
+				<td>6</td>
+				<td></td>
+			</tr>
+		</table>
+		<hr />
+		<div class="jumbotron">
+			<h4 class="text-center">Branch: Rainbow mages – mages that use 3+ elements</h4>
+			<p>Early on, players will find themselves wanting to be a jack-of-all-trades to combat any element resistance they encounter in Story stages.</p>
+			<p>To build a rainbow mage, save as much SC as you can for spells, and rely on T2 spells when you can. Magic Aura is required for damage since you won't have enough SC to run every element boost/crit.</p>
+		</div>
+		<h5 class="text-center">Tier 2 (T2) spells:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+		<thead class="thead-light">
+			<tr>
+			  <th class="text-center" data-formatter="skillName">Skill</th>
+			  <th class="text-center w-25">Description</th>
+			  <th class="text-center w-25">Ark required</th>
+			  <th class="text-center" data-formatter="skillName">SC</th>
+			  <th class="text-center small w-25"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/4997/pFGqP2.jpg"></image><br />Meteor Rain</td>
+				<td>Fire attack against all enemies</td>
+				<td>Egg of Remy the Firebird, Altar of the Forbidden Book, Phoenix Blow</td>
+				<td>4</td>
+				<td>Meteor Rain randomises enemy targets and is a poor spell in general. Use the T3 fire spell, Crimson Flare, if you can.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/9089/I0aG7A.jpg"></image><br />Blizzard</td>
+				<td>Ice attack against all enemies</td>
+				<td>Aurora Glacier, Treasured Sword Eliud, Vell=de=Org</td>
+				<td>4</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/589/mslhSX.jpg"></image><br />Lightning Gauge</td>
+				<td>Thunder attack in a medium area</td>
+				<td>Thundercloud Zellania, God of Storms, Skyship Lonvalion</td>
+				<td>4</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/1883/8gX781.png"></image><br />Tornado Storm</td>
+				<td>Earth attack in a medium area</td>
+				<td>Sand Tower Mirage, Thundercloud Zellania, Sandwyrm</td>
+				<td>4</td>
+				<td>Tornado Storm is a poor spell for farming. However if you are looking for spells that juggle enemies, Tornado Storm is a good spell. A common practice is to use Lightning Gauge to gather enemies, then use Tornado Storm to juggle.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/2919/wZ8MrQ.jpg"></image><br />Galaxy</td>
+				<td>Light attack against all enemies</td>
+				<td>Grave of the Blademaster, Archangel Smile</td>
+				<td>5</td>
+				<td>Galaxy focuses its hits on enemies in the middle of the map, and pushes those enemies to the map's corners, so it can be problematic in some situations.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/1230/jwY4ex.jpg"></image><br />Dark Matter</td>
+				<td>Dark attack in a medium area</td>
+				<td>Shrine of Heresy, God of the Dead</td>
+				<td>5</td>
+				<td>Dark Matter has a small range, is time-stop, and does poor damage. Poison Cloud is usually preferred because it is non-timestop and has a much wider range.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/8043/Q5GHpA.jpg"></image><br />Poison Cloud</td>
+				<td>Dark attack in a medium area. Chance to inflict poison</td>
+				<td>Secret Room of the Hermit</td>
+				<td>5</td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+		<br />
+		<h5 class="text-center">Tier 3 (T3) spells:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/4997/pFGqP2.jpg"></image><br />Crimson Flare</td>
+				<td>Powerful Fire attack against all enemies. Effective against Plant enemies</td>
+				<td>Altar of the Forbidden Book</td>
+				<td>7</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/9089/I0aG7A.jpg"></image><br />Diamond Dust</td>
+				<td>Powerful Ice attack against all enemies</td>
+				<td>Treasured Sword Eliud</td>
+				<td>7</td>
+				<td>Diamond Dust has the lowest damage multiplier (and lowest damage in practice) of all the T3 spells. Use Acid Storm instead if you can.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/589/mslhSX.jpg"></image><br />Valza Riser</td>
+				<td>Powerful Thunder attack against all enemies</td>
+				<td>God of Storms</td>
+				<td>7</td>
+				<td>Valza Riser is a weak T3 spell and lacks the crowd-control that Lightning Gauge has. (It looks cool though)</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/1883/8gX781.png"></image><br />Grand Cross</td>
+				<td>Powerful Earth attack against all enemies</td>
+				<td>Sandwyrm</td>
+				<td>7</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/6330/KChfpt.jpg"></image><br />Shining Zok</td>
+				<td>Powerful Light attack against all enemies</td>
+				<td>Archangel Smile, Wishes on a Holy Night</td>
+				<td>10</td>
+				<td>Shining Zok has the highest damage multiplier of any T3 spell, but some people complain about the long animation after seeing it for the 20,000th time. These are the same people who would also complain that the sky is blue, and pray for rain after watering their garden, so I don't see why you should listen to them.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/1230/jwY4ex.jpg"></image><br />Abyss Gate</td>
+				<td>Powerful Dark attack against all enemies</td>
+				<td>God of the Dead</td>
+				<td>10</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/5833/4m4aju.png"></image><br />Acid Storm</td>
+				<td>Ice attack against all eenmies. Chance to reduce enemy DEF</td>
+				<td>Secret of Mana</td>
+				<td>8</td>
+				<td></td>
+			</tr>
+			</tbody>
+			</table>
+			<br />
+			<p>Venomous Rainfall is exclusive to Blood Rose, and functions similar to Acid Storm but with the chance to Poison instead. But if you're using Blood Rose in any capacity, you don't need this build guide anyway.</p>
+		</div>
+		<div class="tab-pane fade" id="buildPhysical">
+			<p>Coming soon.</p>
+		</div>
+		<div class="tab-pane fade" id="buildTank">
+			<p>Coming soon.</p>
+		</div>
+		<div class="tab-pane fade" id="buildSupport">
+			<p>Coming soon.</p>
+		</div>
+		<div class="tab-pane fade" id="buildHybrid">
+			<p>Coming soon.</p>
+		</div>
+	</div>
+</div>
+	<!-- footer -->
+	<div data-html="./site/footer"></div>
+    <!-- javascript -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/@popperjs/core@2
+"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap-table.js"></script>
+	<script type="text/javascript" src="./js/dropdown.js"></script>
+	<script type="text/javascript" src="./js/collapse.js"></script>
+	<script type="text/javascript" src="./js/util.js"></script>
+	<script type="text/javascript" src="./js/html-load.js"></script>
+	<script>
+  function skillName(value) {
+    return '<strong>' +
+      value.substring() +
+      '</strong>'
+  }
+	</script>
+</body>
+</html>
