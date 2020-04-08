@@ -81,10 +81,11 @@
 				<li>Sticky header resizes itself because of Chrome injecting element.style.<br />Removed for now, fix later.</li>
 				<li>Inserting tables as separate HTML fragments doesn't work without custom JS. Solution is two-fold: can convert all data tables into json and just load it dynamically (outside website scope), or just dump it all in the same HTML file (what we're doing now).</li>
 				<li><s>Need to implement hover-on-menu-dropdown with jQuery extension</s> It works for now, let's just go with it.</li>
-				<li>Equipment/Ark icons refuse to cooperate for consistent sizing without custom CSS script. Solution: custom CSS that overrides Bootstrap. Much later.</li>
+				<li><s>Equipment/Ark icons refuse to cooperate for consistent sizing without custom CSS script.</s> Found a one-liner custom CSS that works, using it for the Skill guide; will port over to Ark ether guide soon.</li>
 				<li>Custom search to support strict item search in loot tables. Low priority.</li>
-				<li>Dark mode. See <a href="https://darkmodejs.learn.uno/">https://darkmodejs.learn.uno/</a></li>
-				<li>Fix the main lore page so that the navigation doesn't hide itself – only swaps between tabs.</li>
+				<li>Dark mode. <s>See <a href="https://darkmodejs.learn.uno/">https://darkmodejs.learn.uno/</a></s><br />So the deal with dark mode is that it's usually implemented either by switching the CSS tag (i.e. [dark-mode] .element) or by switching css files (i.e. if switch is toggled, replace link(css)). User preference is saved in either HTML5 storage or $.cookie.<br />And none of the available free Bootstrap dark themes are feature complete (one was missing header classes, other was missing jumbotron/certain alerts, didn't play nice with bootstrap-tables, etc.). <br />With this much custom modding needed dark mode will be low priority until the site is v1 feature-complete.</li>
+				<li>Fix the main lore page so that the navigation doesn't hide itself – only swaps between tabs.
+				<br />– Found a solution but it involves modifying base bootstrap.js.</li>
 			</ul>
 		</li>
 	</ul>
