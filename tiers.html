@@ -41,7 +41,7 @@
 		<div class="toc">
 			<ul>
 				<li><a href="#tower-units">Tower units</a></li>
-				<li>General units
+				<li>Units
 					<ul>
 						<li><a href="#unit-mage">Mages</a></li>
 						<li><a href="#unit-pdps">Physical DPS</a></li>
@@ -61,7 +61,7 @@
 					</ul>
 				</li>
 				<li><a href="#">Tower arks</a></li>
-				<li><a href="#">General arks</a>
+				<li>Arks
 					<ol>
 						<li><a href="#ark-meta">Meta arks</a></li>
 						<li><a href="#ark-non-meta">Other arks worth mentioning</a></li>
@@ -77,22 +77,26 @@
 			<h4 class="text-center"><a name="tower-units">Tower unit tier list</a></h4>
 			<p class="text-center">Only includes units that excel in Tower.<br />Assumes the units are built to their intended specifications with AT LEAST 50SC invested in skills (i.e. pure tank/healer).<br /><strong>Do not use this tier list for rerolling.</strong></p>
 		</div>
-		<table id="table" data-toggle="table" table-layout="auto" class=" table-sm">
+		<table id="table" data-toggle="table" class="table table-disable-hover table-bordered">
 		<thead class="thead-light">
 			<tr>
 			  <th class="text-center"></th>
-			  <th class="text-center" data-formatter="skillName">Damage</th>
-			  <th class="text-center w-25">Support</th>
-			  <th class="text-center w-25">Break</th>
+			  <th class="text-center">Damage</th>
+			  <th class="text-center">Support</th>
+			  <th class="text-center">Break</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td><h4>Meta</h4></td>
 				<td>
-					<div data-toggle="tooltip" title="Randi / Secret of Mana Collab"><image src="https://imagizer.imageshack.com/img921/807/07TsQ0.jpg"></image></div>
+					 <image src="https://imagizer.imageshack.com/img921/807/07TsQ0.jpg" data-toggle="tooltip" data-placement="top" title="Randi / Secret of Mana"></image> 
 				</td>
-				<td></td>
+				<td>
+					 <image src="https://imagizer.imageshack.com/img923/1792/i86dA2.jpg" data-toggle="tooltip" data-placement="top" title="Gorm"></image> 
+					 <image src="https://imagizer.imageshack.com/img921/1561/jesOoI.jpg" data-toggle="tooltip" data-placement="top" title="Leena"></image> 
+					 <image src="https://imagizer.imageshack.com/img923/4885/H0Nvzl.jpg" data-toggle="tooltip" data-placement="top" title="Sevia"></image> 
+				</td>
 				<td></td>
 			</tr>
 		</tbody>
@@ -112,14 +116,12 @@
 	<script type="text/javascript" src="./js/util.js"></script>
 	<script type="text/javascript" src="./js/html-load.js"></script>
 	<script>
-  function skillName(value) {
-    return '<strong>' +
-      value.substring() +
-      '</strong>'
-  }
   $(function () {
 	  $('[data-toggle="tooltip"]').tooltip()
 	})
+  $.extend(
+  	  $.fn.bootstrapTable.defaults, {classes:'table'}
+  	);
 	</script>
 </body>
 </html>
