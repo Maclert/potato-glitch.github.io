@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/sticky-footer.css">
     <link rel="stylesheet" href="./css/bootstrap-table.css">
     <style>
-    	image, img {max-width: 50px !important; height: auto !important;}
+    	image, img {max-width: 100px !important; height: auto !important;}
     </style>
 </head>
 <body>
@@ -24,15 +24,87 @@
 	  <strong>This page is under construction.</strong>
 	</div>
     <!-- top content -->
-    
+    <div class="row">
+    <div class="col-md-8">
+		<p><h1>Tier lists</h1></p>
+		<p>A tier list that ranks Global version Arks and Units in different gameplay modes. Initial draft by @Throne, @WGT and @potato, with additional insight from posts by @Envy.</p>
+		<p>Have questions? Ask in #gl-help on Discord or in the Questions megathread on Reddit.<br />Have complaints? Ping @potato on Discord.</p>
+		<div class="alert alert-warning" role="alert">
+		  <strong>Last updated April 10, 2020.</strong> Future updates may not be reflected here.
+		</div>
+		<div class="alert alert-info" role="alert">
+		  <strong>This tier list precedes Arena (PvP).</strong> We need contributions from Arena players to determine which units are best for Arena. Contact @potato on Discord.
+		</div>
+	</div>
+    <div class="col-md-4">
+		<p><h2>Table of contents</h2></p>
+		<div class="toc">
+			<ul>
+				<li><a href="#tower-units">Tower units</a></li>
+				<li>General units
+					<ul>
+						<li><a href="#unit-mage">Mages</a></li>
+						<li><a href="#unit-pdps">Physical DPS</a></li>
+						<li><a href="#unit-tank">Tanks</a></li>
+						<li><a href="#unit-healer">Healers</a></li>
+						<li><a href="#unit-support">Support</a></li>
+					</ul>
+				</li>
+				<li>Unit explanations
+					<ul>
+						<li><a href="#unit-collab">Collab units</a></li>
+						<li><a href="#unit-limited">Limited units</a></li>
+						<li><a href="#unit-doh">Descent of Heroes units</a></li>
+						<li><a href="#unit-gacha">Permanent gacha units</a></li>
+						<li><a href="#unit-story">Story units</a></li>
+						<li><a href="#unit-monster">Monster units</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Tower arks</a></li>
+				<li><a href="#">General arks</a>
+					<ol>
+						<li><a href="#ark-meta">Meta arks</a></li>
+						<li><a href="#ark-non-meta">Other arks worth mentioning</a></li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+	<!-- exit flexbox -->
+		<hr />
+		<div class="jumbotron">
+			<h4 class="text-center"><a name="tower-units">Tower unit tier list</a></h4>
+			<p class="text-center">Only includes units that excel in Tower.<br />Assumes the units are built to their intended specifications with AT LEAST 50SC invested in skills (i.e. pure tank/healer).<br /><strong>Do not use this tier list for rerolling.</strong></p>
+		</div>
+		<table id="table" data-toggle="table" table-layout="auto" class=" table-sm">
+		<thead class="thead-light">
+			<tr>
+			  <th class="text-center"></th>
+			  <th class="text-center" data-formatter="skillName">Damage</th>
+			  <th class="text-center w-25">Support</th>
+			  <th class="text-center w-25">Break</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><h4>Meta</h4></td>
+				<td>
+					<div data-toggle="tooltip" title="Randi / Secret of Mana Collab"><image src="https://imagizer.imageshack.com/img921/807/07TsQ0.jpg"></image></div>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
     <!-- end container -->
 </div>
 	<!-- footer -->
 	<div data-html="./site/footer"></div>
     <!-- javascript -->
 	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="https://unpkg.com/@popperjs/core@2
-"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap-table.js"></script>
 	<script type="text/javascript" src="./js/dropdown.js"></script>
@@ -45,6 +117,9 @@
       value.substring() +
       '</strong>'
   }
+  $(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 	</script>
 </body>
 </html>
