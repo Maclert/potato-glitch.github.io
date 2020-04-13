@@ -23,6 +23,9 @@
 	<div class="alert alert-warning" role="alert">
 	  <strong>This page is under construction.</strong>
 	</div>
+	<div class="alert alert-warning" role="alert">
+	  <strong>Last updated April 13, 2020.</strong> Future game updates may not be reflected here.
+	</div>
     <!-- top content -->
     <div class="row">
     <div class="col-md-6">
@@ -62,7 +65,7 @@
 		<a href="#buildSupport" class="nav-link" data-toggle="tab">Supports</a>
 		</li>
 		<li class="nav-item">
-		<a href="#buildHybrid" class="nav-link" data-toggle="tab">Hybrids</a>
+		<a href="#buildOther" class="nav-link" data-toggle="tab">Other skills</a>
 		</li>
 	</ul>
 	<!-- 1st level tab-content -->
@@ -839,7 +842,7 @@
 			<p>Venomous Rainfall is exclusive to Blood Rose, and functions similar to Acid Storm but with the chance to Poison instead. But if you're using Blood Rose in any capacity, you don't need this build guide anyway.</p>
 		<br />
 		<div class="jumbotron text-center">
-			<h4 class="text-center" name="mage-branch-rainbow">Optional: Real-time buffs</h4>
+			<h4 class="text-center" name="mage-optional-realtime">Optional: Real-time buffs</h4>
 			<p>Certain buffs are limited to set durations, i.e. between 6AM to 5.59PM. These buffs are dependent on your phone's internal time/date.</p>
 			<p>Because these buffs use SC even while not active, they are not recommended for general use.</p>
 		</div>
@@ -910,12 +913,11 @@
 						<li><a href="#pdps-core-elements">Element boosts</a></li>
 					</ul>
 				</li>
-				<li><a href="#pdps-branch-sct">Branch: Skill Charge Time reduction</a></li>
+				<li><a href="#pdps-branch-sct">Branch: Skill Charge Time (SCT) reduction</a></li>
 				<li><a href="#pdps-branch-break">Branch: Break & faint</a></li>
-				<li><a href="#pdps-branch-impact">Branch: Impacts & ailments</a></li>
+				<li><a href="#pdps-branch-impact">Branch: Impacts & regular attacks</a></li>
 				<li><a href="#pdps-branch-killer">Branch: Killers and slayers</a></li>
 				<li><a href="#pdps-branch-sniper">Branch: Magleon (Snipers)</a></li>
-				<li><a href="#pdps-optional-mimicry">Optional: Mimicry types</a></li>
 				<li><a href="#pdps-optional-realtime">Optional: Real-time buffs</a></li>
 			</ol>
 			</div>
@@ -1278,7 +1280,7 @@
 					<td>Nullifies Curse. Changes Curse weakness to Curse resistance</td>
 					<td>Archangel Smile</td>
 					<td>8</td>
-					<td>The more expensive version of Curse Resist.<a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+					<td>The more expensive version of Curse Resist. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
 				</tr>
 				<tr>
 					<td><image src="https://imagizer.imageshack.com/img924/116/8WwU4M.png"></image><br />Stun Resist</td>
@@ -1405,6 +1407,525 @@
 				</tr>
 			</tbody>
 		</table>
+		<br />
+		<div class="jumbotron text-center">
+			<h4 name="pdps-branch-sct" class="text-center">Branch: Skill charge time (SCT) reduction</h4>
+			<p>SCT refers to the value that determines the charging time for every physical skill (the top left, top right, and bottom left skills). As these skills are any PDPS's main source of damage, increasing SCT gain means less charging time and more skill activations.</p>
+			<p>A SCT build is highly recommended for any unit using Sharp Eyes.</p>
+			<p>Most of the skills below should be selectively stacked. For example, you don't need to stack Pirate's Feast with anything else.</p>
+		</div>
+		<h5 class="text-center">SCT build options:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/1359/vHRd5X.jpg"></image><br />Pose of Glory</td>
+					<td>Defeat an enemy with a physical attack and recover some SCT</td>
+					<td>The Final Oath</td>
+					<td>2</td>
+					<td>Recommended for any SCT build. Only exception is if you're facing a 1-boss 1-wave stage.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/7034/t8jL21.jpg"></image><br />Ale of Glory</td>
+					<td>Battle end: recovers some SCT</td>
+					<td>Miracle of Gorde</td>
+					<td>4</td>
+					<td>The cheap version of Pirate's Feast. Recommended for units that don't want to commit to Pirate's Feast, or don't have Pirate Ship Legnis ark.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/8904/m4rSaz.jpg"></image><br />Pirate's Feast</td>
+					<td>Recovers all SCT at end of battle</td>
+					<td>Pirate Ship Legnis</td>
+					<td>9</td>
+					<td>Does what it says, which is that all physical skills will be at maximum stock (uses) after each wave. Game-breaking for story farming and harder multi-wave stages in Tower. Useless in Arena and other 1-wave fights.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/8597/B8D8iO.png"></image><br />Auto Haste</td>
+					<td>Continuous Haste effect. Boosts SCT</td>
+					<td>Eternal Clock De=Rowe</td>
+					<td>14</td>
+					<td>A very, very expensive option to boost SCT regeneration rate. Under most circumstances, it's better to use Skill Charges and Pose of Glory. But if you want to see SCT regeneration go at sonic-speed, then equip this with the Aldana Colosseum (SR) ark ether reward and Archangel Smile (SSR) ark ether reward.</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Skill Charge 1</td>
+					<td>Restore some SCT in the top left Skill at the start of the battle</td>
+					<td>Terror of the Grana Seas</td>
+					<td>3</td>
+					<td>Highly recommended for any PDPS with a strong Skill 1. Worth stacking with Pirate's Feast if you just need a boost for the first wave.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/7913/vkdqFu.png"></image><br />Skill Charge 2</td>
+					<td>Restore some SCT in the top right Skill at the start of a battle</td>
+					<td>Kaldina the Great</td>
+					<td>3</td>
+					<td>Highly recommended for any PDPS with a strong Skill 2. Worth stacking with Pirate's Feast if you just need a boost for the first wave.</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Skill Charge 3</td>
+					<td>Restore some SCT of the third Skill (bottom left Skill) at the start of battle</td>
+					<td>Bell Tower of Guidance</td>
+					<td>3</td>
+					<td>Highly recommended for any PDPS with a strong Skill 3. Worth stacking with Pirate's Feast if you just need a boost for the first wave.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/1729/cYzLpx.png"></image><br />Quick Trigger</td>
+					<td>At the start of battle, recover a skill SCT stock by 1</td>
+					<td>Wishes on a Holy Night</td>
+					<td>6</td>
+					<td>Used in conjunction with Skill Charges. The RNG effect of Quick Trigger can be mitigated by force-closing the game, reopening it, and continuing the previous fight.</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Stock Skill 1</td>
+					<td>Increase the maximum stock of the first Skill (upper left Skill)</td>
+					<td>Abandoned City of the Sea</td>
+					<td>3</td>
+					<td>Used in conjunction with other SCT increasing passives.<br />For example, if you're a filthy Davan paid-axe player, this will enable your "MY SPIRAL WILL PIERCE THE HEAVENS" moment.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/6424/GmhqWn.png"></image><br />Honey Elixir</td>
+					<td>Completely exhaust Unit MP to greatly recover HP and completely restore SCT</td>
+					<td>FINAL FANTASY Adventure</td>
+					<td>12</td>
+					<td>It's a 200 MP spell and it exhausts your entire MP bar even if you have more than 200 MP. For units that have 200 base MP, this is a viable alternative to Pirate's Feast for a 1-wave stage. Not usable in Arena.</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<div class="jumbotron text-center">
+			<h4 name="pdps-branch-break" class="text-center">Branch: Break & faint</h4>
+			<p>Break refers to a boss's break bar, and faint refers to an invisible bar that determines a mob's break bar. In harder content, breaking and fainting is essential to deal damage and/or protect the party from being wiped. Certain units (i.e. Vaughn) are specifically designed for exploiting this mechanic.</p>
+			<p>For a better idea on which units should pursue a Break/Faint build, see the <a href="https://potato-glitch.github.io/tiers">tier list</a>.</p>
+			<p>Most buffs for a Break/Faint build are on equipment and ark passives (Terror in the Grana Seas or Phoenix Blow) rather than skills.</p>
+		</div>
+		<h5 class="text-center">Break/Faint build options:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/6231/u2eKDd.jpg"></image><br />Breaker</td>
+					<td>Boost break level</td>
+					<td>Pirate Ship Legnis, Terror of the Grana Seas</td>
+					<td>5</td>
+					<td>Mandatory for a Break build. Only affects bosses.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/3696/evsand.jpg"></image><br />Head Bash</td>
+					<td>Makes enemies faint easier</td>
+					<td>Aldanian Warriors</td>
+					<td>3</td>
+					<td>Mandatory for a Faint build. Only affects mobs.</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Axe High Boost</td>
+					<td>When Axe is equipped: Physical attack +25% and increase Break value</td>
+					<td>Terror of the Grana Seas</td>
+					<td>9</td>
+					<td>Worthwhile for a dedicated Break/Faint unit. Need to be paired with Axe Equip if the unit does not innately know how to equip Axes.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/9877/RL0zVJ.jpg"></image><br />Chance Drive</td>
+					<td>Boost physical damage dealt to enemies that have fainted or are in break</td>
+					<td>Crystal Castle</td>
+					<td>6</td>
+					<td>A decent damage buff. However, core PDPS passives take priority.</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<div class="jumbotron text-center">
+			<h4 name="pdps-branch-impact" class="text-center">Branch: Impacts & regular attacks</h4>
+			<p>Impacts are passives that allow a PDPS unit to do additional hits/damage on their auto-attacks (regular attacks).</p>
+			<p>Impacts are generally discouraged from new players because they provide low damage to their SC costs. However, they look really cool (a cascade of numbers!) and as such, some players are very dedicated to equipping the full set of Impacts. The most common build is the Impact + Ailment build, where you stack Ailment-causing Research passives and terrorise your enemies with your regular attacks. Another variant is to pair Impacts with Killer passives.</p>
+			<p>It goes without saying that any build involving Impacts is not a damage-oriented build. Impacts also won't trigger a number of auxiliary effects that regular hits will, such as Proud Force.</p>
+		</div>
+		<h5 class="text-center">Regular attack damage buffs:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/7501/rQaKAB.jpg"></image><br />Impact</td>
+					<td>Regular attacks have a chance (20%) to deal additional damage (20% damage)</td>
+					<td>Geist Training Mountain, Grave of the Blademaster</td>
+					<td>2</td>
+					<td>The cheapest Impact, and also really useless. Use Double Impact over this if you don't plan on stacking Impacts.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/8562/T6RTix.jpg"></image><br />Double Impact</td>
+					<td>Regular attacks deal additional damage</td>
+					<td>Flaming Hero, Sandwyrm</td>
+					<td>5</td>
+					<td>The most cost-effective Impact. 100% chance to do 20% additional damage.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/973/QNfHxa.jpg"></image><br />Triple Impact</td>
+					<td>Regular attacks deal additional damage x2.</td>
+					<td>Cavern Ale</td>
+					<td>11</td>
+					<td>The most expensive Impact. 2 additional hits, each at 20% damage.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/2017/lQKy1d.png"></image><br />Phase Change</td>
+					<td>Increase power of regular attacks proportional to magic power</td>
+					<td>Vell=de=Org</td>
+					<td>9</td>
+					<td>Very good on a unit that can utilise regular attacks and has high INT, such as Phal with her innate Stun Research.</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<h5 class="text-center">Ailment stacking options:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/3015/jLGkkG.png"></image><br />Blind Research</td>
+					<td>Regular attacks have a chance to inflict Blind</td>
+					<td>Hidden Treasure, Makyuodyne, The Sword of Corpses</td>
+					<td>6</td>
+					<td><a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/8361/R39Ceu.jpg"></image><br />Curse Research</td>
+					<td>Regular attacks have a chance to inflict Curse</td>
+					<td>House of the Witch, Ghost of Zeluen</td>
+					<td>6</td>
+					<td><a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/9750/QL6Fud.png"></image><br />Illness Research</td>
+					<td>Regular attacks have a chance to inflict Illness</td>
+					<td>White Laboratory</td>
+					<td>10</td>
+					<td><a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/792/pxogBT.jpg"></image><br />Poison Research</td>
+					<td>Regular attacks have a chance to inflict Poison</td>
+					<td>Pokkle Eater, Secret Room of the Hermit</td>
+					<td>6</td>
+					<td>Poison is currently capped at 999 damage per tick, making this a poor substitute for actual damage. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/272/NkK7bG.png"></image><br />Silence Research</td>
+					<td>Regular attacks have a chance to inflict Silence</td>
+					<td>Bloody Moon, Heaven's Bow Star-Lord</td>
+					<td>6</td>
+					<td>Used for handling enemy mages. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/9794/bKlPXW.png"></image><br />Monkey Baby</td>
+					<td>Regular attack have a chance of inflicting Silence. Damage +30% against Silenced enemies</td>
+					<td>FINAL FANTASY Adventure</td>
+					<td>8</td>
+					<td>The better option to Silence Research – but still a very niche build. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<div class="jumbotron text-center">
+			<h4 name="pdps-branch-killer" class="text-center">Branch: Killers and slayers</h4>
+			<p>Killers and slayers are damage boosts based on enemy type. The difference between killers and slayers is that while killers only affect regular attacks, slayers affect both regular attacks and physical attacks. For example, if you have God Slayer equipped, you don't need God Killer.</p>
+			<p>In Arena (and sometimes Tower), Human-type killers/slayers (Knight, Sorcerer, Soldier, Sniper) are very useful.</p>
+		</div>
+		<h5 class="text-center">Killer and slayer passives:</h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/1041/fGtm4c.png"></image><br />Special Boost</td>
+					<td>Damage affected by Killer and Slayer passives enhanced by +50%</td>
+					<td>Moonlit Murder</td>
+					<td>6</td>
+					<td>Mandatory for any build involving killers or slayers, i.e. Randi.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/7116/g5Ibk4.jpg"></image><br />Beast Killer</td>
+					<td>Regular attacks are effective against Beast enemies</td>
+					<td>Aldanian Warriors, Beast Hunter</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/7116/g5Ibk4.jpg"></image><br />Beast Slayer</td>
+					<td>Physical attacks are super effective against Beast enemies</td>
+					<td>Beast Hunter</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/868/1sck02.jpg"></image><br />Bird Killer</td>
+					<td>Regular attacks are effective against Bird enemies</td>
+					<td>Heaven's Bow Star-Lord</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/868/1sck02.jpg"></image><br />Bird Slayer</td>
+					<td>Physical attacks are super effective against Bird enemies</td>
+					<td>Heaven's Bow Star-Lord</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/9708/5Qnclp.jpg"></image><br />Creature Killer</td>
+					<td>Regular attacks are effective against Creature enemies</td>
+					<td>White Laboratory</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/9708/5Qnclp.jpg"></image><br />Creature Slayer</td>
+					<td>Physical attacks are super effective against Creature enemies</td>
+					<td>Terror of the Grana Seas</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/4492/o8CYPh.jpg"></image><br />Dragon Killer</td>
+					<td>Regular attacks are effective against Dragon enemies</td>
+					<td>Dragon Treasure Raynicle</td>
+					<td>5</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/4492/o8CYPh.jpg"></image><br />Dragon Slayer</td>
+					<td>Physical attacks are super effective against Dragon enemies</td>
+					<td>Dragon Treasure Raynicle</td>
+					<td>9</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/1886/OwQW0f.jpg"></image><br />Fish Killer</td>
+					<td>Regular attacks are effective against Fish enemies</td>
+					<td>Broken Sword at the Shore</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/1886/OwQW0f.jpg"></image><br />Fish Slayer</td>
+					<td>Physical attacks are super effective against Fish enemies</td>
+					<td>Pirate Ship Legnis</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/6359/vP9I3Y.jpg"></image><br />God Killer</td>
+					<td>Regular attacks are effective against God enemies</td>
+					<td>Divine Beast Hunter</td>
+					<td>5</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/6359/vP9I3Y.jpg"></image><br />God Slayer</td>
+					<td>Physical attacks are super effective against God enemies</td>
+					<td>Divine Beast Hunter</td>
+					<td>9</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/8400/9Ctq5V.jpg"></image><br />Insect Killer</td>
+					<td>Regular attacks are effective against Insect enemies</td>
+					<td>Secret Room of the Hermit</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/8400/9Ctq5V.jpg"></image><br />Insect Slayer</td>
+					<td>Physical attacks are super effective against Insect enemies</td>
+					<td>Secret Room of the Hermit</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/125/34A18e.jpg"></image><br />Machine Killer</td>
+					<td>Regular attacks are effective against Machine enemies</td>
+					<td>Thunderstone Luster</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/1494/Th1vbD.jpg"></image><br />Plant Killer</td>
+					<td>Regular attacks are effective against Plant enemies</td>
+					<td>Pokkle Eater, Flaming Hero</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/1494/Th1vbD.jpg"></image><br />Plant Slayer</td>
+					<td>Physical attacks are super effective against Plant enemies</td>
+					<td>Flaming Hero</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/6086/N1eWyO.jpg"></image><br />Spirit Killer</td>
+					<td>Regular attacks are effective against Spirit enemies</td>
+					<td>Bloody Moon</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/6086/N1eWyO.jpg"></image><br />Spirit Slayer</td>
+					<td>Physical attacks are super effective against Spirit enemies</td>
+					<td>Bloody Moon</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/1807/Y42XCu.jpg"></image><br />Stone Killer</td>
+					<td>Regular attacks are effective against Stone enemies</td>
+					<td>Miracle of Gorde</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/1807/Y42XCu.jpg"></image><br />Stone Slayer</td>
+					<td>Physical attacks are super effective against Stone enemies</td>
+					<td>Foreign Land Megrona</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/2984/OtKzxj.png"></image><br />Undead Killer</td>
+					<td>Regular attacks are effective against Undead enemies</td>
+					<td>Grave of the Blademaster</td>
+					<td>4</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/2984/OtKzxj.png"></image><br />Undead Slayer</td>
+					<td>Physical attacks are super effective against Undead enemies</td>
+					<td>Grave of the Blademaster</td>
+					<td>8</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/9666/nScKFS.jpg"></image><br />Knight Killer</td>
+					<td>Regular attacks are effective against Knights</td>
+					<td>Aldana Colosseum</td>
+					<td>5</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/4114/SrAt44.png"></image><br />Sniper Killer</td>
+					<td>Regular attacks are effective against Snipers</td>
+					<td>Aldana Colosseum</td>
+					<td>5</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/8415/XtQdri.png"></image><br />Sorcerer Killer</td>
+					<td>Regular attacks are effective against Sorcerers</td>
+					<td>Aldana Colosseum</td>
+					<td>5</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/3538/LoOYaW.jpg"></image><br />Soldier Killer</td>
+					<td>Regular attacks are effective against Soldiers</td>
+					<td>Aldana Colosseum</td>
+					<td>5</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<div class="jumbotron text-center">
+			<h4 name="pdps-branch-sniper" class="text-center">Branch: Magleon (Snipers)</h4>
+			<p>Magleon is a unique passive that increases its damage buff the farther away a unit is from their targeted enemy. The maximum damage bonus is 50%, which activates at roughly the normal attack range for snipers (i.e. Lilebette and Phal). Magleon affects both regular attacks and physical attacks.</p>
+			<p>Any Magleon build usually involves stacking core PDPS damage buffs and SCT buffs. The beauty isn't Magleon itself – it's in Magleon offering just that little bit more for Snipers.</p>
+		</div>
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/2318/toNGxn.jpg"></image><br />Magleon</td>
+					<td>Damage dealt is proportional to the distance of long-range attacks</td>
+					<td>Heaven's Bow Star-Lord</td>
+					<td>11</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<div class="jumbotron text-center">
+			<h4 class="text-center" name="pdps-optional-realtime">Optional: Real-time buffs</h4>
+			<p>Certain buffs are limited to set durations, i.e. between 6AM to 5.59PM. These buffs are dependent on your phone's internal time/date.</p>
+			<p>Because these buffs use SC even while not active, they are not recommended for general use.</p>
+		</div>
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+		<thead class="thead-light">
+			<tr>
+			  <th class="text-center" data-formatter="skillName">Skill</th>
+			  <th class="text-center w-25">Description</th>
+			  <th class="text-center w-25">Ark required</th>
+			  <th class="text-center" data-formatter="skillName">SC</th>
+			  <th class="text-center small w-25"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/2830/NZ257w.png"></image><br />Holiday of Mana</td>
+				<td>STR, DEF, INT and MND +5% when it is Sunday in the real world</td>
+				<td>Trials of Mana</td>
+				<td>5</td>
+				<td>It's a great passive, if it's Sunday. A persuasive reason to make every day Sunday, don't you think?</td>
+			</tr>
+		</tbody>
+		</table>
 		</div>
 		<div class="tab-pane fade" id="buildTank">
 			<p>Coming soon.</p>
@@ -1412,8 +1933,46 @@
 		<div class="tab-pane fade" id="buildSupport">
 			<p>Coming soon.</p>
 		</div>
-		<div class="tab-pane fade" id="buildHybrid">
-			<p>Coming soon.</p>
+		<div class="tab-pane fade" id="buildOther">
+		<div class="jumbotron text-center">
+			<h4 name="pdps-optional-mimicry" class="text-center">Optional: Mimicry types</h4>
+			<p>Mimicry passives allow units to add on unit types. The main draw is in activating desirable Ark and equipment passives which are normally locked to a certain unit type (i.e. Dragon).</p>
+			<p>As the game continues to be updated, expect more Mimicry passives to be added.</p>
+		</div>
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src=""></image><br />Mimicry [Dragon]</td>
+					<td>Add Dragon type to user</td>
+					<td>Birth of the Rivazard</td>
+					<td>2</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Mimicry [God]</td>
+					<td>Add God type to user</td>
+					<td>Divine Beast, Loug Mekia</td>
+					<td>2</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Mimicry [Plant]</td>
+					<td>Add Plant type to user</td>
+					<td>Pokkle Eater</td>
+					<td>2</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
 		</div>
 	</div>
 </div>
