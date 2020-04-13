@@ -48,7 +48,6 @@
 	</div>
 	</div>
     <!-- 1st level tabs -->
-<div class="container">
 	<ul class="nav nav-tabs">
 		<li class="nav-item">
 		<a href="#buildMage" class="nav-link active" data-toggle="tab">Mages</a>
@@ -907,7 +906,7 @@
 					<ul>
 						<li><a href="#pdps-core-basics">Basics</a></li>
 						<li><a href="#pdps-core-defense">Defense</a></li>
-						<li><a href="#pdps-core-elements">Weapon boosts</a></li>
+						<li><a href="#pdps-core-weapon">Weapon boosts</a></li>
 						<li><a href="#pdps-core-elements">Element boosts</a></li>
 					</ul>
 				</li>
@@ -917,6 +916,7 @@
 				<li><a href="#pdps-branch-killer">Branch: Killers and slayers</a></li>
 				<li><a href="#pdps-branch-sniper">Branch: Magleon (Snipers)</a></li>
 				<li><a href="#pdps-optional-mimicry">Optional: Mimicry types</a></li>
+				<li><a href="#pdps-optional-realtime">Optional: Real-time buffs</a></li>
 			</ol>
 			</div>
 		</div>
@@ -1013,6 +1013,398 @@
 			</tr>
 			</tbody>
 		</table>
+		<br />
+		<p>If you still have SC to spare after learning all these skills, read on.</p>
+		<br />
+		<div class="jumbotron text-center">
+			<h4 class="text-center"><a name="pdps-core">Core passives</a></h4>
+			<p>These are the passives that every PDPS should consider having regardless of their build. Some stack, while others don't.</p>
+		</div>
+		<h5 class="text-center"><a name="pdps-core-basics">Core basic passives:</a></h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+		<thead class="thead-light">
+			<tr>
+			  <th class="text-center" data-formatter="skillName">Skill</th>
+			  <th class="text-center w-25">Description</th>
+			  <th class="text-center w-25">Ark required</th>
+			  <th class="text-center" data-formatter="skillName">SC</th>
+			  <th class="text-center small w-25"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/8351/Unz92n.jpg"></image><br />Attack Up</td>
+				<td>STR +2%</td>
+				<td>Geist Training Mountain</td>
+				<td>1</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/8351/Unz92n.jpg"></image><br />Attack Up II</td>
+				<td>STR +5%</td>
+				<td>Birth of the Rivazard, Foreign Land Megrona</td>
+				<td>2</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/8351/Unz92n.jpg"></image><br />Attack Up III</td>
+				<td>STR +8%</td>
+				<td>Skyship Lonvalion, The Sword of Corpses</td>
+				<td>3</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/8351/Unz92n.jpg"></image><br />Attack Up MAX</td>
+				<td>STR +15%</td>
+				<td>Geist Training Mountain</td>
+				<td>6</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5263/thJJHM.jpg"></image><br />Magic Up</td>
+				<td>INT +2%</td>
+				<td>Sorcerer's Eden</td>
+				<td>1</td>
+				<td>For Phase Change builds and units that use INT in their physical skills (Phal, Zekus, Lily, etc.)</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5263/thJJHM.jpg"></image><br />Magic Up II</td>
+				<td>INT +5%</td>
+				<td>Manmade Ether, Shrine of Heresy</td>
+				<td>2</td>
+				<td>For Phase Change builds and units that use INT in their physical skills (Phal, Zekus, Lily, etc.)</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5263/thJJHM.jpg"></image><br />Magic Up III</td>
+				<td>INT +8%</td>
+				<td>God of the Dead, Divine Beast, Loug Mekia</td>
+				<td>3</td>
+				<td>For Phase Change builds and units that use INT in their physical skills (Phal, Zekus, Lily, etc.)</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5263/thJJHM.jpg"></image><br />Magic Up MAX</td>
+				<td>INT +15%</td>
+				<td>Sorcerer's Eden</td>
+				<td>6</td>
+				<td>For Phase Change builds and units that use INT in their physical skills (Phal, Zekus, Lily, etc.)</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/4603/MnFj11.jpg"></image><br />Fast Brave</td>
+				<td>Automatically activates Brave on battle start</td>
+				<td>Geist Training Mountain, Phoenix Blow</td>
+				<td>2</td>
+				<td>+20% STR for 40 seconds. Does not stack with Fast Vacation/Auto Brave</td>
+			</tr>
+			<tr>
+				<td><image src=""></image><br />Fast Vacation</td>
+				<td>Automatically activate Brave, Aura, Protection, and Magic Barrier at the start of battle</td>
+				<td>White Knight's Vacation</td>
+				<td>5</td>
+				<td>Saves 1 SC if you are already running Fast Brave, Fast Protection and Fast Barrier (for challenging content). Saves 3SC for Phase Change builds. Does not stack with Fast/Auto Brave.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/4531/BViBQt.jpg"></image><br />Auto Brave</td>
+				<td>Continuous Brave effect. Attack increases.</td>
+				<td>Dragon Treasure Raynicle</td>
+				<td>7</td>
+				<td>The only reason you'd have Auto Brave over Fast Brave/Vacation is if you're facing long stages, the enemy likes wiping your buffs, or if it comes free with the unit (i.e. Shin). Does not stack with Fast Brave/Vacation.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5070/3pcaZK.jpg"></image><br />Critical Up</td>
+				<td>Critical hit rate +2%</td>
+				<td>Broken Sword at the Shore</td>
+				<td>2</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5070/3pcaZK.jpg"></image><br />Critical Up II</td>
+				<td>Critical hit rate +5%</td>
+				<td>Moonlit Murder, Flaming Hero</td>
+				<td>3</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/5070/3pcaZK.jpg"></image><br />Critical Up III</td>
+				<td>Critical hit rate +8%</td>
+				<td>Beast Hunter</td>
+				<td>7</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/567/iFys9d.jpg"></image><br />Aim: Vitals</td>
+				<td>Critical hit power +30%</td>
+				<td>Divine Beast Hunter, Foreign Land Megrona</td>
+				<td>4</td>
+				<td>Mandatory for boosting Critical damage.</td>
+			</tr>
+			<tr>
+				<td><image src=""></image><br />Advanced Aim: Vitals</td>
+				<td>Critical hit power +50%</td>
+				<td>The Sword of Corpses</td>
+				<td>6</td>
+				<td>Mandatory for boosting Critical damage.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/7014/qMgdRl.png"></image><br />Fast Critical</td>
+				<td>Automatically activate Critical at the start of the battle</td>
+				<td>Foreign Land Megrona</td>
+				<td>2</td>
+				<td>+15% Critical rate for 40 seconds. Can be stacked with Critical Ups.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/8620/kWTwj3.jpg"></image><br />Proud Force</td>
+				<td>Critical hits recovers HP</td>
+				<td>Broken Sword at the Shore</td>
+				<td>4</td>
+				<td>Proud Force scales off MND, and provides free healing. Your main source of sustain.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/2075/IzMqSp.jpg"></image><br />Archangel's Blessing</td>
+				<td>Battle end: recovers MP +30%</td>
+				<td>Archangel Smile</td>
+				<td>9</td>
+				<td>For Sharp Eyes. The superior MP recovery passive. This can be stacked with Ale of Honor and Cavern Ale's ether reward (see Ark ether guide)</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/2673/nLXOdi.jpg"></image><br />Ale of Honor</td>
+				<td>Battle end: recovers MP +10%</td>
+				<td>Holy Flag of Norlean</td>
+				<td>4</td>
+				<td>For Sharp Eyes. The cheap MP recovery passive. This can be stacked with Archangel Blessing and Cavern Ale's ether reward (see Ark ether guide).</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img922/1113/naTf0v.png"></image><br />Sharp Eyes</td>
+				<td>For each physical skill attack, consume 3% MP for +50% damage</td>
+				<td>Foreign Land Megrona</td>
+				<td>9</td>
+				<td>Only affects physical skills. The PDPS equivalent of Magic Aura.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img924/1359/vHRd5X.jpg"></image><br />Pose of Glory</td>
+				<td>Defeat an enemy with a physical attack and recover some SCT</td>
+				<td>The Final Oath</td>
+				<td>2</td>
+				<td>Recommended for a SCT build.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img923/3765/dA4QOY.jpg"></image><br />Pose of Honor</td>
+				<td>Defeat an enemy with a physical attack and recover 5% MP</td>
+				<td>Flower of Falnia</td>
+				<td>2</td>
+				<td>Recommended for synergy with Sharp Eyes.</td>
+			</tr>
+			<tr>
+				<td><image src="https://imagizer.imageshack.com/img921/1046/rukvBu.jpg"></image><br />Pose of Victory</td>
+				<td>Defeat an enemy with a physical attack and recovery 10% HP</td>
+				<td>Flaming Hero</td>
+				<td>2</td>
+				<td>The cheaper version of Proud Force, for PDPS units that can't afford to use Crit. Stacks with Proud Force.</td>
+			</tr>
+		</tbody>
+		</table>
+		<br />
+		<h5 class="text-center"><a name="pdps-core-defense">Core defense passives:</a></h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/4820/FT03kP.png"></image><br />Conversation</td>
+					<td>Occasionally regenerates a small amount of HP</td>
+					<td>FINAL FANTASY Adventure</td>
+					<td>3</td>
+					<td>Regenerates a decent amount of HP every so often. A cheap passive for players without Regeneration accessories.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/8409/xAeL69.jpg"></image><br />Ale of Victory</td>
+					<td>Battle end: recovers HP +20%</td>
+					<td>Cavern Ale</td>
+					<td>4</td>
+					<td>Recovers HP at the end of a wave. Usually Proud Force and/or Pose of Victory is enough for sustain. The second option is to equip an accessory that gives Regeneration, as well as Conversation. When you reach the point of needing Ale of Victory, you should already have a healer/support unit in party, so use it at your discretion.</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Fast Vacation</td>
+					<td>Automatically activate Brave, Aura, Protection, and Magic Barrier at the start of battle</td>
+					<td>White Knight's Vacation</td>
+					<td>5</td>
+					<td>Recommended for saving 1-3SC.</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Fast Barrier</td>
+					<td>Automatically activates Magic Barrier on battle start</td>
+					<td>Fairies Forest</td>
+					<td>2</td>
+					<td>40 second buff to reduce magic damage taken by 20%.</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Fast Protection</td>
+					<td>Automatically activates Protection on battle start</td>
+					<td>Gate Beyganda</td>
+					<td>2</td>
+					<td>40 second buff to reduce physical damage taken by 20%.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/6475/3TKTvy.png"></image><br />Blind Resist</td>
+					<td>Reduces chance of being Blinded. Removes Blind weakness</td>
+					<td>Crystal Castle, Cavern Ale</td>
+					<td>4</td>
+					<td>Prevents your unit from being blinded and missing attacks. Useful in certain Tower stages. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/9955/kuJBfZ.png"></image><br />Blind Nil</td>
+					<td>Nullifies Blind. Changes Blind weakness to resistance</td>
+					<td>Phoenix Blow</td>
+					<td>8</td>
+					<td>The more expensive version of Blind Resist. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/6221/4uqoDJ.png"></image><br />Curse Resist</td>
+					<td>Reduce chance of being Cursed. Removes Curse weakness</td>
+					<td>Temple of Grana Daria</td>
+					<td>4</td>
+					<td>Prevents your unit from being cursed – unable to use physical skills or Ultimate. Curse is one of the worst ailments to affect a PDPS. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/3690/STvA2m.png"></image><br />Curse Nil</td>
+					<td>Nullifies Curse. Changes Curse weakness to Curse resistance</td>
+					<td>Archangel Smile</td>
+					<td>8</td>
+					<td>The more expensive version of Curse Resist.<a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/116/8WwU4M.png"></image><br />Stun Resist</td>
+					<td>Reduces chance of being Stunned. Removes Stun weakness</td>
+					<td>God of Storms</td>
+					<td>5</td>
+					<td>Prevents your unit from being stunned – incapable of casting spells or moving. Required for certain content, i.e. Green crystal dungeon. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/2948/p1lL2i.png"></image><br />Stun Nil</td>
+					<td>Nullifies Stun. Changes Stun weakness to Stun resistance</td>
+					<td>God of the Dead</td>
+					<td>10</td>
+					<td>The more expensive version of Stun Resist. Required for some stun-heavy stages in Tower. <a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<h5 class="text-center"><a name="pdps-core-weapon">Core weapon boosts:</a></h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src=""></image><br />Spear Boost</td>
+					<td>When a spear is equipped, physical attacks +5%, physical damage taken -5%</td>
+					<td>Birth of the Rivazard</td>
+					<td>4</td>
+					<td>Not a very good passive, but if you have SC to spare...</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Sword High Boost</td>
+					<td>When Sword is equipped: Physical attack +30%</td>
+					<td>The Sword of Corpses</td>
+					<td>9</td>
+					<td>Mandatory for any sword-wielding PDPS, like Sevia and Randi</td>
+				</tr>
+				<tr>
+					<td><image src=""></image><br />Axe High Boost</td>
+					<td>When Axe is equipped: Physical attack +25% and increase Break value</td>
+					<td>Terror of the Grana Seas</td>
+					<td>9</td>
+					<td>Arguably better than Sword High Boost, and pairs with the highest STR weapon in the game – Terror in the Grana Seas (SSR) ark ether reward</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img922/7480/DCczyP.jpg"></image><br />Dual Wield</td>
+					<td>Another weapon can be equipped in the place of armor</td>
+					<td>Sandwyrm</td>
+					<td>14</td>
+					<td>Affects both regular attacks and physical attacks, and effectively raises the damage cap for players who are at the damage cap. Highly recommended for endgame.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img923/6347/A9WG99.png"></image><br />Holy Aura</td>
+					<td>Boosts equipped weapon attack</td>
+					<td>Grave of the Blademaster</td>
+					<td>9</td>
+					<td>An expensive auxiliary skill for Dual Wield.</td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<h5 class="text-center"><a name="pdps-core-elements">Core element passives:</a></h5>
+		<br />
+		<table id="table" data-toggle="table" table-layout="auto" class="table table-hover table-sm">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center" data-formatter="skillName">Skill</th>
+				  <th class="text-center w-25">Description</th>
+				  <th class="text-center w-25">Ark required</th>
+				  <th class="text-center" data-formatter="skillName">SC</th>
+				  <th class="text-center small w-25"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/8051/nnObFR.png"></image><br />Light Attack Raise</td>
+					<td>Light attack damage +20%</td>
+					<td>Divine Beast, Loug Mekia</td>
+					<td>11</td>
+					<td>Attack Raise passives affect normal attacks and physical attacks.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/9348/bzdFee.jpg"></image><br />Dark Attack Raise</td>
+					<td>Dark attack damage +20%</td>
+					<td>Ghost of Zeluen</td>
+					<td>11</td>
+					<td>Attack Raise passives affect normal attacks and physical attacks.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/7025/gdk8QO.jpg"></image><br />Fire Attack Raise</td>
+					<td>Strengthens Fire attacks</td>
+					<td>Flaming Hero</td>
+					<td>11</td>
+					<td>Attack Raise passives affect normal attacks and physical attacks.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/5136/6WKytl.jpg"></image><br />Ice Attack Raise</td>
+					<td>Strengthens Ice attacks</td>
+					<td>Treasured Sword Eliud</td>
+					<td>11</td>
+					<td>Attack Raise passives affect normal attacks and physical attacks.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/2589/B2Y28R.jpg"></image><br />Earth Attack Raise</td>
+					<td>Strengthens Earth attacks</td>
+					<td>Sandwyrm</td>
+					<td>11</td>
+					<td>Attack Raise passives affect normal attacks and physical attacks.</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img921/1863/httGqF.jpg"></image><br />Thunder Attack Raise</td>
+					<td>Strengthens Thunder attacks</td>
+					<td>God of Storms</td>
+					<td>11</td>
+					<td>Attack Raise passives affect normal attacks and physical attacks.</td>
+				</tr>
+			</tbody>
+		</table>
 		</div>
 		<div class="tab-pane fade" id="buildTank">
 			<p>Coming soon.</p>
@@ -1024,7 +1416,6 @@
 			<p>Coming soon.</p>
 		</div>
 	</div>
-</div>
 </div>
 	<!-- footer -->
 	<div data-html="./site/footer"></div>
