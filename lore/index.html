@@ -22,13 +22,7 @@
 	<p>All lore is transcribed and edited for consistency, grammar and spelling.</p>
 	<p>Contact @Throne, @Legion or @potato on <a href="https://discord.gg/hYGG9Gt">Discord</a> to contribute new Ark/Unit stories or to report spelling/grammar mistakes.</p>
 	<hr />
-	<div id="iconNavigate">
 	<p class="h3 text-center">Lore navigation</p>
-		<div class="btn-group d-flex" role="group">
-			<button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#unitMenu">Units</button>
-			<button type="button" class="btn btn-info btn-lg" data-toggle="collapse" data-target="#arkMenu">Arks</button>
-		</div>
-		<div id="unitMenu" class="collapse show active" data-parent="#iconNavigate">
 			<table id="table" data-toggle="table" class="table table-disable-hover table-bordered">
 				<thead class="thead-light">
 				<tr><th class="text-center">Story units</th></tr>
@@ -129,8 +123,6 @@
 					</tr>
 				</tbody>
 			</table>
-		</div>
-		<div id="arkMenu" class="collapse" data-parent="#iconNavigate">
 			<table id="table" data-toggle="table" class="table table-disable-hover table-bordered">
 				<thead class="thead-light">
 				<tr><th class="text-center">R arks</th></tr>
@@ -246,19 +238,25 @@
 					</tr>
 				</tbody>
 			</table>
-		</div>
-	</div>
 	</div>
 	<!-- footer -->
 	<div data-html="https://potato-glitch.github.io/site/footer"></div>
     <!-- javascript -->
 	<script type="text/javascript" src="https://potato-glitch.github.io/js/jquery-3.4.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script><script> $(function () { $('[data-toggle="tooltip"]').tooltip() })</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script type="text/javascript" src="https://potato-glitch.github.io/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://potato-glitch.github.io/js/bootstrap-table.js"></script>
 	<script type="text/javascript" src="https://potato-glitch.github.io/js/dropdown.js"></script>
 	<script type="text/javascript" src="https://potato-glitch.github.io/js/collapse.js"></script>
 	<script type="text/javascript" src="https://potato-glitch.github.io/js/util.js"></script>
 	<script type="text/javascript" src="https://potato-glitch.github.io/js/html-load.js"></script>
+	<script>
+  $(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+  $.extend(
+  	  $.fn.bootstrapTable.defaults, {classes:'table'}
+  	);
+	</script>
 </body>
 </html>
