@@ -249,7 +249,7 @@
 	<script type="text/javascript" src="./js/moment.js"></script>
 	<script type="text/javascript" src="./js/moment-timezone-with-data.js"></script>
 	<script>
-		var dateOne = moment.tz("2020-04-26 23:59", "America/Los_Angeles");
+		var dateOne = moment.tz("2020-04-27 00:00", "America/Los_Angeles");
 		$('#clockOne').countdown(dateOne.toDate(), function(event) {
 		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
 		});
@@ -261,7 +261,7 @@
 		});
 		var dateTwoString = moment.utc(dateTwo).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringTwo").innerHTML=dateTwoString;
-		var dateThree = moment.tz("2020-05-06 23:59", "America/Los_Angeles");
+		var dateThree = moment.tz("2020-05-07 00:00", "America/Los_Angeles");
 		$('#clockThree').countdown(dateThree.toDate(), function(event) {
 		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
 		});
