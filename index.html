@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-7">
+		<div class="col-md-8">
 			<h2>About this site</h2>
 			<p>This website contains <strong>data and basic guides</strong> for Last Cloudia, a mobile RPG available for Android and iOS.</p>
 			<p>Most of these guides are manually imported from spreadsheets that I authored or co-authored.</p>
@@ -170,14 +170,25 @@
 			  </div> 
 			</div>
 		</div>
-		<div class="col-md-5">
-			<h2>Event countdowns</h2>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-body text-danger bg-light">
+					<p class="card-text">
+					<h5 class="text-center">Daily reset</h5>
+						<div id="clockDaily" class="h3 text-center"></div>
+						<div id="clockStringDaily" class="p text-muted small text-center"></div>
+					</p>
+				</div>
+			</div>
+			<br />
+			<h4 class="text-center">Event countdowns</h4>
 			<div class="card">
 				<div class="card-header">
 					<image src="https://imagizer.imageshack.com/img921/9564/zmOpPL.png" class="card-img-top"></image>
 				</div>
 				<div class="card-body">
 					<p class="card-text">
+					<h5 class="text-center">Tower of Trials</h5>
 						<div id="clockTwo" class="h3 text-center"></div>
 						<div id="clockStringTwo" class="p text-muted small text-center"></div>
 					</p>
@@ -235,6 +246,14 @@
 		});
 		var dateThreeString = moment.utc(dateThree).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringThree").innerHTML=dateThreeString;
+		var now = moment();
+		var tomorrowNow = moment.utc(now).add(14, 'hours').format("YYYY-MM-DD");
+		var dateDaily = moment.tz(tomorrowNow+" 05:00", "America/Los_Angeles");
+		$('#clockDaily').countdown(dateDaily.toDate(), function(event) {
+		  $(this).html(event.strftime('%H:%M:%S'));
+		});
+		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 	</script>
 </body>
 </html>
