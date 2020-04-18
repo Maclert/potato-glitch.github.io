@@ -30,11 +30,9 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
-			<h2>About this site</h2>
-			<p>This website contains <strong>data and basic guides</strong> for Last Cloudia, a mobile RPG available for Android and iOS.</p>
-			<p>Most of these guides are manually imported from spreadsheets that I authored or co-authored.</p>
-			<h4>Spreadsheets</h4>
+		<div class="col">
+			<p><h1>About this site</h1></p>
+			<p>This website contains <strong>data and basic guides</strong> for Last Cloudia, a mobile RPG available for Android and iOS.<br />Most of these guides are manually imported from spreadsheets that I authored or co-authored.</p>
 	<ul>
 		<li><a href="https://docs.google.com/spreadsheets/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">LootTable Query</a> – A spreadsheet that translates Japanese to Global item names/stage maps and has custom search functions for searching by item, stage, and crystal drops.
 		<ul>
@@ -54,35 +52,50 @@
 		
 	</ul>
 		</div>
-		<div class="col-md-6">
-			<p><h2>Event countdowns</h2></p>
-			<div class="card">
-				<div class="card-header">
-					<image src="https://imagizer.imageshack.com/img921/9564/zmOpPL.png" class="card-img-top"></image>
-				</div>
-				<div class="card-body">
-					<p class="card-text">
-						<div id="clockTwo" class="h3 text-center"></div>
-						<div id="clockStringTwo" class="p text-muted small text-center"></div>
-					</p>
-				</div>
+		<div class="col d-none d-lg-block">
+			<br />
+			<div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+			<ol class="carousel-indicators">
+			<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-2" data-slide-to="1"></li>
+			<li data-target="#carousel-example-2" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+			<div class="view">
+			<img class="d-block w-100" style="opacity:0.9;" src="https://imagizer.imageshack.com/img923/7817/rmFJ6t.jpg">
+			<div class="mask rgba-black-light"></div>
 			</div>
-			<div class="card">
-				<div class="card-header">
-					<image src="https://imagizer.imageshack.com/img924/4114/dekSTB.png" class="card-img-top"></image>
-				</div>
-				<div class="card-body">
-					<h5 class="text-center">End of Anniversary Part 1</h5>
-					<p class="card-text">
-						<div id="clockOne" class="h3 text-center"></div>
-						<div id="clockStringOne" class="p text-muted small text-center"></div>
-					</p>
-					<h5 class="text-center">End of Anniversary Part 2</h5>
-					<p class="card-text">
-						<div id="clockThree" class="h3 text-center"></div>
-						<div id="clockStringThree" class="p text-muted small text-center"></div>
-					</p>
-				</div>
+			<div class="carousel-caption">
+			<!-- <h3 class="h3-responsive">Heading</h3>
+			<p>First text</p> -->
+			</div>
+			</div>
+			<div class="carousel-item">
+			<div class="view">
+			<img class="d-block w-100" style="opacity:0.9;" src="https://imagizer.imageshack.com/img924/4112/uUqns1.jpg">
+			<div class="mask rgba-black-light"></div>
+			</div>
+			<div class="carousel-caption">
+			</div>
+			</div>
+			<div class="carousel-item">
+			<div class="view">
+			<img class="d-block w-100" style="opacity:0.9;" src="https://imagizer.imageshack.com/img923/133/j0Nn5H.jpg">
+			<div class="mask rgba-black-light"></div>
+			</div>
+			<div class="carousel-caption">
+			</div>
+			</div>
+			</div>
+			<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+			</a>
 			</div>
 		</div>
 	</div>
@@ -242,32 +255,10 @@
 	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap-table.js"></script>
 	<script type="text/javascript" src="./js/dropdown.js"></script>
 	<script type="text/javascript" src="./js/collapse.js"></script>
 	<script type="text/javascript" src="./js/util.js"></script>
 	<script type="text/javascript" src="./js/html-load.js"></script>
-	<script type="text/javascript" src="./js/jquery.countdown.min.js"></script>
-	<script type="text/javascript" src="./js/moment.js"></script>
-	<script type="text/javascript" src="./js/moment-timezone-with-data.min.js"></script>
-	<script>
-		var dateOne = moment.tz("2020-04-26 23:59", "America/Los_Angeles");
-		$('#clockOne').countdown(dateOne.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
-		});
-		var dateOneString = moment.utc(dateOne).local().format('dddd, MMMM Do h:mm a');
-		document.getElementById("clockStringOne").innerHTML=dateOneString;
-		var dateTwo = moment.tz("2020-04-20 00:00", "America/Los_Angeles");
-		$('#clockTwo').countdown(dateTwo.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
-		});
-		var dateTwoString = moment.utc(dateTwo).local().format('dddd, MMMM Do h:mm a');
-		document.getElementById("clockStringTwo").innerHTML=dateTwoString;
-		var dateThree = moment.tz("2020-05-06 23:59", "America/Los_Angeles");
-		$('#clockThree').countdown(dateThree.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
-		});
-		var dateThreeString = moment.utc(dateThree).local().format('dddd, MMMM Do h:mm a');
-		document.getElementById("clockStringThree").innerHTML=dateThreeString;
-	</script>
 </body>
 </html>
