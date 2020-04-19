@@ -20,20 +20,17 @@
     <!-- top content -->
 <div class="container">
 	<div class="row">
-		<div class="col">
+		<div class="col-md-8">
 			<div class="alert alert-success" role="alert">
 				<strong>The tier list is now up!</strong> <a href="https://potato-glitch.github.io/tiers">Did you know that Gobl can break bosses with his Skill 3?</a> We have short guides to every unit in the game, so please read it!
 			</div>
 			<div class="alert alert-success" role="alert">
 				<strong>The skill guide is now complete!</strong> <a href="https://potato-glitch.github.io/skill-guide">It might not contain every skill in the game, but it's a great starting point for newer players!</a>
 			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-8">
 			<h2>About this site</h2>
 			<p>This website contains <strong>data and basic guides</strong> for Last Cloudia, a mobile RPG available for Android and iOS.</p>
-			<p>Most of these guides are manually imported from spreadsheets that I authored or co-authored.</p>
+			<h4>Navigation</h4>
+			<br /><br />
 			<h4>Spreadsheets</h4>
 	<ul>
 		<li><a href="https://docs.google.com/spreadsheets/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">LootTable Query</a> – A spreadsheet that translates Japanese to Global item names/stage maps and has custom search functions for searching by item, stage, and crystal drops.
@@ -169,6 +166,7 @@
 				</div>
 			  </div> 
 			</div>
+			<br /><br />
 		</div>
 		<div class="col-md-4">
 			<div class="card">
@@ -193,21 +191,43 @@
 						<div id="clockStringTwo" class="p text-muted small text-center"></div>
 					</p>
 				</div>
-			</div>
-			<div class="card">
 				<div class="card-header">
 					<image src="https://imagizer.imageshack.com/img924/4114/dekSTB.png" class="card-img-top"></image>
 				</div>
 				<div class="card-body">
-					<h5 class="text-center">Maintenance for Part 2</h5>
+					<h5 class="text-center">End of Anniversary 1/2</h5>
 					<p class="card-text">
 						<div id="clockOne" class="h3 text-center"></div>
 						<div id="clockStringOne" class="p text-muted small text-center"></div>
 					</p>
-					<h5 class="text-center">End of Anniversary Part 2</h5>
+					<h5 class="text-center">End of Anniversary 2/2</h5>
 					<p class="card-text">
 						<div id="clockThree" class="h3 text-center"></div>
 						<div id="clockStringThree" class="p text-muted small text-center"></div>
+					</p>
+				</div>
+			</div>
+			<br />
+			<h4 class="text-center">Gacha banners</h4>
+			<div class="card">
+				<div class="card-header">
+					<image src="https://imagizer.imageshack.com/img924/5294/K0zzVi.png" class="card-img-top"></image>
+				</div>
+				<div class="card-body">
+					<p class="card-text">
+					<h5 class="text-center">Gallant Flame Vaughn</h5>
+						<div id="clockBannerOne" class="h3 text-center"></div>
+						<div id="clockStringBannerOne" class="p text-muted small text-center"></div>
+					</p>
+				</div>
+				<div class="card-header">
+					<image src="https://imagizer.imageshack.com/img924/2641/XDQFys.png" class="card-img-top"></image>
+				</div>
+				<div class="card-body">
+					<p class="card-text">
+					<h5 class="text-center">Ice Emperor Seilios</h5>
+						<div id="clockBannerTwo" class="h3 text-center"></div>
+						<div id="clockStringBannerTwo" class="p text-muted small text-center"></div>
 					</p>
 				</div>
 			</div>
@@ -254,6 +274,18 @@
 		});
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
+		var dateBannerOne = moment.tz("2020-04-23 00:00", "America/Los_Angeles");
+		$('#clockBannerOne').countdown(dateBannerOne.toDate(), function(event) {
+		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		});
+		var dateBannerOneString = moment.utc(dateBannerOne).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerOne").innerHTML=dateBannerOneString;
+		var dateBannerTwo = moment.tz("2020-04-30 00:00", "America/Los_Angeles");
+		$('#clockBannerTwo').countdown(dateBannerTwo.toDate(), function(event) {
+		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		});
+		var dateBannerTwoString = moment.utc(dateBannerTwo).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerTwo").innerHTML=dateBannerTwoString;
 	</script>
 </body>
 </html>
