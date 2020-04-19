@@ -271,7 +271,7 @@
 		$('#clockDaily').countdown(dateDaily.toDate(), function(event) {
 		  $(this).html(event.strftime('%H:%M:%S'));
 		});
-		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		var dateDailyString = moment.utc(dateDaily).local().add(-1,'day').format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		var dateBannerOne = moment.tz("2020-04-23 00:00", "America/Los_Angeles");
 		$('#clockBannerOne').countdown(dateBannerOne.toDate(), function(event) {
