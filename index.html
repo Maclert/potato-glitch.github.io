@@ -180,54 +180,76 @@
 			<br />
 			<h4 class="text-center">Event countdowns</h4>
 			<div class="card">
-				<div class="card-header">
-					<image src="https://imagizer.imageshack.com/img921/9564/zmOpPL.png" class="card-img-top"></image>
+				<div class="countdownTowerStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img921/9564/zmOpPL.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5>Unlock Tower of Trials</h5>
+							<div id="clockTowerStart" class="h3 text-center"></div>
+							<div id="clockStringTowerStart" class="p text-muted small text-center"></div>
+						</p>
+					</div>
 				</div>
-				<div class="card-body text-black text-center">
-					<p class="card-text">
-					<h5>Unlock Tower of Trials</h5>
-						<div id="clockTwo" class="h3 text-center"></div>
-						<div id="clockStringTwo" class="p text-muted small text-center"></div>
-					</p>
+				<div class="countdownTowerEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img921/9564/zmOpPL.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5>End Tower of Trials</h5>
+							<div id="clockTowerEnd" class="h3 text-center"></div>
+							<div id="clockStringTowerEnd" class="p text-muted small text-center"></div>
+						</p>
+					</div>
 				</div>
-				<div class="card-header">
-					<image src="https://imagizer.imageshack.com/img924/4114/dekSTB.png" class="card-img-top"></image>
-				</div>
-				<div class="card-body text-danger text-center">
-					<h5 >End of Anniversary part 1</h5>
-					<p class="card-text">
-						<div id="clockOne" class="h3"></div>
-						<div id="clockStringOne" class="p text-muted small"></div>
-					</p>
-					<h5 class="">End of Anniversary part 2</h5>
-					<p class="card-text">
-						<div id="clockThree" class="h3"></div>
-						<div id="clockStringThree" class="p text-muted small"></div>
-					</p>
+				<div class="countdownThree">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/4114/dekSTB.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-danger text-center">
+						<div class="countdownOne">
+							<h5 >End of Anniversary part 1</h5>
+							<p class="card-text">
+								<div id="clockOne" class="h3"></div>
+								<div id="clockStringOne" class="p text-muted small"></div>
+							</p>
+						</div>
+							<h5 class="">End of Anniversary part 2</h5>
+							<p class="card-text">
+								<div id="clockThree" class="h3"></div>
+								<div id="clockStringThree" class="p text-muted small"></div>
+							</p>
+					</div>
 				</div>
 			</div>
 			<br />
 			<h4 class="text-center">Gacha banners</h4>
 			<div class="card">
-				<div class="card-header">
-					<image src="https://imagizer.imageshack.com/img924/5294/K0zzVi.png" class="card-img-top"></image>
+				<div class="countdownBannerOne">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/5294/K0zzVi.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5 >Gallant Flame Vaughn</h5>
+							<div id="clockBannerOne" class="h3 "></div>
+							<div id="clockStringBannerOne" class="p text-muted small "></div>
+						</p>
+					</div>
 				</div>
-				<div class="card-body text-black text-center">
-					<p class="card-text">
-					<h5 >Gallant Flame Vaughn</h5>
-						<div id="clockBannerOne" class="h3 "></div>
-						<div id="clockStringBannerOne" class="p text-muted small "></div>
-					</p>
-				</div>
-				<div class="card-header">
-					<image src="https://imagizer.imageshack.com/img924/2641/XDQFys.png" class="card-img-top"></image>
-				</div>
-				<div class="card-body text-black text-center">
-					<p class="card-text">
-					<h5 >Ice Emperor Seilios</h5>
-						<div id="clockBannerTwo" class="h3 "></div>
-						<div id="clockStringBannerTwo" class="p text-muted small "></div>
-					</p>
+				<div class="countdownBannerTwo">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/2641/XDQFys.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5 >Ice Emperor Seilios</h5>
+							<div id="clockBannerTwo" class="h3 "></div>
+							<div id="clockStringBannerTwo" class="p text-muted small "></div>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -247,24 +269,7 @@
 	<script type="text/javascript" src="./js/moment.js"></script>
 	<script type="text/javascript" src="./js/moment-timezone-with-data.js"></script>
 	<script>
-		var dateOne = moment.tz("2020-04-27 00:00", "America/Los_Angeles");
-		$('#clockOne').countdown(dateOne.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
-		});
-		var dateOneString = moment.utc(dateOne).local().format('[Local time: ]dddd, MMMM Do h:mm a');
-		document.getElementById("clockStringOne").innerHTML=dateOneString;
-		var dateTwo = moment.tz("2020-04-20 00:00", "America/Los_Angeles");
-		$('#clockTwo').countdown(dateTwo.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
-		});
-		var dateTwoString = moment.utc(dateTwo).local().format('[Local time: ]dddd, MMMM Do h:mm a');
-		document.getElementById("clockStringTwo").innerHTML=dateTwoString;
-		var dateThree = moment.tz("2020-05-07 00:00", "America/Los_Angeles");
-		$('#clockThree').countdown(dateThree.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
-		});
-		var dateThreeString = moment.utc(dateThree).local().format('[Local time: ]dddd, MMMM Do h:mm a');
-		document.getElementById("clockStringThree").innerHTML=dateThreeString;
+		// Daily reset
 		var now = moment();
 		var tomorrowNow = moment.utc(now).add(14, 'hours').format("YYYY-MM-DD");
 		var dateDaily = moment.tz(tomorrowNow+" 05:00", "America/Los_Angeles");
@@ -273,6 +278,24 @@
 		});
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
+		// Events
+		var dateOne = moment.tz("2020-04-27 00:00", "America/Los_Angeles");
+		$('#clockOne').countdown(dateOne.toDate(), function(event) {
+		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		});
+		var dateOneString = moment.utc(dateOne).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringOne").innerHTML=dateOneString;
+		var dateThree = moment.tz("2020-05-07 00:00", "America/Los_Angeles");
+		$('#clockThree').countdown(dateThree.toDate(), function(event) {
+		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		});
+		var dateThreeString = moment.utc(dateThree).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringThree").innerHTML=dateThreeString;
+		if(moment(dateOne.local()).isBefore(now) == true) {
+			$(".countdownOne").wrap("<div class='d-none'></div>"); }
+		if(moment(dateThree.local()).isBefore(now) == true) {
+			$(".countdownThree").wrap("<div class='d-none'></div>"); }
+		// Gacha
 		var dateBannerOne = moment.tz("2020-04-23 00:00", "America/Los_Angeles");
 		$('#clockBannerOne').countdown(dateBannerOne.toDate(), function(event) {
 		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
@@ -285,6 +308,27 @@
 		});
 		var dateBannerTwoString = moment.utc(dateBannerTwo).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringBannerTwo").innerHTML=dateBannerTwoString;
+		if(moment(dateBannerOne.local()).isBefore(now) == true) {
+			$(".countdownBannerOne").wrap("<div class='d-none'></div>"); }
+		if(moment(dateBannerTwo.local()).isBefore(now) == true) {
+			$(".countdownBannerTwo").wrap("<div class='d-none'></div>"); }
+		// Tower of Trials
+		var dateTowerStart = moment.tz("2020-04-20 00:00", "America/Los_Angeles");
+		$('#clockTowerStart').countdown(dateTowerStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		});
+		var dateTowerStartString = moment.utc(dateTowerStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringTowerStart").innerHTML=dateTowerStartString;
+		var dateTowerEnd = moment.tz("2020-04-26 00:00", "America/Los_Angeles");
+		$('#clockTowerEnd').countdown(dateTowerEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		});
+		var dateTowerEndString = moment.utc(dateTowerEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringTowerEnd").innerHTML=dateTowerEndString;
+		if(moment(dateTowerStart.local()).isBefore(now) == true) {
+			$(".countdownTowerStart").wrap("<div class='d-none'></div>"); }
+		if(moment(dateTowerEnd.local()).isBetween(dateTowerStart, dateTowerEnd, '[]') == false) {
+			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 	</script>
 </body>
 </html>
