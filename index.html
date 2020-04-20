@@ -276,20 +276,20 @@
 		var tomorrowNow = moment.utc(now).add(14, 'hours').format("YYYY-MM-DD");
 		var dateDaily = moment.tz(tomorrowNow+" 05:00", "America/Los_Angeles");
 		$('#clockDaily').countdown(dateDaily.toDate(), function(event) {
-		  $(this).html(event.strftime('%H:%M:%S'));
+		  $(this).html(event.strftime('%-H:%-M:%-S'));
 		});
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		// Events
 		var dateOne = moment.tz("2020-04-27 00:00", "America/Los_Angeles");
 		$('#clockOne').countdown(dateOne.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateOneString = moment.utc(dateOne).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringOne").innerHTML=dateOneString;
 		var dateThree = moment.tz("2020-05-07 00:00", "America/Los_Angeles");
 		$('#clockThree').countdown(dateThree.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateThreeString = moment.utc(dateThree).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringThree").innerHTML=dateThreeString;
@@ -300,13 +300,13 @@
 		// Gacha
 		var dateBannerOne = moment.tz("2020-04-23 00:00", "America/Los_Angeles");
 		$('#clockBannerOne').countdown(dateBannerOne.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateBannerOneString = moment.utc(dateBannerOne).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringBannerOne").innerHTML=dateBannerOneString;
 		var dateBannerTwo = moment.tz("2020-04-30 00:00", "America/Los_Angeles");
 		$('#clockBannerTwo').countdown(dateBannerTwo.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateBannerTwoString = moment.utc(dateBannerTwo).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringBannerTwo").innerHTML=dateBannerTwoString;
@@ -317,13 +317,13 @@
 		// Tower of Trials
 		var dateTowerStart = moment.tz("2020-04-20 00:00", "America/Los_Angeles");
 		$('#clockTowerStart').countdown(dateTowerStart.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateTowerStartString = moment.utc(dateTowerStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringTowerStart").innerHTML=dateTowerStartString;
 		var dateTowerEnd = moment.tz("2020-04-26 00:00", "America/Los_Angeles");
 		$('#clockTowerEnd').countdown(dateTowerEnd.toDate(), function(event) {
-		  $(this).html(event.strftime('%-Dd %H:%M:%S'));
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateTowerEndString = moment.utc(dateTowerEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringTowerEnd").innerHTML=dateTowerEndString;
