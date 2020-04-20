@@ -329,7 +329,7 @@
 		document.getElementById("clockStringTowerEnd").innerHTML=dateTowerEndString;
 		if(moment(dateTowerStart.local()).isBefore(now) == true) {
 			$(".countdownTowerStart").wrap("<div class='d-none'></div>"); }
-		if(moment(dateTowerEnd.local()).isBetween(dateTowerStart, dateTowerEnd, '[]') == false) {
+		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 	</script>
 </body>
