@@ -350,7 +350,7 @@
 		});
 		var dateTowerStartString = moment.utc(dateTowerStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringTowerStart").innerHTML=dateTowerStartString;
-		var dateTowerEnd = moment.tz("2020-04-26 00:00", "America/Los_Angeles");
+		var dateTowerEnd = moment.tz("2020-04-27 00:00", "America/Los_Angeles");
 		$('#clockTowerEnd').countdown(dateTowerEnd.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
