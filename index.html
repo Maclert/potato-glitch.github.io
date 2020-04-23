@@ -382,8 +382,8 @@
 			$(".countdownTowerStart").wrap("<div class='d-none'></div>"); }
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
-		// Website update timer
-		var dateSiteUpdate = moment.tz("2020-04-23 11:38:15", "Australia/Melbourne")
+		// Website update string
+		var dateSiteUpdate = moment.tz("2020-04-23 13:14:32", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
