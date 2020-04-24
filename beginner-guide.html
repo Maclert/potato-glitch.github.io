@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PotatoSack</title>
+    <meta name="description" content="A beginner's guide to Last Cloudia, a mobile smartphone RPG by AIDIS.">
+    <title>Beginner's guide | PotatoSack</title>
     <!-- favicon 
     <link rel="icon" href="./favicon.png" type="image/x-icon" /> 
     -->
@@ -13,7 +14,10 @@
     -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/sticky-footer.css">
-    <link rel="stylesheet" href="./css/bootstrap-table.css"></head>
+    <link rel="stylesheet" href="./css/bootstrap-table.css">
+    <style>
+    	image, img {max-width: 500px !important; max-height: 500px !important;}
+    </style></head>
 <body>
 	<!-- header -->
 	<div data-html="./site/header"></div>
@@ -24,27 +28,304 @@
 	</div>
 	<div class="row">
 		<div class="col-md-8">
-		<p><h1>Beginner guide</h1></p>
+		<p><h1>Beginner's guide</h1></p>
 		<p>This page consolidates most of the launch advice, Greensburg's <a href="https://gamepress.gg/last-cloudia-beginners-guide">beginner's guide</a>, and my experience as a regular in #gl-help on Discord.</p>
 		<p>If you are a new player, this page was written for you.</p>
-		<p>This page contains the following:</p>
 		<ul>
+			<li><strong>The basics</strong> is for explaining the various configurations and menu options available.</li>
 			<li><strong>The walkthrough</strong> is for all new players up to their first level 80 units.</li>
 			<li><strong>The crystal spending guide</strong> has tips on how to maximise crystal efficiency for players who don't spend much, or at all.</li>
-			<li><strong>The reroll guide</strong> is for players who want to understand why certain arks are preferred over others for a "starting account". This section is for regular gacha players.</li>
+			<li><strong>The reroll guide</strong> is for players who want to understand why certain arks are preferred over others for a "starting account". This section is written from the perspective of a gacha player, for other gacha players.</li>
 		</ul>
-		<p>Have questions? Ask in #gl-help on Discord or in the Questions megathread on Reddit.<br />Have complaints? Ping @potato on Discord.</p>
+		<h4>Where do I ask other questions?</h4>
+		<p>Ask in #gl-help on <a href="https://discord.gg/hYGG9Gt">Discord</a> or in the Questions megathread on <a href="https://old.reddit.com/r/lastcloudia/">Reddit</a>.</p>
+		<p>For any questions specific to the guide itself, ping @potato (me) on Discord. I don't have a Reddit account. <span class="text-white">You can DM me on Discord if you need to.</span></p>
 	</div>
 	<div class="col-md-4">
 		<br />
 		<h2>Additional resources</h2>
 		<ul>
-			<li>Greensburg's beginner guides: <a href="https://gamepress.gg/last-cloudia-magical-dps-builds">Magical DPS builds</a> and <a href="https://gamepress.gg/last-cloudia-physical-dps-builds">Physical DPS builds</a></li>
-			<li><a href="https://docs.google.com/spreadsheets/d/1MXQkApC-pAJjPaIlWevRR_BBad4noowlGJeQJyEtwM4/edit#gid=0">Lake's spreadsheet</a>, which has information from the JP datamine as well as in-game testing.
-			<li>My <a href="https://potato-glitch.github.io/arkether">Ark ether guide</a> for recommended equipment.</li>
-			<li>Our <a href="https://docs.google.com/spreadsheets/d/1NNrhtDZnvCo4gbVJ6dnWBxFBp-hmcVKGyqEJ3Dx7SUY/edit">Unit builder</a>. All data here comes from the Unit builder. Sign into your Google account on a PC to make a copy and get started.
+			<li><a href="https://docs.google.com/spreadsheets/d/1MXQkApC-pAJjPaIlWevRR_BBad4noowlGJeQJyEtwM4/edit#gid=0">Lake's spreadsheet</a>, which has information from the JP datamine as well as in-game testing.</li>
 		</ul>
+		<div class="alert alert-danger text-center" role="alert" data-toggle="tooltip" data-placement="bottom" title="Please take this warning seriously."><strong>Spend and gamble responsibly.<br />No game is worth the entirety of your paycheck.<br /><br />The best advice is to turn off 1-click purchase and unlink your credit card.</strong><br />Some gacha players go as far as only spending through gift cards. Decide for yourself how to limit yourself.
+		</div>
 	</div>
+	</div>
+    <!-- 1st level tabs -->
+	<ul class="nav nav-tabs bg-light border pt-2">
+		<li class="nav-item"><a class="nav-link disabled">Navigation >></a></li>
+		<li class="nav-item border">
+		<a href="#guideBasics" class="nav-link" data-toggle="tab">Basics</a>
+		</li>
+		<li class="nav-item border">
+		<a href="#guideWalkthrough" class="nav-link active" data-toggle="tab">Walkthrough</a>
+		</li>
+		<li class="nav-item border">
+		<a href="#guideCrystals" class="nav-link" data-toggle="tab">Crystal spending</a>
+		</li>
+		<li class="nav-item border">
+		<a href="#guideReroll" class="nav-link" data-toggle="tab">Rerolling</a>
+		</li>
+	</ul>
+	<!-- 1st level tab-content -->
+	<div class="tab-content">
+		<div class="tab-pane fade" id="guideBasics">
+			<br />
+			<div class="row">
+				<div class="col-md-8">
+					<h2>Basics</h2>
+					<p>This section is to guide players to navigate the game while understanding what they are looking at.</p>
+					<p>Because as we all know, tutorials are there to be skipped, and common sense is at an all-time low every hour of the day.</p>
+					<p>Disclaimer: I'm using my own account to take these screenshots. Once you've played for a while, you will also have 8k crystallites and 50m+ Zell. It accumulates.</p>
+				</div>
+				<div class="col-md-4">
+					<h2>Table of contents</h2>
+					<ul>
+						<li><a href="#startGacha">Explaining gacha</a></li>
+						<li><a href="#startCurrencies">Explaining currencies and stamina</a></li>
+						<li><a href="#startCombat">Changing your in-combat settings</a></li>
+						<li><a href="#startSupportUnit">Changing your support unit</a></li>
+						<li><a href="#startFriends">Adding friends and Friend Points</a></li>
+						<li><a href="#startSkillCost">Adding skill cost (SC)</a></li>
+						<li><a href="#startAbilityTree">Unlocking unit ability trees</a></li>
+						<li><a href="#startUnlockUnit">Unlocking units with souls</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<h4 id="startGacha">Explaining gacha</h4>
+			<table id="table" class="table table-bordered">
+			<thead class="thead-light"> 
+				<tr>  
+					<th colspan="2" class="d-none"></th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+			<image src="https://imagizer.imageshack.com/img922/2048/lrQObx.jpg"></image></td>
+					<td>
+					<p>This is an example of a "featured gacha banner". Usually you will want to roll on this, but be aware that there are multiple types  of gacha.</p>
+					<ol>
+						<li><strong>Permanent gacha:</strong> Features permanent units and arks. These units and arks will be available in all banners, including semi-limited and limited banners. They can also be obtained through gacha tickets.</li>
+						<li><strong>Semi-limited gacha:</strong> Banners that return every so often, such as monthly Descent of Heroes banners.</li>
+						<li><strong>Limited gacha:</strong> Seasonal banners such as the Christmas banner, and banners that feature collaboration units and arks, such as Secret of Mana units and Arks. These banners are the rarest and only rerun at the developer's discretion.</li>
+					</ol>
+					<p>Rolling on permanent banners is usually discouraged for free players and low spenders.</p>
+					<p>Gachas use <strong>paid crystals</strong> or <strong>free crystals</strong>. The rates are the same, but paid crystals can be discounted, such as the "Daily Gacha" here.</p>
+					<p>The <strong>pick-up details</strong> shows the details of the featured unit/arks at max level. <strong>Gacha details</strong> and <strong>probability</strong> show the details of the gacha banner, and the drop rate of all the possible units/arks in the banner respectively.</p>
+					<p><strong>Medals</strong> are the pity currency in this game. Exchange them for units, arks or other items in the Shop.</p>
+					</td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/4520/0vLTKq.jpg"></image></td>
+					<td>
+					<p>The <strong>Ticket gacha</strong> is for spending gacha tickets that are obtained through achievements, events, and shop packages.</p>
+					<p><strong>You can only obtain permanent units and arks from tickets.</strong></p>
+					<p>Some tickets have expiry dates, so be careful if you don't plan on using these tickets immediately.</p></td>
+				</tr>
+				<tr>
+					<td><image src="https://imagizer.imageshack.com/img924/8915/lqae4j.jpg"></image></td>
+					<td>
+					<p>The <strong>Friend gacha</strong> uses Friend points obtained by using Support units, and gifting friends/being gifted by your friends.</p>
+					<p><strong>Save your friend points for a Friend Gacha campaign like shown in the screenshot, or for materials in the Friend Point exchange.</strong></p>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+			<hr />
+			<h4 id="startCurrencies">Explaining stamina</h4>
+			<p>Last Cloudia is generally known as a "no stamina" game. The "no stamina" means that you can run stages an infinite amount of times without being gated by "stamina". <strong>This is only half true.</strong></p>
+			<p>There is a "soft stamina" system in Last Cloudia where, if you plan on equipping Arks while entering combat, you will require a number of souls as an entry cost.</p>
+			<div class="text-center"><image src="https://imagizer.imageshack.com/img924/7905/Yy3sKx.jpg"></image></div>
+			<br />
+			<p>In the above screenshot, we can see our protagonist equipped with an Ark. That Ark costs 2,640 blue souls to enter, which is shown as <strong>Required Souls</strong> below the Start Quest button.</p>
+			<p>90% of the time, you will want to equip Arks when entering battle. The only times when you <strong>don't</strong> want to equip Arks is when you are farming stages for souls (they drop in minuscule amounts per stage clear), and when you are out of souls.</p>
+			<hr />
+			<h4>Explaining currencies</h4>
+			<br />
+			<div class="text-center"><image src="https://imagizer.imageshack.com/img923/725/lFAuQj.jpg"></image></div>
+			<br />
+			<ol>
+				<li>The gold coin is <strong>Zell</strong>, the main game currency. Zell is used to enhance units, purchase equipment and upgrade soul tanks and soul spots.</li>
+				<li><strong>Crystals</strong> are the premium currency in this game. They are used for pulling on gacha and increasing friend slots.</li>
+				<li>Blue orbs are known as "blue souls". Blue souls are obtained from unlocking and leveling soul spots dotted through the world map. You obtain a set amount each day, and sometimes, paid boosters are available to make them generate faster. <strong>Blue souls are used to level arks, learn ark skills, and level red soul spots and red soul tanks.</strong></li>
+				<li>Red orbs are known as "red souls", and generate at a much lower rate than blue souls. <strong>Red souls are used to level arks and learn ark skills.</strong></li>
+			</ol>
+			<hr />
+			<h4 id="startCombat">Changing your in-combat settings</h4>
+			<table id="table" class="table table-bordered text-center">
+			<thead class="thead-light"> 
+				<tr>  
+					<th colspan="2" class="d-none"></th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img922/1817/DSO7wo.jpg"><image src="https://imagizer.imageshack.com/img922/1817/DSO7wo.jpg"></image></a></td>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img923/2369/mdfNY4.jpg"><image src="https://imagizer.imageshack.com/img923/2369/mdfNY4.jpg"></image></a></td>
+				</tr>
+			</tbody>
+			</table>
+			<p>These are the in-combat settings.</p>
+			<table id="table" class="table table-bordered text-center">
+			<thead class="thead-light"> 
+				<tr>  
+					<th colspan="2" class="d-none"></th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img923/9565/Dv0RVt.jpg"><image src="https://imagizer.imageshack.com/img923/9565/Dv0RVt.jpg"></image></a></td>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img924/7867/wt7ZIZ.jpg"><image src="https://imagizer.imageshack.com/img924/7867/wt7ZIZ.jpg"></image></a></td>
+				</tr>
+			</tbody>
+			</table>
+			<ul>
+				<li><strong>Auto attack</strong> means that your units will automatically target enemies and use regular attacks. This applies to all units that are not selected, or all units if Auto Drive is on Semi/Full.</li>
+				<li><strong>NPC uses Specials automatically</strong> means that the bottom right skill, known as the "Ultimate" or "Special", will automatically be used when it is ready to be used (charged). Turn this off when you aren't farming.</li>
+				<li><strong>Confirmation screens for magic</strong> – does what it says. Keep this on since there's no downside to it.</li>
+				<li><strong>Special Cut-In</strong> refers to the brief pop-up at the start of each unit's Special. Visual flair only.</li>
+				<li><strong>Summons Movie</strong> refers to the 10 second or so animation when you use a Summon (i.e. Yggdrasil). Most players have these off after watching these movies once, because they can waste a lot of time.</li>
+				<li><strong>Camera shake</strong> refers to the screen shaking during combat. Turn this off ASAP if you are easily motion-sick. I have it off because I cannot stand camera-shake in most games.</li>
+				<li><strong>Manual Drive</strong> refers to being able to control your unit manually. <mark>You can use the giant red Attack button as a thumbstick to move your unit around when you have Manual Drive on.</mark> Manual Drive does not conflict with Auto Drive.</li>
+				<li><strong>Auto Drive</strong> refers to the "AUTO" below the Settings icon in combat. You can turn Auto off without needing to turn Auto Drive off. 
+				<ul>
+				<li>Full = all units are under Auto.</li>
+				<li>Semi = your selected unit will not use physical skills, spells or Ultimate.</li>
+				</ul></li>
+				<li><strong>Rematch confirmation</strong> refers to the pop-up screen when you clear a stage you've already cleared prior. It prompts you to repeat the stage. Keep this on if you plan on manually farming a stage.</li>
+				<li><strong>Rematch support</strong> refers to setting a support unit on the rematch.
+				<ul>
+				<li>Full = the game automatically selects a support unit for you.</li>
+				<li>Semi = you're prompted to choose from a list of support units.</li>
+				<li>None = Skip support unit entirely on rematch.</li>
+				</ul>
+				Some players prefer not bringing support units for certain stages.</li>
+			</ul>
+			<hr />
+			<h4 id="startSupportUnit">Changing your support unit</h4>
+			<br />
+			<div class="text-center"><a href="https://imagizer.imageshack.com/img924/624/AEiVuf.jpg" target="_blank"><image src="https://imagizer.imageshack.com/img924/624/AEiVuf.jpg"></image></a></div>
+			<br />
+			<p>Tap on Party from the bottom bar, then tap the Unit and Ark above the party name to change your support Unit and Ark.</p>
+			<h4 id="startFriends">Adding friends</h4>
+			<p>Playing a gacha is a lonely endeavour. No, really, I totally understand your plight – otherwise you'd be playing on a Switch or FFXIV.</p>
+			<p>To lessen your ongoing grief, you can add "friends" in this game. In this game, all "friends" are friends with benefits. Ergo, you should add as many "friends" as you can. There is no downside to having more "friends".</p>
+			<h4>Obtaining friend points</h4>
+			<p>First, add some "friends". Then, follow the instructions below.</p>
+			<table id="table" class="table table-bordered text-center">
+			<thead class="thead-light"> 
+				<tr>  
+					<th colspan="2" class="d-none"></th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img922/9367/jJ59U9.jpg"><image src="https://imagizer.imageshack.com/img922/9367/jJ59U9.jpg"></image></a></td>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img922/3059/PTsBzX.jpg"><image src="https://imagizer.imageshack.com/img922/3059/PTsBzX.jpg"></image></a></td>
+				</tr>
+			</tbody>
+			</table>
+			<p>When you tap on the pink box in the right image, you are shown this popup. To play smart, you will want to change to Friend Points and stay on it forever.</p>
+			<p>Sometimes event currencies are obtainable in friend gifts. The Ceremonial Badge shown below is an event currency. <strong>Remember to switch back to friend points when the event ends. The game will not do it automatically for you.</strong></p>
+			<div class="text-center"><a target="_blank" href="https://imagizer.imageshack.com/img923/8360/6L18SO.jpg"><image src="https://imagizer.imageshack.com/img923/8360/6L18SO.jpg"></image></a></div>
+			<br />
+			<h4>Increasing friend slots</h4>
+			<p>One of the earliest things you should do is to max out your friend slots. More friends = more points. More points = more upgrade materials. More materials = more progression. More progression = more chances to brag about your maxed units on Reddit or Discord.</p>
+			<p>Tap on the Shop icon on the home screen, then increase your friend slots on the top left.</p>
+			<table id="table" class="table table-bordered text-center">
+			<thead class="thead-light"> 
+				<tr>  
+					<th colspan="2" class="d-none"></th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img922/6161/bIMM1Z.jpg"><image src="https://imagizer.imageshack.com/img922/6161/bIMM1Z.jpg"></image></a></td>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img923/1482/gVG66Z.jpg"><image src="https://imagizer.imageshack.com/img923/1482/gVG66Z.jpg"></image></a></td>
+				</tr>
+			</tbody>
+			</table>
+			<br />
+			<h4 id="startSkillCost">Adding skill cost (SC)</h4>
+			<p>A lot of players will mention SC. This website will mention SC frequently. Knowing what SC is is assumed knowledge, but SC is also barely explained in-game. A lot of users will find out for the first time what SC is, by reading a guide or lurking on Reddit/Discord.</p>
+			<p><strong>Skill cost</strong>, or SC for short, is the main measurement of how strong your unit is. The most unique aspect of Last Cloudia's progression system is allowing any unit to learn <em>any Ark skill</em> as long as they have the right Arks and the right number of souls.</p>
+			<p>To balance these Ark skills, each skill has a "cost" to equip. More skills = more SC required.</p>
+			<div class="text-center"><image src="https://imagizer.imageshack.com/img923/2325/x3WC2K.jpg"></image></div>
+			<br />
+			<p>You will need to increase SC to equip more Ark skills. First, enter the Unit screen.</p>
+			<div class="text-center"><image src="https://imagizer.imageshack.com/img923/6589/k4BoEi.jpg"></image></div>
+			<br />
+			<p>Then tap on the green button next to the SC counter.</p>
+			<table id="table" class="table table-bordered text-center">
+			<thead class="thead-light"> 
+				<tr>  
+					<th colspan="2" class="d-none"></th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img922/2006/GVqri7.jpg"><image src="https://imagizer.imageshack.com/img922/2006/GVqri7.jpg"></image></a></td>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img924/5586/jqZ9cu.jpg"><image src="https://imagizer.imageshack.com/img924/5586/jqZ9cu.jpg"></image></a></td>
+				</tr>
+			</tbody>
+			</table>
+			<ul>
+				<li><strong>Unit souls</strong> are souls specific to the unit, such as Kyle's souls. These souls can only be used on Kyle.</li>
+				<li><strong>Mother souls</strong> can be used on any unit to increase their SC. Save those souls for limited units because it's much harder to obtain a limited unit's souls once their banner ends.</li>
+			</ul>
+			<p>Once you're done increasing SC, you need to equip skills. Because I have no skills on Kyle, let's move to Saintly Theria.</p>
+			<p>If you haven't noticed yet, I take pride in owning a level 1 Kyle as a day 1 player. Look, we all have our hangups. That's why we play gacha.</p>
+			<div class="text-center"><image src="https://imagizer.imageshack.com/img924/784/LDKgfa.jpg"></image></div>
+			<br />
+			<p>From top to bottom:</p>
+			<ul>
+				<li>The <strong>Reset button</strong> lets you reset all your equipped skills on that page. So if you are on the Magic page, all your spells will be unequipped, but your passives will still be equipped. It's useful for restarting a build.</li>
+				<li>The <strong>Sorting and Filtering options</strong> is for when you have a few dozen skills learned and all the icons are painful to look at. It helps at endgame. Not so much early on.</li>
+				<li>The <strong>SC 0</strong> spells indicate that the unit has learned these spells from their ability tree. That means that the unit can equip them at no cost, and doesn't need the relevant Ark either. As you can see here, STheria learns Galaxy and Shining Zok from her ability tree, so she can equip them at no cost. However, Holy Bolt costs 5 SC.</li>
+				<li>The <strong>Browse Skill Set</strong> shows all the skills you have currently equipped. See below.</li>
+			</ul>
+			<div class="text-center"><image src="https://imagizer.imageshack.com/img923/924/FymrqN.jpg"></image></div>
+			<br />
+			<p>To view all the skills you have mastered, tap the Skills button on Kyle's main page.</p>
+			<div class="text-center"><image src="https://imagizer.imageshack.com/img924/7062/kKVIrF.jpg"></image></div>
+			<br />
+			<p>And once again, because I have no skills on Kyle, I'll show you how this page looks like on Saintly Theria.</p>
+			<div class="text-center"><image src="https://imagizer.imageshack.com/img924/4702/YecNl1.jpg"></image></div>
+			<br />
+			<p>This page monitors all the Ark skills you have learned or are in the progress of learning. It is very useful for forgetful people. Like me, who forgot I was making STheria learn Proud Force until I took this screenshot for this guide. By the time you're reading this, I probably forgot again.</p>
+			<hr />
+			<h4 id="startAbilityTree">Unlocking unit ability trees</h4>
+			<p>Navigate to your unit screen, then press the Ability button.</p>
+			<div class="text-center"><a href="https://imagizer.imageshack.com/img922/1742/ufliTy.jpg" target="_blank"><image src="https://imagizer.imageshack.com/img922/1742/ufliTy.jpg"></image></a></div>
+			<br />
+			<p>You need crystallites, crystals and crystal clusters to unlock ability tree nodes. See the images below as an example.</p>
+			<table id="table" class="table table-bordered text-center">
+			<thead class="thead-light"> 
+				<tr>  
+					<th colspan="2" class="d-none"></th>
+				</tr> 
+			</thead>
+			<tbody>
+				<tr>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img924/6902/QTzvZq.jpg"><image src="https://imagizer.imageshack.com/img924/6902/QTzvZq.jpg"></image></a></td>
+					<td><a target="_blank" href="https://imagizer.imageshack.com/img923/1900/jrfCfy.jpg"><image src="https://imagizer.imageshack.com/img923/1900/jrfCfy.jpg"></image></a></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<div class="tab-pane fade show active" id="guideWalkthrough">
+			<br />
+			<h2>Walkthrough</h2>
+			<ol>
+				<li><a href="#starter">New player goals</a></li>
+				<li><a href="#level20">Walkthrough: From level 1 to level 20</a></li>
+				<li><a href="#level40">Walkthrough: From level 21 to level 40</a></li>
+				<li><a href="#level60">Walkthrough: From level 41 to level 60</a></li>
+				<li><a href="#level80">Walkthrough: From level 61 to level 80</a></li>
+			</ol>
+		</div>
 	</div>
 </div>
 	<!-- footer -->
@@ -58,5 +339,10 @@
 	<script type="text/javascript" src="./js/collapse.js"></script>
 	<script type="text/javascript" src="./js/util.js"></script>
 	<script type="text/javascript" src="./js/html-load.js"></script>
+	<script>
+  $(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
 </body>
 </html>
