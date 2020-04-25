@@ -31,6 +31,9 @@
 				<div class="alert alert-info" role="alert">
 					<strong>The <a href="https://potato-glitch.github.io/skill-guide">skill guide</a> has been updated!</strong><br />The explanation on Trishula and its mechanics has been clarified for better understanding. Weak is also a -20 resistance spell, not -30. We apologise for the error.<br />New skills from Militia of the Departed (SSR) have been added.
 				</div>
+				<div class="alert alert-success" role="alert">
+					<strong>The <a href="https://potato-glitch.github.io/tiers">beginner's guide</a> is complete!</strong><br />If you are a new player, this guide was written for you. Please read it!
+				</div>
 				<span class="text-muted small p text-right"><div id="dateSiteUpdateString"></div></span>
 			</div>
 			<br />
@@ -384,7 +387,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-04-24 09:12", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-04-25 13:17", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
