@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/bootstrap-table.css">
     <style>
     	image, img {max-width: 100px !important; height: auto !important;}
+    	.back-to-top { cursor: pointer; position: fixed; bottom: 20px; right: 20px; display:none; }
     </style>
 </head>
 <body>
@@ -84,17 +85,22 @@
 	</div>
 </div>
 	<!-- exit flexbox, 1st level tabs -->
+<div class="bg-light border border-right-0 border-left-0">
 <div class="container">
-	<ul class="nav nav-tabs bg-light border pt-2">
+	<ul class="nav nav-tabs rounded-top pt-2 border-bottom-0">
 		<li class="nav-item"><a class="nav-link disabled">Navigation >></a></li>
-		<li class="nav-item border">
+		<li class="nav-item border border-success border-bottom-0 rounded-top">
 		<a href="#lists" class="nav-link active" data-toggle="tab">Tier lists</a>
 		</li>
-		<li class="nav-item border">
+		<li class="nav-item border border-info border-bottom-0 rounded-top">
 		<a href="#unit-desc" class="nav-link" data-toggle="tab">Unit guide</a>
 		</li>
 	</ul>
+</div>
+</div>
 	<!-- 1st level tab-content -->
+<div class="container">
+<br />
 	<div class="tab-content">
 		<div class="tab-pane fade show active" id="lists">
 			<div class="alert alert-info alert-dismissible fade show" role="alert">
@@ -1819,6 +1825,8 @@
 </div>
 	<!-- footer -->
 	<div data-html="./site/footer"></div>
+	<!-- back to top -->
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return to the top" data-toggle="tooltip" data-placement="left">▲</a>
     <!-- javascript -->
 	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -1829,12 +1837,30 @@
 	<script type="text/javascript" src="./js/util.js"></script>
 	<script type="text/javascript" src="./js/html-load.js"></script>
 	<script>
-  $(function () {
-	  $('[data-toggle="tooltip"]').tooltip()
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
 	})
-  $.extend(
-  	  $.fn.bootstrapTable.defaults, {classes:'table'}
-  	);
+	$.extend(
+		$.fn.bootstrapTable.defaults, {classes:'table'}
+	);
+	// plugging
+	$(document).ready(function(){
+	 $(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		$('#back-to-top').click(function () {
+			$('#back-to-top').tooltip('hide');
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+		$('#back-to-top').tooltip('show');
+	});
 	</script>
 </body>
 </html>
