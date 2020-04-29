@@ -253,7 +253,7 @@
 				</div>
 				<div class="countdownTwoStart">
 					<div class="card-header">
-						<image src="https://imagizer.imageshack.com/img922/672/QBZc9c.jpg" class="card-img-top"></image>
+						<image src="https://imagizer.imageshack.com/img922/4973/v2LLNP.jpg" class="card-img-top"></image>
 					</div>
 					<div class="card-body text-center">
 						<h5>The Dr. Stone collaboration event will be released in</h5>
@@ -265,7 +265,7 @@
 				</div>
 				<div class="countdownTwoEnd">
 					<div class="card-header">
-						<image src="https://imagizer.imageshack.com/img922/672/QBZc9c.jpg" class="card-img-top"></image>
+						<image src="https://imagizer.imageshack.com/img922/4973/v2LLNP.jpg" class="card-img-top"></image>
 					</div>
 					<div class="card-body text-center">
 						<h5>The Dr. Stone collaboration event will end in</h5>
@@ -320,7 +320,7 @@
 				</div>
 				<div class="countdownBannerOneStart">
 					<div class="card-header">
-						<image src="https://imagizer.imageshack.com/img922/672/QBZc9c.jpg" class="card-img-top"></image>
+						<image src="https://imagizer.imageshack.com/img922/48/BbKsp9.png" class="card-img-top"></image>
 					</div>
 					<div class="card-body text-black text-center">
 						<p class="card-text">
@@ -332,7 +332,7 @@
 				</div>
 				<div class="countdownBannerOneEnd">
 					<div class="card-header">
-						<image src="https://imagizer.imageshack.com/img922/672/QBZc9c.jpg" class="card-img-top"></image>
+						<image src="https://imagizer.imageshack.com/img922/48/BbKsp9.png" class="card-img-top"></image>
 					</div>
 					<div class="card-body text-center">
 						<p class="card-text">
@@ -380,9 +380,9 @@
 		if(moment(dateOne.local()).isBefore(now) == true) {
 			$(".countdownOne").wrap("<div class='d-none'></div>"); }
 		// Event #2
-		var dateTwoStart = moment.tz("2020-04-30 04:00", "America/Los_Angeles");
+		var dateTwoStart = moment.tz("2020-04-30 03:00", "America/Los_Angeles");
 		$('#clockTwoStart').countdown(dateTwoStart.toDate(), function(event) {
-		  $(this).html(event.strftime('%-D day%!D'));
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateTwoStartString = moment.utc(dateTwoStart).local().format('[Local time: ]dddd, MMMM Do');
 		document.getElementById("clockStringTwoStart").innerHTML=dateTwoStartString;
@@ -397,9 +397,9 @@
 		if(moment(now).isBetween(dateTwoStart, dateTwoEnd) == false) {
 			$(".countdownTwoEnd").wrap("<div class='d-none'></div>"); }
 		// Gacha #1
-		var dateBannerOneStart = moment.tz("2020-04-30 04:00", "America/Los_Angeles"); // err on 4 hour maintenance
+		var dateBannerOneStart = moment.tz("2020-04-30 03:00", "America/Los_Angeles"); // err on 4 hour maintenance
 		$('#clockBannerOneStart').countdown(dateBannerOneStart.toDate(), function(event) {
-		  $(this).html(event.strftime('%-D day%!D'));
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateBannerOneStartString = moment.utc(dateBannerOneStart).local().format('[Local time: ]dddd, MMMM Do');
 		document.getElementById("clockStringBannerOneStart").innerHTML=dateBannerOneStartString;
