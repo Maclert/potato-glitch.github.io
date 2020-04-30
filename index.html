@@ -25,16 +25,8 @@
 		<div class="col-md-8">
 			<h2>New updates</h2>
 			<div class="p-3 bg-light border">
-				<div class="countdownOne">
-					<div class="alert alert-info" role="alert">
-						<strong>New updates to the <a href="https://potato-glitch.github.io/tiers">tier list</a> and <a href="https://potato-glitch.github.io/arkether">Ark ether guide</a>!</strong><br />Militia of the Departed (SSR) buffs its user's SCT regen by up to 50% at the cost of -400HP/sec. We recommend you try it with Proud Force in Arena!
-						<br /><br /><div class="alert alert-warning" role="alert"><strong>Update</strong>: Zaix's Skill 1 has been nerfed from his JP version. The unit guide has been corrected in light of this information.
-						<br /><strong>Update 2</strong>: Multiple players on Discord have reported on Zaix's skills and paid equipment not matching JP performance and functionality.
-						<br /><strong>Update 3</strong>: The changes are confirmed to be bugs, not nerfs. Zaix should be fixed in the next update according to the community manager on Discord.</div>
-					</div>
-					<div class="alert alert-info" role="alert">
-						<strong>The <a href="https://potato-glitch.github.io/skill-guide">skill guide</a> has been updated!</strong><br />The explanation on Trishula and its mechanics has been clarified for better understanding. Weak is also a -20 resistance spell, not -30. We apologise for the error.<br />New skills from Militia of the Departed (SSR) have been added.
-					</div>
+				<div class="alert alert-danger" role="alert">
+					<strong>The Arena has been updated with a significant damage nerf.</strong><br />The Arena tier list and the skill guide require significant updates that are scheduled for next week. We apologise in advance for the inconvenience.
 				</div>
 				<div class="alert alert-success" role="alert">
 					<strong>The <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> is complete!</strong><br />If you are a new player, this guide was written for you. Please read it!
@@ -457,7 +449,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-04-29 12:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-05-01 07:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
