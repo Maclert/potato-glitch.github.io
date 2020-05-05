@@ -36,6 +36,9 @@
 					</div>
 				</div>
 				<div class="alert alert-success" role="alert">
+					<strong>The <a href="https://potato-glitch.github.io/lore">lore section</a> has received a massive update!</strong><br />Including the new Dr. Stone collab units and arks! Missing images for Arks have also been added.
+				</div>
+				<div class="alert alert-success" role="alert">
 					<strong>The <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> is complete!</strong><br />If you are a new player, this guide was written for you. Please read it!
 				</div>
 				<span class="text-muted small p text-right"><div id="dateSiteUpdateString"></div></span>
@@ -368,7 +371,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-05-01 10:32", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-05-05 10:10", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
