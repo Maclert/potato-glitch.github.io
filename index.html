@@ -204,12 +204,42 @@
 		</div>
 		<div class="col-md-4">
 			<div class="card">
-				<div class="card-body bg-light">
+				<div class="card-body bg-white">
 					<p class="card-text">
 					<h5 class="text-center">Time until daily reset</h5>
 						<div id="clockDaily" class="h3 text-center text-danger"></div>
 						<div id="clockStringDaily" class="p text-muted small text-center"></div>
 					</p>
+				</div>
+				<div class="countdownMaintStart">
+					<div class="card-body bg-light">
+						<p class="card-text">
+						<h5 class="text-center">Time until maintenance</h5>
+							<div id="clockMaintStart" class="h3 text-center text-black"></div>
+							<div id="clockStringMaintStart" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownMaintEnd">
+					<div class="card-body bg-light">
+						<p class="card-text">
+						<h5 class="text-center">Time until maintenance ends</h5>
+							<div id="clockMaintEnd" class="h3 text-center text-danger"></div>
+							<div id="clockStringMaintEnd" class="p text-muted small text-center"></div>
+							<hr />
+							<div class="p text-muted small text-center">This is the original maintenance end date. For each hour of extended maintenance, expect ~100 crystals of compensation.</div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownMaintCheck">
+					<div class="card-body bg-light">
+						<p class="card-text">
+						<h5 class="text-center">The last maintenance ended on</h5>
+							<div id="clockStringMaintCheck" class="h3 text-center text-success"></div>
+							<hr />
+							<div class="p text-muted small text-center">The date here reflects the last scheduled maintenance. Extended maintenance and emergency maintenance may be updated after it has occurred.</div>
+						</p>
+					</div>
 				</div>
 			</div>
 			<br />
@@ -319,6 +349,28 @@
 		});
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
+		// Maintenance
+		var dateMaintStart = moment.tz("2020-05-07 00:00", "America/Los_Angeles");
+		var dateMaintEnd = moment.tz("2020-05-07 02:00", "America/Los_Angeles");
+		$('#clockMaintStart').countdown(dateMaintStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateMaintStartString = moment.utc(dateMaintStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringMaintStart").innerHTML=dateMaintStartString;
+		$('#clockMaintEnd').countdown(dateMaintEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateMaintEndString = moment.utc(dateMaintEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringMaintEnd").innerHTML=dateMaintEndString;
+		var dateMaintEndString = moment.utc(dateMaintEnd).local().format('MMMM Do h:mm a');
+		document.getElementById("clockStringMaintCheck").innerHTML=dateMaintEndString;
+		if(moment(dateMaintStart.local()).isBefore(now) == true) {
+			$(".countdownMaintStart").wrap("<div class='d-none'></div>"); }
+		if(moment(now).isBetween(dateMaintStart, dateMaintEnd) == false) {
+			$(".countdownMaintEnd").wrap("<div class='d-none'></div>"); }
+		if(moment(dateMaintEnd.local()).isAfter(now) == true && 
+			moment(dateMaintStart.local()).isAfter(now) == true ) {
+			$(".countdownMaintCheck").wrap("<div class='d-none'></div>"); }
 		// Event #2
 		var dateTwoStart = moment.tz("2020-04-30 03:00", "America/Los_Angeles");
 		$('#clockTwoStart').countdown(dateTwoStart.toDate(), function(event) {
