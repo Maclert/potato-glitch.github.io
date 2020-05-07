@@ -366,10 +366,9 @@
 		document.getElementById("clockStringMaintCheck").innerHTML=dateMaintEndString;
 		if(moment(dateMaintStart.local()).isBefore(now) == true) {
 			$(".countdownMaintStart").wrap("<div class='d-none'></div>"); }
-		if(moment(now).isBetween(dateMaintStart, dateMaintEnd) == false) {
+		if(moment(now).isBetween(dateMaintStart, dateMaintEnd) == false ) {
 			$(".countdownMaintEnd").wrap("<div class='d-none'></div>"); }
-		if(moment(dateMaintEnd.local()).isAfter(now) == true && 
-			moment(dateMaintStart.local()).isAfter(now) == true ) {
+		if(moment(dateMaintEnd.local()).isBefore(now) == false ) {
 			$(".countdownMaintCheck").wrap("<div class='d-none'></div>"); }
 		// Event #2
 		var dateTwoStart = moment.tz("2020-04-30 03:00", "America/Los_Angeles");
