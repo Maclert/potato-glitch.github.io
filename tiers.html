@@ -23,7 +23,8 @@
 	<!-- alert -->
 <div class="container">
 	<div class="alert alert-info" role="alert">
-	  <strong>Last updated May 5, 2020.</strong> Removed Arena section based on feedback from players. Added Senku and Kohaku. Future game updates may not be reflected here.
+	  <strong>Last updated May 12, 2020.</strong><br />
+	  Updated Master Thief Robin unit guide because of synergy between After 3700 Years and Mage Robin's build.<br />Updated formatting for Tower tier list.<br />Future game updates may not be reflected here.
 	</div>
     <!-- start flexbox -->
     <div class="row">
@@ -93,21 +94,17 @@
 </div>
 </div>
 	<!-- 1st level tab-content -->
-<div class="container">
-<br />
 	<div class="tab-content">
 		<div class="tab-pane fade show active" id="lists">
-			<div class="alert alert-info alert-dismissible fade show" role="alert">
-			  <strong>New updates!</strong> Added Kohaku and Senku. Removed Kyle from Tower and rebalanced most tier lists to reflect the current generation of units.
-			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
+		<br />
+<div class="bg-light p-3">
+	<div class="container">
+		<br />
 		<div class="jumbotron">
 			<h4 class="text-center"><a id="tower-units">Tower unit tier list</a></h4>
-			<p class="text-center">Only includes units that excel in Tower.<br />Assumes the units are built to their intended specifications with AT LEAST 50SC invested in skills (i.e. pure tank/healer).<br /><strong>Do not use this tier list for rerolling.</strong></p>
+			<p class="text-center">Only includes units that excel in Tower.<br />Assumes the units are built to their intended specifications with AT LEAST 50SC invested in skills (i.e. pure tank/healer).<br /><strong class="text-danger">Do not use this tier list for rerolling.</strong></p>
 		</div>
-		<table id="table" data-toggle="table" class="table table-disable-hover table-bordered">
+		<table id="table" data-toggle="table" class="table table-disable-hover table-bordered bg-white rounded">
 		<thead class="thead-light">
 			<tr>
 			  <th class="text-center w-25"></th>
@@ -133,7 +130,7 @@
 				</td>
 				<td>
 					 <image src="https://imagizer.imageshack.com/img923/7748/qNT7df.jpg" data-toggle="tooltip" data-placement="top" title="Kohaku  / Dr. Stone"></image> 
-					 <image src="https://imagizer.imageshack.com/img923/4894/F7L2pH.jpg" data-toggle="tooltip" data-placement="top" title="Zaix"></image>
+					 <image src="https://imagizer.imageshack.com/img923/4894/F7L2pH.jpg" data-toggle="tooltip" data-placement="top" title="Zaix / Descent of Heroes"></image>
 				</td>
 			</tr>
 			<tr>
@@ -171,15 +168,18 @@
 			</tr>
 		</tbody>
 		</table>
-		<br />
 		<div class="row">
 		<div class="col-md-2"></div>
-		<div class="col-md-8">
-		<h4 class="text-center" id="tower-notes">Unit ranking notes</h4>
-		<ol>
+		<div class="col-md-8 p-3 rounded border border-white">
+		<div class="text-center">
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#tower-notes">Click here for unit ranking notes</button>
+		</div>
+		<div id="tower-notes" class="collapse bg-white rounded border border-success m-3 p-3">
+			<ol>
 			<li><strong>Zaix</strong> has buffed (different from JP) break values to stupid levels on his S3. Since this hasn't been changed post-patch, we can assume that this is here to stay. Use him to wreck bosses. He has great damage output too, but needs Trishula because of his elemental skills. His teleport-on-evade talent is very helpful at increasing survival in Tower.</li>
 			<li><strong>Kohaku</strong> has stupid break values on her S3. She also has excellent damage, but needs Trishula to ignore Earth resist.</li>
 			<li><strong>Senku</strong> has a number of unique powercreep support spells and some of the highest base MP in the game. His S2 is a party-wide heal and his Special is like Saintly Theria's Ult on crack: it restores SCT to all allies, protects its user and blinds all enemies.</li>
+			<li><strong>Princess Lilah</strong> is ranked based on her innately high MP, free God Heal and MP regeneration on Special.</li>
 			<li><strong>Gorm</strong> is used in conjunction with Yggdrasil summon (Giant Tree ark Lv4 unlock) to provide a soft battle reset for an almost-wiped party. Use Gorm to stall for time until Yggdrasil is ready, then use Yggdrasil followed by Gorm's ultimate for a party heal on low-hp revived allies.</li>
 			<li><strong>Gorm</strong> can recover allies' SCT by using his Ultimate and having Spirit Breath equipped on allies.</li>
 			<li><strong>Sevia</strong> is used for her -50% physical/magic damage buff on Ultimate. Her damage can also be decent, but requires manual control.</li>
@@ -189,14 +189,23 @@
 			<li><strong>Phantom Thief Robin</strong> and <strong>Shin</strong> cannot juggle flinch-resist enemies. However, as neutral-element PDPS there are no better alternatives.</li>
 			<li>All mages in Global are penalised in damage because even with the best MP Ark ether equipment and 40% MP regen per wave (Archangel Blessing + Ale of Honor), the base MP nerf (base stat + ability tree nodes) effectively halves their usable MP.</li>
 		</ol>
-		<h4 class="text-center">Unit removal notes</h4>
-		<ol>
-			<li><strong>Romel</strong> is no longer relevant because his auto-attacks cannot stun-lock enemies with anti-flinch. Since this was his main value in early Tower, he has been removed from the list. (For those wondering, the Tower tier list was written when the Tower only had 30 levels.)</li>
-			<li><strong>Kyle</strong> is no longer relevant because there are now much better Breakers/Fainters.</li>
-		</ol>
+		</div>
+		<hr />
+		<div class="text-center">
+			<button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target="#tower-removal-notes">Click here for unit removal notes</button>
+		</div>
+		<div id="tower-removal-notes" class="collapse bg-white rounded border border-danger m-3 p-3">
+			<ol>
+				<li><strong>Romel</strong> is no longer relevant because his auto-attacks cannot stun-lock enemies with anti-flinch. Since this was his main value in early Tower, he has been removed from the list. (For those wondering, the Tower tier list was written when the Tower only had 30 levels.)</li>
+				<li><strong>Kyle</strong> is no longer relevant because there are now much better Breakers/Fainters.</li>
+			</ol>
+		</div>
 		</div>
 		<div class="col-md-2"></div>
 		</div>
+	</div>
+</div>
+<div class="container">
 		<br />
 		<!-- <div class="jumbotron text-center">
 			<h4><a id="arena-units">Arena unit tier list</a></h4>
@@ -844,15 +853,12 @@
 		</tbody>
 		</table>
 		</div>
+</div>
 		<!-- start 2nd tab -->
 		<div class="tab-pane fade" id="unit-desc">
 			<!-- start unit-desc -->
-			<div class="alert alert-info alert-dismissible fade show" role="alert">
-			  <strong>New updates!</strong> Added Senku and Kohaku (Dr. Stone collab)
-			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			  </button>
-			</div>
+	<div class="container">
+	<br />
 		<div class="jumbotron">
 			<h4 class="text-center"><a id="unit-collab">Collab units</a></h4>
 			<p class="text-center">Units featured in collaborations with other games/licenses.<br />The most limited units in the game.</p>
@@ -1193,6 +1199,7 @@
 			<dd class="col-sm-5">
 				<p class="text-center"><u>Positives</u></p>
 				<ul>
+					<li>Skill 2 warps from anywhere on the map, but is single hit and only holds 1 base charge.</li>
 					<li>Skill 3 is single-target crowd-control juggle.</li>
 					<li>Talent is chance to steal on kill. Steal chance can be increased by 5% with the accessory from Pirate Ship Legnis ether reward, for a maximum of 20%.</li>
 					<li>Can equip all weapons.</li>
@@ -1204,7 +1211,12 @@
 				<ul>
 					<li>Low damage and overall stats.</li>
 					<li>Raven’s Edge (Skill 2) is a 1-hit skill that reaches damage cap</li>
-					<li>To maximise loot, Mage Robin build with time-stop spells is recommended. This takes significant SC and Ark investment.</li>
+					<li>To maximise loot, Mage Robin build with time-stop spells is recommended. This takes significant SC and Ark investment.
+						<ul>
+							<li>On lower level maps where Mage Robin can wipe consistently, it's better to run Mage Robin over Phantom Thief Robin.</li>
+							<li>The new Science spell introduced with the Dr. Stone collab, After 3700 Years (timestop), is highly recommended for a Mage Robin build.</li>
+						</ul>
+					</li>
 				</ul>
 			</dd>
 		</dl>
@@ -1842,8 +1854,6 @@
 		</dl>
 		</div>
 	</div>
-    <!-- end container -->
-</div>
 	<!-- footer -->
 	<div data-html="./site/footer"></div>
 	<!-- back to top -->
