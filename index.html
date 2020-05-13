@@ -431,12 +431,12 @@
 		if(moment(now).isBetween(dateBannerOneStart, dateBannerOneEnd) == false) {
 			$(".countdownBannerOneEnd").wrap("<div class='d-none'></div>"); }
 		// Gacha #2
-		var dateBannerTwoStart = moment.tz("2020-5-14 02:00", "America/Los_Angeles");
+		var dateBannerTwoStart = moment.tz("2020-05-14 02:00", "America/Los_Angeles");
 		var dateBannerTwoEnd = moment.tz("2020-05-21 00:00", "America/Los_Angeles");
 		$('#clockBannerTwoStart').countdown(dateBannerTwoStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
-		var dateBannerTwoStartString = moment.utc(dateBannerTwoStart).local().format('[Local time: ]dddd, MMMM Do');
+		var dateBannerTwoStartString = moment.utc(dateBannerTwoStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringBannerTwoStart").innerHTML=dateBannerTwoStartString;
 		$('#clockBannerTwoEnd').countdown(dateBannerTwoEnd.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
