@@ -38,7 +38,8 @@
 					<strong>Mage AI on auto is bugged</strong><br />Mages tend to not use spells until late or at all. This means that mages such as Lily and Saintly Theria wiping stages with a single spell is not time-efficient at the moment.<br /><br /><strong>Run physical DPS units for farming if you can.</strong>
 					<br /><br />
 					<div class="alert alert-info" role="alert">
-						<strong>Update</strong>: This appears to only affect instant cast builds (with T3 spells?). It has also been confirmed to be a bug.
+						<strong>Update</strong>: This appears to only affect instant cast builds (with T3 spells?). It has also been confirmed to be a bug.<br />
+						<strong>Update 2</strong>: A significant bug fix patch will be pushed live by next week according to the community manager.
 					</div>
 				</div>
 				<span class="text-muted small p text-right"><div id="dateSiteUpdateString"></div></span>
@@ -322,6 +323,31 @@
 						</p>
 					</div>
 				</div>
+				<div class="countdownBannerTwoStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img922/9320/MCK04m.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5>Tsukasa will be released in</h5>
+							<div id="clockBannerTwoStart" class="h3 text-center"></div>
+							<div id="clockStringBannerTwoStart" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownBannerTwoEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img922/9320/MCK04m.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<p class="card-text">
+						<h5>Tsukasa</h5>
+							<p>New limited unit and limited ark</p>
+							<div id="clockBannerTwoEnd" class="h3 text-center text-info"></div>
+							<div id="clockStringBannerTwoEnd" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -350,8 +376,8 @@
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		// Maintenance
-		var dateMaintStart = moment.tz("2020-05-07 00:00", "America/Los_Angeles");
-		var dateMaintEnd = moment.tz("2020-05-07 02:00", "America/Los_Angeles");
+		var dateMaintStart = moment.tz("2020-05-14 00:00", "America/Los_Angeles");
+		var dateMaintEnd = moment.tz("2020-05-14 02:00", "America/Los_Angeles");
 		$('#clockMaintStart').countdown(dateMaintStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -388,7 +414,7 @@
 		if(moment(now).isBetween(dateTwoStart, dateTwoEnd) == false) {
 			$(".countdownTwoEnd").wrap("<div class='d-none'></div>"); }
 		// Gacha #1
-		var dateBannerOneStart = moment.tz("2020-04-30 03:00", "America/Los_Angeles"); // err on 4 hour maintenance
+		var dateBannerOneStart = moment.tz("2020-04-30 03:00", "America/Los_Angeles"); 
 		$('#clockBannerOneStart').countdown(dateBannerOneStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -404,14 +430,31 @@
 			$(".countdownBannerOneStart").wrap("<div class='d-none'></div>"); }
 		if(moment(now).isBetween(dateBannerOneStart, dateBannerOneEnd) == false) {
 			$(".countdownBannerOneEnd").wrap("<div class='d-none'></div>"); }
+		// Gacha #2
+		var dateBannerTwoStart = moment.tz("2020-5-14 02:00", "America/Los_Angeles");
+		var dateBannerTwoEnd = moment.tz("2020-05-21 00:00", "America/Los_Angeles");
+		$('#clockBannerTwoStart').countdown(dateBannerTwoStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerTwoStartString = moment.utc(dateBannerTwoStart).local().format('[Local time: ]dddd, MMMM Do');
+		document.getElementById("clockStringBannerTwoStart").innerHTML=dateBannerTwoStartString;
+		$('#clockBannerTwoEnd').countdown(dateBannerTwoEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerTwoEndString = moment.utc(dateBannerTwoEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerTwoEnd").innerHTML=dateBannerTwoEndString;
+		if(moment(dateBannerTwoStart.local()).isBefore(now) == true) {
+			$(".countdownBannerTwoStart").wrap("<div class='d-none'></div>"); }
+		if(moment(now).isBetween(dateBannerTwoStart, dateBannerTwoEnd) == false) {
+			$(".countdownBannerTwoEnd").wrap("<div class='d-none'></div>"); }
 		// Tower of Trials
-		var dateTowerStart = moment.tz("2020-04-20 00:00", "America/Los_Angeles");
+		var dateTowerStart = moment.tz("2020-05-20 00:00", "America/Los_Angeles");
+		var dateTowerEnd = moment.tz("2020-05-27 00:00", "America/Los_Angeles");
 		$('#clockTowerStart').countdown(dateTowerStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
 		var dateTowerStartString = moment.utc(dateTowerStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringTowerStart").innerHTML=dateTowerStartString;
-		var dateTowerEnd = moment.tz("2020-04-27 00:00", "America/Los_Angeles");
 		$('#clockTowerEnd').countdown(dateTowerEnd.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -422,7 +465,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-05-05 22:30", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-05-13 22:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
