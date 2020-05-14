@@ -25,14 +25,8 @@
 		<div class="col-md-8">
 			<h2>New updates</h2>
 			<div class="p-3 bg-light border">
-				<div class="alert alert-success" role="alert">
-					<strong>The website has been updated with the Dr. Stone collab!</strong><br />The <a href="https://potato-glitch.github.io/skill-guide">skill guide</a>, the <a href="https://potato-glitch.github.io/arkether">ark ether guide</a> and the <a href="https://potato-glitch.github.io/tiers">tier list / character guide</a> have been updated!
-				</div>
-				<div class="alert alert-success" role="alert">
-					<strong>The <a href="https://potato-glitch.github.io/lore">lore section</a> has received a massive update!</strong><br />Including the new Dr. Stone collab units and arks! Missing images for Arks have also been added.
-				</div>
-				<div class="alert alert-success" role="alert">
-					<strong>The <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> is complete!</strong><br />If you are a new player, this guide was written for you. Please read it!
+				<div class="alert alert-danger" role="alert">
+					<strong>The website will be updated with information from the Tsukasa update next week.</strong><br />We apologise for the inconvenience.
 				</div>
 				<div class="alert alert-warning" role="alert">
 					<strong>Mage AI on auto is bugged</strong><br />Mages tend to not use spells until late or at all. This means that mages such as Lily and Saintly Theria wiping stages with a single spell is not time-efficient at the moment.<br /><br /><strong>Run physical DPS units for farming if you can.</strong>
@@ -465,7 +459,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-05-13 22:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-05-15 09:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
