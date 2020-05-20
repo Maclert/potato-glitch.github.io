@@ -26,7 +26,10 @@
 			<h2>New updates</h2>
 			<div class="p-3 bg-light border">
 				<div class="alert alert-danger" role="alert">
-					<strong>The website will be updated with information from the Tsukasa update next week.</strong><br />We apologise for the inconvenience.
+					<strong>The website will be updated with information from the Tsukasa and Thunder Sevia update by this weekend.</strong><br />We apologise for the inconvenience.
+				</div>
+				<div class="alert alert-success" role="alert">
+					<strong>The <a href="https://potato-glitch.github.io/tiers">tier list</a> has been updated for Tsukasa!</strong> Tsukasa's inclusion required a major reshuffling of the physical DPS list to reflect the new generation of units. Read his unit guide to find out more.
 				</div>
 				<div class="alert alert-warning" role="alert">
 					<strong>Mage AI on auto is bugged</strong><br />Mages tend to not use spells until late or at all. This means that mages such as Lily and Saintly Theria wiping stages with a single spell is not time-efficient at the moment.<br /><br /><strong>Run physical DPS units for farming if you can.</strong>
@@ -288,6 +291,30 @@
 						</p>
 					</div>
 				</div>
+				<div class="countdownOneStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img923/8334/7Sqs1O.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<h5>The Gorde War event will be released in</h5>
+						<p class="card-text">
+							<div id="clockOneStart" class="h3"></div>
+							<div id="clockStringOneStart" class="p text-muted small"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownOneEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img923/8334/7Sqs1O.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<h5>The Gorde War event will end in</h5>
+						<p class="card-text">
+							<div id="clockOneEnd" class="h3 text-danger"></div>
+							<div id="clockStringOneEnd" class="p text-muted small"></div>
+						</p>
+					</div>
+				</div>
 			</div>
 			<br />
 			<h4 class="text-center">Gacha banners</h4>
@@ -342,6 +369,31 @@
 						</p>
 					</div>
 				</div>
+				<div class="countdownBannerThreeStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/7554/mXUcIY.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5>Thunderbolt Sevia will be released in</h5>
+							<div id="clockBannerThreeStart" class="h3 text-center"></div>
+							<div id="clockStringBannerThreeStart" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownBannerThreeEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/7554/mXUcIY.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<p class="card-text">
+						<h5>Thunderbolt Sevia</h5>
+							<p>New permanent unit and arks</p>
+							<div id="clockBannerThreeEnd" class="h3 text-center text-info"></div>
+							<div id="clockStringBannerThreeEnd" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -370,8 +422,8 @@
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		// Maintenance
-		var dateMaintStart = moment.tz("2020-05-14 00:00", "America/Los_Angeles");
-		var dateMaintEnd = moment.tz("2020-05-14 02:00", "America/Los_Angeles");
+		var dateMaintStart = moment.tz("2020-05-21 00:00", "America/Los_Angeles");
+		var dateMaintEnd = moment.tz("2020-05-21 03:00", "America/Los_Angeles");
 		$('#clockMaintStart').countdown(dateMaintStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -390,6 +442,23 @@
 			$(".countdownMaintEnd").wrap("<div class='d-none'></div>"); }
 		if(moment(dateMaintEnd.local()).isBefore(now) == false ) {
 			$(".countdownMaintCheck").wrap("<div class='d-none'></div>"); }
+		// Event #1
+		var dateOneStart = moment.tz("2020-05-21 03:00", "America/Los_Angeles");
+		var dateOneEnd = moment.tz("2020-06-04 00:00", "America/Los_Angeles");
+		$('#clockOneStart').countdown(dateOneStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateOneStartString = moment.utc(dateOneStart).local().format('[Local time: ]dddd, MMMM Do');
+		document.getElementById("clockStringOneStart").innerHTML=dateOneStartString;
+		if(moment(dateOneStart.local()).isBefore(now) == true) {
+			$(".countdownOneStart").wrap("<div class='d-none'></div>"); }
+		$('#clockOneEnd').countdown(dateOneEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateOneEndString = moment.utc(dateOneEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringOneEnd").innerHTML=dateOneEndString;
+		if(moment(now).isBetween(dateOneStart, dateOneEnd) == false) {
+			$(".countdownOneEnd").wrap("<div class='d-none'></div>"); }
 		// Event #2
 		var dateTwoStart = moment.tz("2020-04-30 03:00", "America/Los_Angeles");
 		$('#clockTwoStart').countdown(dateTwoStart.toDate(), function(event) {
@@ -441,6 +510,23 @@
 			$(".countdownBannerTwoStart").wrap("<div class='d-none'></div>"); }
 		if(moment(now).isBetween(dateBannerTwoStart, dateBannerTwoEnd) == false) {
 			$(".countdownBannerTwoEnd").wrap("<div class='d-none'></div>"); }
+		// Gacha #3
+		var dateBannerThreeStart = moment.tz("2020-05-21 03:00", "America/Los_Angeles");
+		var dateBannerThreeEnd = moment.tz("2020-06-11 00:00", "America/Los_Angeles");
+		$('#clockBannerThreeStart').countdown(dateBannerThreeStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerThreeStartString = moment.utc(dateBannerThreeStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerThreeStart").innerHTML=dateBannerThreeStartString;
+		$('#clockBannerThreeEnd').countdown(dateBannerThreeEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerThreeEndString = moment.utc(dateBannerThreeEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerThreeEnd").innerHTML=dateBannerThreeEndString;
+		if(moment(dateBannerThreeStart.local()).isBefore(now) == true) {
+			$(".countdownBannerThreeStart").wrap("<div class='d-none'></div>"); }
+		if(moment(now).isBetween(dateBannerThreeStart, dateBannerThreeEnd) == false) {
+			$(".countdownBannerThreeEnd").wrap("<div class='d-none'></div>"); }
 		// Tower of Trials
 		var dateTowerStart = moment.tz("2020-05-20 00:00", "America/Los_Angeles");
 		var dateTowerEnd = moment.tz("2020-05-27 00:00", "America/Los_Angeles");
@@ -459,7 +545,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-05-15 09:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-05-21 09:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
