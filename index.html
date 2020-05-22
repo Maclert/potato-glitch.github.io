@@ -28,8 +28,9 @@
 				<div class="alert alert-danger" role="alert">
 					<strong>The website will be updated with information from the Tsukasa and Thunder Sevia update by this weekend.</strong><br />We apologise for the inconvenience.
 				</div>
-				<div class="alert alert-success" role="alert">
-					<strong>The <a href="https://potato-glitch.github.io/tiers">tier list</a> has been updated for Tsukasa!</strong> Tsukasa's inclusion required a major reshuffling of the physical DPS list to reflect the new generation of units. Read his unit guide to find out more.
+				<div class="alert alert-warning" role="alert">
+					<strong>Always check the rate-up on a banner before pulling.</strong> Thunder Sevia's rate up is only 1% compared to 1.5% in past permanent unit banners.<br />
+					See the <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> for more information on gacha mechanics.
 				</div>
 				<div class="alert alert-warning" role="alert">
 					<strong>Mage AI on auto is bugged</strong><br />Mages tend to not use spells until late or at all. This means that mages such as Lily and Saintly Theria wiping stages with a single spell is not time-efficient at the moment.<br /><br /><strong>Run physical DPS units for farming if you can.</strong>
@@ -424,7 +425,7 @@
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		// Maintenance
 		var dateMaintStart = moment.tz("2020-05-21 00:00", "America/Los_Angeles");
-		var dateMaintEnd = moment.tz("2020-05-21 03:00", "America/Los_Angeles");
+		var dateMaintEnd = moment.tz("2020-05-21 04:00", "America/Los_Angeles");
 		$('#clockMaintStart').countdown(dateMaintStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -546,7 +547,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-05-22 13:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-05-23 09:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
