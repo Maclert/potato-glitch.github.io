@@ -25,7 +25,7 @@
     <!-- top content -->
 <div class="container">
 	<div class="alert alert-info" role="alert">
-	  <strong>Last updated May 23, 2020.</strong> Moved alert. Future game updates may not be reflected here.
+	  <strong>Last updated May 25, 2020.</strong> Moved glossary from the Ark ether guide. Removed errant row header in reroll guide. Future game updates may not be reflected here.
 	</div>
 	<div class="row">
 		<div class="col-md-8">
@@ -70,6 +70,9 @@
 		</li>
 		<li class="nav-item border border-info border-bottom-0 rounded-top">
 		<a href="#guideCrystals" class="nav-link" data-toggle="tab">Crystal spending</a>
+		</li>
+		<li class="nav-item border border-dark border-bottom-0 rounded-top">
+		<a href="#guideGlossary" class="nav-link" data-toggle="tab">Glossary</a>
 		</li>
 	</ul>
 </div>
@@ -956,10 +959,10 @@
 				</tr> 
 			</thead>
 			<tbody>
-				<tr>
+				<!-- <tr>
 					<td><image data-toggle="tooltip" data-placement="top" title="Icy Guardian" src="https://imagizer.imageshack.com/img924/4679/hRVYv1.jpg" class="image-fluid"></image></td>
 					<td>
-					<!-- <h6>Icy Guardian (SSR)</h6>
+					<h6>Icy Guardian (SSR)</h6>
 					<ul>
 						<li><strong>Critical physical attacks inflict +40% extra damage (Ark passive)</strong> – Lets any physical DPS unit bypass the damage cap with critical hits (the extra damage counts as an extra hit).</li>
 						<li><strong>Ardor (skill)</strong> – Critical rate +10% at max HP. Incredibly useful on any unit with Proud Force (skill, recover HP on critical hit) equipped.</li>
@@ -1075,6 +1078,137 @@
 			<p><strong>Most crystals in this game are obtained by playing the game.</strong> Last Cloudia is not a pull simulator. Play Dragalia Lost or Destiny Child if all you care about is pulling on the gacha.</p>
 			<p><strong>Always check the featured Unit and Ark banner rates before pulling.</strong> It's become a recent trend for AIDIS to screw around with the rates. Some banners will have 1% featured rate, others will have 1.5%, and a few select banners (with multiple units) will have 0.5% rate up. Checking before pulling will help you make informed decisions as to whether a banner is worth your time.</p>
 			<p>For further enquiries, ask other players in Reddit or Discord.</p>
+		</div>
+		<div class="tab-pane fade" id="guideGlossary">
+		<div class="row">
+		<div class="col col-md-6">
+		<br />
+			<table id="table" data-toggle="table" table-layout="fixed" class="table table-hover">
+			<thead class="thead-light">
+			<tr>
+			<th scope="col">Primary stat</th>
+			<th scope="col">Description</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>HP</td>
+			<td><strong>Secondary stat</strong> for tanks and melee physical DPS.</td>
+			</tr>
+			<tr>
+			<td>MP</td>
+			<td><strong>Primary stat</strong> for mages and support. MP is nerfed in global twice – once through ability tree MP nodes, and once on base level MP growth. This nerf has been confirmed to be undone soon.</td>
+			</tr>
+			<tr>
+			<td>STR</td>
+			<td><strong>Primary stat</strong> for most physical DPS. Inflating STR is a good idea for certain units, while focusing on SCT is better for most other units.</td>
+			</tr>
+			<tr>
+			<td>DEF</td>
+			<td><strong>Primary stat</strong> for tanks. <strong>Secondary stat</strong> for support and melee DPS.</td>
+			</tr>
+			<tr>
+			<td>INT</td>
+			<td><strong>Primary stat</strong> for mages. Inflate this as much as you can since spells rely entirely on INT. <strong>Secondary stat</strong> for certain physical DPS that have a +INT% modification to their STR% skills, such as Phal.</td>
+			</tr>
+			<tr>
+			<td>MND</td>
+			<td><strong>Primary stat</strong> for healers. <strong>Affects all healing spells and secondary healing passives. Secondary stat</strong> for tanks and Proud Force physical DPS builds.</td>
+			</tr>
+			</tbody>
+			</table>
+			<br />
+			<table id="table" data-toggle="table" table-layout="fixed" class="table table-hover">
+			<thead class="thead-light">
+			<tr>
+			<th scope="col">Secondary<br />stat</th>
+			<th scope="col">Description</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td>Attribute resistance (aka. Element resistance)</td>
+			<td>Element resists are flat damage reduction modifiers (i.e. 100 resist = 100% final damage reduction). In current Global content, element resists are used on a per-stage basis. <br /><br /> Tower meta is on a per-level basis. Some levels stack certain elements over others.</td>
+			</tr>
+			<tr>
+			<td>Ailment resistance</td>
+			<td>Silence resist is crucial for mages and support in future content. <br /><br /> Stun resist is important in certain events/Tower/Arena, but it can be obtained without Ark ether equipment.<br /><br /><a href="https://pbs.twimg.com/media/EJbulH3WkAAG40S.jpg:large">Ailment guide.</a></td>
+			</tr>
+			</tbody>
+			</table>
+		</div>
+		<div class="col col-md-6">
+			<br />
+			<table 
+			id="table" 
+			data-toggle="table" 
+			table-layout="fixed"
+			class="table table-hover">
+			<thead class="thead-dark">
+			<tr>
+				<th scope="col">Term</th>
+				<th scope="col">Description</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>PDPS</td>
+					<td>Physical DPS = Damage units that primarily rely on physical skills.</td>
+				</tr>
+				<tr>
+					<td>SCT</td>
+					<td>(Physical) skill charge time. Buffing SCT is a priority on most Physical DPS units (other than original Sevia, her SCT gain is ridiculously high).</td>
+				</tr>
+				<tr>
+					<td>Regular attacks (aka. auto attacks, normal attacks)</td>
+					<td>Regular attacks are the auto-attacks that units do when you mash the Attack button. Some units only have 1 hit auto-attacks, others have multiple (like Robin). Slow auto-attacks are usually bad.
+					<br /><br />
+					<strong>Regular attacks are affected by weapon element.</strong> For most units, that means matching weapon(s) to their main element (i.e. Romel with Fire, Randi with Neutral).</td>
+				</tr>
+				<tr>
+					<td>Physical skills</td>
+					<td>Physical skills are the 3 skills (top left, top right, bottom left) that charge over time on each unit.
+					<br /><br /><strong>Physical skills are NOT affected by weapon element.</strong></td>
+				</tr>
+				<tr>
+					<td>Attack magic</td>
+					<td>Attack magic means spells that do direct damage (i.e. Blizzard, Lightning Gauge, Galaxy, etc.). Healing spells and other support spells (buffs/debuffs) are not considered attack magic.</td>
+				</tr>
+				<tr>
+					<td>Ultimate (aka. Special)</td>
+					<td>Ultimates are the bottom-right skill on a unit, that is upgraded when the unit is awakened.</td>
+				</tr>
+				<tr>
+					<td>Full-stock</td>
+					<td>When a physical skill contains maximum charges (i.e. 3 charges/uses) and caps, that is considered "full-stock".</td>
+				</tr>
+				<tr>
+					<td>Passives</td>
+					<td>Passive skills are skills that cannot be cast (e.g. Attack Up, High Level Magic Chant, Fast Aura).</td>
+				</tr>
+			</tbody>
+		  </table>
+		  <br />
+		  <table id="table" data-toggle="table" table-layout="fixed" class="table table-hover">
+			<thead class="thead-dark">
+			<tr>
+				<th scope="col">Term</th>
+				<th scope="col">Description</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>"Best in slot"</td>
+					<td>"Best in slot" or BiS refers to the best-possible weapon for a Unit in most situations. I emphasise, "most".	</td>
+				</tr>
+				<tr>
+					<td>"Stat stick"</td>
+					<td>When an equipment's main value is in their raw stats (STR/INT/etc.). Stat sticks are the easiest to be powercrept. Beware investing in them.</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
 		</div>
 	</div>
 </div>
