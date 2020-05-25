@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Equipment data for Last Cloudia, a mobile smartphone RPG by AIDIS.">
+    <title>Equipment | PotatoSack</title>
+    <!-- 
+    	bootstrap for basic css
+    	bootstrap-table for table styling and search functions
+    -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/sticky-footer.css">
+    <link rel="stylesheet" href="./css/bootstrap-table.css">
+    <style>
+    	image, img {max-width: 100px !important; height: auto !important;}
+    	.back-to-top { cursor: pointer; position: fixed; bottom: 20px; right: 20px; display:none; }
+    </style>
+</head>
+<body>
+	<!-- header -->
+	<div data-html="./site/header"></div>
+	<!-- navigation buttons -->
+<div class="container">
+	<div class="alert alert-info" role="alert">
+	  <strong>Last updated May 25, 2020.</strong> Future game updates may not be reflected here.
+	</div>
+	<h1>Equipment</h1>
+</div>
+    <!-- 1st level tabs -->
+<div class="bg-light border border-right-0 border-left-0">
+<div class="container">
+	<ul class="nav nav-tabs rounded-top pt-2 border-bottom-0">
+		<li class="nav-item"><a class="nav-link disabled">Navigation >></a></li>
+		<li class="nav-item border border-dark border-bottom-0 rounded-top">
+		<a href="#equipWeapon" class="nav-link active" data-toggle="tab">Weapons</a>
+		</li>
+		<li class="nav-item border border-dark border-bottom-0 rounded-top">
+		<a href="#equipArmor" class="nav-link" data-toggle="tab">Armor</a>
+		</li>
+		<li class="nav-item border border-dark border-bottom-0 rounded-top">
+		<a href="#equipAccessory" class="nav-link" data-toggle="tab">Accessories</a>
+		</li>
+		</li>
+	</ul>
+</div>
+</div>
+	<!-- 1st level tab-content -->
+<div class="container">
+	<div class="tab-content">
+		<div class="tab-pane fade show active" id="equipWeapon">
+			<table id="table" data-toggle="table" data-search="true" table-layout="auto" class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center">Equipment</th>
+				  <th class="text-center w-25" data-formatter="equipmentNameStat">Stats</th>
+				  <th class="text-center w-25">Passives</th>
+				  <th class="text-center">Obtained from</th>
+			</tr>
+		  </thead>
+		  <tbody>
+		  <tr><td><img src="http://imageshack.com/a/img924/7122/OX2LdX.jpg" /><br /><strong>Star Road, the Heavenly Bow</strong><br />(6* Bow)<br /></td><td>STR: 149<br />MND: 88</td><td>When using Earth or Light skills, Critical rate +10%</td><td>Ark: Heaven's Bow Star-Lord (SSR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/8606/2tEHrq.jpg" /><br /><strong>Magic Rifle Lapsis</strong><br />(6* Machine)<br /></td><td>MP: 20<br />STR: 143</td><td>When using attacks of an attribute an enemy is weak against, damage +10%</td><td>Ark: Skyship Lonvalion (SSR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/5471/3fKtSt.jpg" /><br /><strong>Godly Staff, Apocalypse</strong><br />(6* Staff)<br /></td><td>MP: 25<br />STR: 71<br />INT: 200<br />MND: 120</td><td>Criticals will occur when using healing magic</td><td>Ark: March of the Saints (SSR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/8773/gOgrjh.jpg" /><br /><strong>The Sword of Kusanagi</strong><br />(6* Sword)<br /></td><td>STR: 179</td><td></td><td>Ark: Divine Beast Hunter (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/1307/I6HSdx.jpg" /><br /><strong>Dark Sickle Maurius</strong><br />(6* Axe)<br /></td><td>STR: 199</td><td></td><td>Ark: God of the Dead (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/177.jpg" /><br /><strong>Mana Sword</strong><br />(6* Sword)<br /></td><td>HP: 300<br />STR: 185</td><td>Physical attacks +30% damage against God-type boss monsters</td><td>Ark: Secret of Mana (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/41.jpg" /><br /><strong>Fire Claw, Ligulono Magna</strong><br />(6* Claw)<br /></td><td>STR: 158</td><td>Skill damage +15%</td><td>Ark: Phoenix Blow (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/146.jpg" /><br /><strong>Maja's Wand</strong><br />(6* Staff)<br /></td><td>MP: 40<br />STR: 65<br />INT: 182<br />MND: 167</td><td>Light magic attack damage +30%</td><td>Ark: Great Temple Maja (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/153.jpg" /><br /><strong>Earthly Javelin Refia</strong><br />(6* Spear)<br /></td><td>STR: 155<br />DEF: 54<br />INT: 85</td><td>Earth attack damage +20%</td><td>Ark: The Final Oath (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/199.jpg" /><br /><strong>Phantom Holyblade</strong><br />(6* Sword)<br /></td><td>STR: 130</td><td>100% boost to skill attack power in Phantom Tower battles</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/200.jpg" /><br /><strong>Phantom Spiritbow</strong><br />(6* Bow)<br /></td><td>STR: 110<br />INT: 80</td><td>Raise critical hit power by 50% in Phantom Tower battles</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/126.jpg" /><br /><strong>Kikuichimoji</strong><br />(6* Sword)<br /></td><td>STR: 171</td><td>First hit of regular attack deals +50% damage</td><td>Ark: Foreign Land Megrona (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/210.jpg" /><br /><strong>Heaven's Cry</strong><br />(6* Staff)<br /></td><td>MP: 50<br />STR: 102<br />INT: 216</td><td>Increase Attack magic critical damage by 30%</td><td>Ark: Divine Beast, Loug Mekia (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/9315/YD2iDC.jpg" /><br /><strong>Covert Gun Trishula</strong><br />(6* Machine)<br /></td><td>STR: 156</td><td>If skill damage is originally reduced due to enemy's attribute resistance, ignore attribute resistance (Does not work on attribute Immune enemies)</td><td>Ark: Kaldina the Great (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/183.jpg" /><br /><strong>Lapis Axe Jilven</strong><br />(6* Axe)<br /></td><td>STR: 211</td><td>Greatly increased Counter strength</td><td>Ark: Terror of the Grana Seas (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/1576/lbCaoO.jpg" /><br /><strong>Cursed Sword Crestbane</strong><br />(6* Sword)<br /></td><td></td><td>Increase STR by 25% of MND<br />Current MND will be halved</td><td>Ark: The Sword of Corpses (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/9522/kz5foy.jpg" /><br /><strong>Briskblade Zestina</strong><br />(6* Sword)<br /></td><td>STR: 192<br />DEF: 30<br />MND: 30</td><td>Defeat an enemy and recover SCT</td><td>Ark: Icy Guardian (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/8460/LtoiNP.jpg" /><br /><strong>Kingdom of Science Flag</strong><br />(6* Staff)<br /></td><td>MP: 45<br />INT: 205<br />MND: 142</td><td>The higher the magic power, the more powerful physical attacks will be<br />Science magic damage +50%</td><td>Ark: The Light of Science (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/1849/z5WaIC.jpg" /><br /><strong>Silver-Tipped Spear</strong><br />(6* Spear)<br /></td><td>STR: 185<br />DEF: 67<br />MND: 43<br />PoisonRes: 1<br />StunRes: 1<br />IllnessRes: 1</td><td>Poison, Illness and Stun resistance +1 (Included in stats)</td><td>Ark: The Spring of Sulfuric Acid (SSR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/7770/nL3EMi.jpg" /><br /><strong>Exsperion</strong><br />(5* Bow)<br /></td><td>STR: 61</td><td></td><td>Ark: Beast Hunter (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/663/NKbEf7.jpg" /><br /><strong>Lightning Hammer, Mjolnir</strong><br />(5* Hammer)<br /></td><td>STR: 168<br />DEF: 30</td><td>Additional Thunder damage with Regular attacks. Physical attack critical rate against enemies that are vulnerable to Thunder +5%</td><td>Ark: God of Storms (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/8758/Xi50VC.jpg" /><br /><strong>The Ice Cane of Absul</strong><br />(5* Staff)<br /></td><td>STR: 51<br />INT: 166</td><td>Ice attack magic costs -1 MP</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/105/5z0src.jpg" /><br /><strong>Treasured Sword Eliud</strong><br />(5* Sword)<br /></td><td>STR: 129</td><td>Critical rate +3%<br />Regular attacks have a chance to inflict DEF -25%</td><td>Ark: Treasured Sword Eliud (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/8079/O3vvHc.jpg" /><br /><strong>Golden Sword</strong><br />(5* Sword)<br /></td><td>STR: 92</td><td></td><td>Ark: Miracle of Gorde (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/7428/i06sns.jpg" /><br /><strong>Cursed Blade, Muramasa</strong><br />(5* Sword)<br /></td><td>STR: 133</td><td>Prevents Recovery. Attacks have a chance to decrease your own HP.</td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/7794/Dv882D.jpg" /><br /><strong>Sacred Sword Excalibur</strong><br />(5* Sword)<br /></td><td>STR: 140</td><td>Critical rate against Undead Units +5%</td><td>Ark: Grave of the Blademaster (SR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/178.jpg" /><br /><strong>Cadeceus</strong><br />(5* Staff)<br /></td><td>STR: 43<br />INT: 90</td><td>Dark magic attacks have a chance to deal critical damage<br />Attack dmg +30% during Event quests</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/172.jpg" /><br /><strong>Gigas Glove</strong><br />(5* Claw)<br /></td><td>HP: 100<br />STR: 92</td><td>Str +30 when your hp is full<br />Attack dmg +30% during Event quests</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/170.jpg" /><br /><strong>Daedulus Lance</strong><br />(5* Spear)<br /></td><td>STR: 88<br />DEF: 20</td><td>Slightly increases the chance of enemies fainting<br />Attack dmg +30% during Event quests</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/179.jpg" /><br /><strong>Garuda Buster</strong><br />(5* Bow)<br /></td><td>STR: 85<br />INT: 30</td><td>Critical rate +5% against Birds<br />Attack dmg +30% during Event quests</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/19.jpg" /><br /><strong>Warlord's Halberd</strong><br />(5* Axe)<br /></td><td>STR: 157</td><td>SCT speed +10%</td><td>Ark: Aldana Colosseum (SR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/125.jpg" /><br /><strong>Pokkle Clover</strong><br />(5* Hammer)<br /></td><td>STR: 95<br />MND: 95</td><td>Constantly regenerate HP</td><td>Ark: Hidden Pokkle Plains (SR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/8499/mjm1hc.png" /><br /><strong>Heingull, Axe of Ruin</strong><br />(5* Axe)<br /></td><td>HP: 200<br />STR: 125</td><td>Davan Only: Restore some SCT at the start of the battle.</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/1007/EbrT3T.jpg" /><br /><strong>Scarlet Blade Glazberg</strong><br />(5* Sword)<br /></td><td>STR: 135</td><td>For Advocate of God, Zouglas: Chance to reduce enemy defense with regular attacks</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/262/s02PcN.jpg" /><br /><strong>Deathbringer [Mana]</strong><br />(5* Sword)<br /></td><td>STR: 135</td><td>Randi only: Chance to activate "Absorb 10% damage", "Restore MP 1" or "Restore SCT" with physical attacks</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/8954/3FOTnE.jpg" /><br /><strong>Crimzonian Edge</strong><br />(5* Sword)<br /></td><td>STR: 125</td><td>Zaix only: Physical attacks from behind boost Break value. Damage to fainted enemies or enemies in Break +15%</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/1893/n98ubd.jpg" /><br /><strong>Kohaku's Knives</strong><br />(5* Sword)<br /></td><td>STR: 120<br />DEF: 20</td><td>Kohaku only: When equipping two swords via Dual Wield, power and critical rate of physical attacks +10%</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/650/2v4eQb.jpg" /><br /><strong>Tsukasa's Spear</strong><br />(5* Spear)<br /></td><td>STR: 135</td><td>Tsukasa only: Killer and Slayer type damage enhanced +20%<br />Nullify opponent's evasive effects</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/6337/Fylj7Y.jpg" /><br /><strong>Twin-Bolt Beilun</strong><br />(5* Sword)<br /></td><td>STR: 130</td><td>Thunder Sevia only: For physical attacks, damage is increased by the number of hits. (Up to +50%)</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/527/3CdOtG.jpg" /><br /><strong>Twin-Bolt Dispal</strong><br />(5* Sword)<br /></td><td>MP: 15<br />STR: 100<br />MND: 80</td><td>Thunder Sevia only: HP recovery effect of Skills and Special +50%. Recover some SCT when using healing magic</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/4884/FksLS6.jpg" /><br /><strong>Blaze Axe</strong><br />(4* Axe)<br /></td><td>STR: 82</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/6937/sq9iz0.jpg" /><br /><strong>Arden Fire Axe</strong><br />(4* Axe)<br /></td><td>STR: 118</td><td></td><td>Ark: Aldanian Warriors (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/2186/JPYqHt.jpg" /><br /><strong>Bow of the Sky Dragon</strong><br />(4* Bow)<br /></td><td>STR: 58</td><td>Regular attacks effective against Dragons</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/7991/DWULXi.jpg" /><br /><strong>Dragon Fang</strong><br />(4* Claw)<br /></td><td>STR: 58</td><td>Regular attacks effective against Dragons</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/6849/Xxace4.jpg" /><br /><strong>Flash Cannon, Bar Tess</strong><br />(4* Machine)<br /></td><td>STR: 71</td><td></td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/2323/62iUis.jpg" /><br /><strong>Floe Spear</strong><br />(4* Spear)<br /></td><td>STR: 110</td><td>Critical rate of Ice skills +3%</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/966/1rKFhg.jpg" /><br /><strong>Dragon Lance</strong><br />(4* Spear)<br /></td><td>STR: 69</td><td>Regular attacks effective against Dragons</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/7520/DjS0LA.jpg" /><br /><strong>Sovereign Spear, Ledonius</strong><br />(4* Spear)<br /></td><td>STR: 70</td><td></td><td>Event</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/3931/SBXo4L.jpg" /><br /><strong>Blaze Rod</strong><br />(4* Staff)<br /></td><td>STR: 22<br />INT: 83</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/4619/OBDfzS.jpg" /><br /><strong>Yggdrasil Rod</strong><br />(4* Staff)<br /></td><td>STR: 37<br />INT: 126</td><td>Regular attacks have a chance of recovering +1 MP</td><td>Ark: Fairies Forest (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/4995/ZUeywm.jpg" /><br /><strong>Blaze Blade</strong><br />(4* Sword)<br /></td><td>STR: 74</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/3883/Mat6sG.jpg" /><br /><strong>Star Sword Iometis</strong><br />(4* Sword)<br /></td><td>STR: 101</td><td>Critical rate +5%</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/7850/86upCv.jpg" /><br /><strong>Sword of Ruin, Zeksis</strong><br />(4* Sword)<br /></td><td>STR: 98</td><td>Regular attacks effective against Fish</td><td>Ark: Broken Sword at the Shore (R)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/171.jpg" /><br /><strong>Ninja Star</strong><br />(4* Machine)<br /></td><td>STR: 79</td><td>A probability to blind enemies when a regular attack is performed<br />Attack damage +30% during Event quests</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/147.jpg" /><br /><strong>Miracle Lance</strong><br />(4* Spear)<br /></td><td>STR: 113</td><td>Regular attacks have chance to recover 3% HP</td><td>Subquest</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/138.jpg" /><br /><strong>Sea Dragon Harpoon</strong><br />(4* Spear)<br /></td><td>STR: 78</td><td>Effective against Fish</td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/139.jpg" /><br /><strong>Star Mallet</strong><br />(4* Hammer)<br /></td><td>STR: 88</td><td>Enemies are more likely to faint</td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/140.jpg" /><br /><strong>Battle Crusher</strong><br />(4* Machine)<br /></td><td>STR: 92</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/141.jpg" /><br /><strong>Sea Dragon Talons</strong><br />(4* Claw)<br /></td><td>STR: 85</td><td>Ragular attacks effective against Fish</td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/134.jpg" /><br /><strong>Ocean Wand</strong><br />(4* Staff)<br /></td><td>STR: 20<br />INT: 80</td><td>When using Ice magic, damage +15%</td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/133.jpg" /><br /><strong>Fairy Bow</strong><br />(4* Bow)<br /></td><td>STR: 91</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/128.jpg" /><br /><strong>Mithril Sword</strong><br />(4* Sword)<br /></td><td>STR: 81</td><td>Effective against Machines</td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/129.jpg" /><br /><strong>Mithril Claw</strong><br />(4* Claw)<br /></td><td>STR: 87</td><td>Regular attacks effective against Machines</td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/137.jpg" /><br /><strong>Death Bringer</strong><br />(4* Sword)<br /></td><td>STR: 93</td><td>Have a probability to instantly kill smaller monsters that are a lower level than the Unit (Excludes Arena and Bosses.)</td><td>GranadaMembership</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/159.jpg" /><br /><strong>Dual Blades Gladius</strong><br />(4* Sword)<br /></td><td>STR: 71</td><td>Chance to slightly reduce SCT with regular attacks</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/6067/uzUl6o.jpg" /><br /><strong>Calamitus</strong><br />(4* Sword)<br /></td><td>STR: 82<br />DEF: 25</td><td>When Guard is equipped, +3% Guard rate<br />When automatic Guard activates, -5% damage</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/9499/OTJdkA.jpg" /><br /><strong>Princess Parasol</strong><br />(4* Staff)<br /></td><td>STR: 42<br />INT: 80</td><td>Chance for user's critical attacks to give enemies an Ice debuff</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/3919/FGnirH.jpg" /><br /><strong>Golden Axe</strong><br />(4* Axe)<br /></td><td>STR: 107</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/6693/fFhv0P.jpg" /><br /><strong>Shining Gold Hammer</strong><br />(4* Hammer)<br /></td><td>STR: 116</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/966/nwyMyT.jpg" /><br /><strong>Gold Vulcan</strong><br />(4* Machine)<br /></td><td>STR: 94</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/7981/qc9fEm.jpg" /><br /><strong>Ogre Pike</strong><br />(4* Spear)<br /></td><td>STR: 93</td><td>Enemies are more likely to faint</td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/441/fPHSJt.jpg" /><br /><strong>Divine Staff</strong><br />(4* Staff)<br /></td><td>STR: 38<br />INT: 80<br />MND: 110</td><td>Boost HP recovery when reviving party members</td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/5469/W1s7Ek.jpg" /><br /><strong>Gnome Hammer</strong><br />(4* Hammer)<br /></td><td>STR: 122</td><td>Critical rate +8%<br />Regular attacks inflict extra Earth damage</td><td>Subquest</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/3430/mSIxXh.jpg" /><br /><strong>Rivazard Halberd</strong><br />(4* Spear)<br /></td><td>STR: 90<br />INT: 90</td><td>While equipped, Vazards become Rivazards in battle and have raised abilities</td><td>Ark: Birth of the Rivazard (R)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/6267/Yv2MHo.jpg" /><br /><strong>Fireblade Beivolgg</strong><br />(4* Sword)<br /></td><td>STR: 95</td><td>Attack skill damage +10%<br />SCT speed -15% [When equipped by Vaughn, -15% SCT effect is neutralized]</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/6762/aaRn65.jpg" /><br /><strong>Orbital Blaster</strong><br />(4* Machine)<br /></td><td>STR: 85<br />INT: 22</td><td>A very low probability to make enemies faint with normal attacks. (Excludes bosses)</td><td>Ark: Dimensional Rift (R)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/6926/oSLuJH.jpg" /><br /><strong>Celebratory Blade</strong><br />(4* Sword)<br /></td><td>HP: 66<br />STR: 6</td><td>STR boost equal to Lv (+100 MAX) (e.g. LV100 = 106STR)</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/4626/Vj2kqK.jpg" /><br /><strong>Celebratory Staff</strong><br />(4* Staff)<br /></td><td>MP: 6<br />INT: 6</td><td>INT boost equal to Lv (+100 MAX) (e.g. LV100 = 106 INT)</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/64/NUY1PF.jpg" /><br /><strong>Ishigami Village Katana</strong><br />(4* Sword)<br /></td><td>STR: 95</td><td>Neutral attack damage +7%</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/1372/l5MvGS.jpg" /><br /><strong>Hyoga's Pipe Spear</strong><br />(4* Spear)<br /></td><td>STR: 85</td><td>Physical attacks have a chance to reduce enemy's defenses and deal damage</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/5007/xtQD6Q.jpg" /><br /><strong>Flame Sword, Salamander</strong><br />(4* Sword)<br /></td><td>STR: 94</td><td>Fire skill damage +15%</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/2774/t8G6bE.jpg" /><br /><strong>Grand Axe</strong><br />(3* Axe)<br /></td><td>STR: 44</td><td></td><td>SHop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/7059/pOoEwm.jpg" /><br /><strong>Bow of the Soul</strong><br />(3* Bow)<br /></td><td>STR: 34</td><td>Blind Resistance +1</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/4539/mPgkjI.jpg" /><br /><strong>Ice Bow</strong><br />(3* Bow)<br /></td><td>STR: 29</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/1328/yjnvhF.jpg" /><br /><strong>Ice Claws</strong><br />(3* Claw)<br /></td><td>STR: 36</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/3197/It1oQV.jpg" /><br /><strong>Cactus Hammer</strong><br />(3* Hammer)<br /></td><td>STR: 51</td><td>Regular attacks have a chance of inflicting Stun</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/2374/vrTpa0.jpg" /><br /><strong>Warhammer of Destruction</strong><br />(3* Hammer)<br /></td><td>STR: 54</td><td>Critical Rate +5%</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/1890/7rBuaI.jpg" /><br /><strong>Thunder Drill</strong><br />(3* Machine)<br /></td><td>STR: 42</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/364/UF3lhg.jpg" /><br /><strong>Stinger of the Sand Beast</strong><br />(3* Spear)<br /></td><td>STR: 38</td><td>In Desert: STR +15%</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/3757/vDgHh0.jpg" /><br /><strong>Healing Wand</strong><br />(3* Staff)<br /></td><td>STR: 11<br />INT: 49</td><td>Regular attacks have a chance of recovering HP +3%<br />Effectiveness of healing HP magic +15%</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/8879/UhQoT2.jpg" /><br /><strong>Badaal Sword</strong><br />(3* Sword)<br /></td><td>STR: 41</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/5751/hpXpXO.jpg" /><br /><strong>Ice Dagger</strong><br />(3* Sword)<br /></td><td>STR: 35</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/7726/SlmTXT.jpg" /><br /><strong>Pirate Hatchet</strong><br />(2* Axe)<br /></td><td>STR: 21</td><td>Regular attacks effective against Fish</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/5905/vmPhY2.jpg" /><br /><strong>Imperial Army Bow</strong><br />(2* Bow)<br /></td><td>STR: 17</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/5384/MB3v2u.jpg" /><br /><strong>Claws of Medorone</strong><br />(2* Claw)<br /></td><td>MP: 5<br />STR: 47</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/492/BM8IqH.jpg" /><br /><strong>Imperial Army Spear</strong><br />(2* Spear)<br /></td><td>STR: 24</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/6581/iIBefU.jpg" /><br /><strong>Magician's Wand</strong><br />(2* Staff)<br /></td><td>STR: 6<br />INT: 25</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/5490/0QyG0I.jpg" /><br /><strong>Imperial Army Sword</strong><br />(2* Sword)<br /></td><td>STR: 22</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/2163/c9hn5M.jpg" /><br /><strong>Iron Axe</strong><br />(1* Axe)<br /></td><td>STR: 23</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/6075/IB85Bz.jpg" /><br /><strong>Iron Claw</strong><br />(1* Claw)<br /></td><td>STR: 12</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/6779/InUis2.jpg" /><br /><strong>Bone Club</strong><br />(1* Hammer)<br /></td><td>STR: 17</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/7971/ExdXGB.jpg" /><br /><strong>Traveler's Staff</strong><br />(1* Staff)<br /></td><td>STR: 8<br />INT: 21</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/6994/JY9cnN.jpg" /><br /><strong>Migalian Sword</strong><br />(1* Sword)<br /></td><td>STR: 13</td><td></td><td>Shop</td></tr>
+		  </tbody>
+		 </table>
+		 </div>
+		<div class="tab-pane fade" id="equipArmor">
+			<table id="table" data-toggle="table" data-search="true" table-layout="auto" class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center">Equipment</th>
+				  <th class="text-center w-25" data-formatter="equipmentNameStat">Stats</th>
+				  <th class="text-center w-25">Passives</th>
+				  <th class="text-center">Obtained from</th>
+			</tr>
+		  </thead>
+		  <tbody>
+		  <tr><td><img src="http://imageshack.com/a/img921/6428/Jt1i60.jpg" /><br /><strong>The Divine Law of Caltia Roun</strong><br />(6* Robe)<br />Gender: All</td><td>MP: 30<br />DEF: 84<br />MND: 215<br />LightRes: 10</td><td>Continuous MP regeneration effect (Gradual MP recovery)</td><td>Ark: Vell=De=Org (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/201.jpg" /><br /><strong>Phantom Cuirass</strong><br />(6* Armor)<br />Gender: All</td><td>STR: 30<br />DEF: 120</td><td>Resist most attacks in Phantom Tower battles</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/164.jpg" /><br /><strong>Sea King Armor</strong><br />(6* Armor)<br />Gender: All</td><td>HP: 200<br />DEF: 192<br />MND: 146<br />CurseRes: 1<br />StunRes: -1<br />IllnessRes: 1<br />FireRes: 15<br />IceRes: 10<br />ThunderRes: -10</td><td>Add Fish type to user</td><td>Ark: Abandoned City of the Sea (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/4466/vkQniD.jpg" /><br /><strong>Holy Robe Sol Finne</strong><br />(6* Robe)<br />Gender: All</td><td>MP: 20<br />DEF: 58<br />INT: 106<br />MND: 172<br />StunRes: 1<br />LightRes: 5<br />DarkRes: 5</td><td>Permanent HP/MP regeneration effect. (Slowly restore HP and MP)</td><td>Ark: Bell Tower of Guidance (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/2521/4AwQhy.png" /><br /><strong>Phantom Coat</strong><br />(6* Robe)<br />Gender: All</td><td>DEF: 70<br />INT: 40<br />MND: 135<br />CurseRes: 1</td><td>In Phantom Tower battles, boosts HP recovery, magic power and speed, and restores 10% MP at the battle's end</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/2184/ZqAvWd.jpg" /><br /><strong>Gold Armor</strong><br />(6* Armor)<br />Gender: All</td><td>DEF: 213<br />MND: 164<br />BlindRes: 1</td><td>More likely to be targeted by enemies<br />Physical damage taken -10%</td><td>Ark: Gorde War (SSR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/7683/HZaUkG.jpg" /><br /><strong>Armor of the Cursed</strong><br />(5* Armor)<br />Gender: All</td><td>DEF: 145<br />MND: -50<br />PoisonRes: -1<br />BlindRes: -1<br />SilenceRes: -1<br />CurseRes: -1<br />StunRes: -1<br />IllnessRes: -1</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/4479/uhtHxh.jpg" /><br /><strong>Flaming Armor, Ignis</strong><br />(5* Armor)<br />Gender: All</td><td>DEF: 125<br />FireRes: 10<br />IceRes: -5<br />EarthRes: 15</td><td></td><td>Ark: Flaming Hero (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/2415/FhhxTM.jpg" /><br /><strong>Mirror Armor of Mizel</strong><br />(5* Armor)<br />Gender: All</td><td>DEF: 134<br />MND: 127</td><td>Nullify magic criticals you receive</td><td>Ark: Mirror Armor of Mizel (SR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/180.jpg" /><br /><strong>Ancient Robe</strong><br />(5* Robe)<br />Gender: All</td><td>MP: 10<br />MND: 119<br />LightRes: -10<br />DarkRes: 10</td><td>Dark magic attack dmg taken -15%</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/149.jpg" /><br /><strong>Davan T Shirt</strong><br />(5* Clothes)<br />Gender: Male</td><td>STR: 34<br />DEF: 18</td><td>[Men Only] A probability of avoiding magic attacks<br />Damage when failing to evade +150%</td><td>Chest</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/205.jpg" /><br /><strong>Black Santa Coat</strong><br />(5* Clothes)<br />Gender: Female</td><td>MP: 15<br />DEF: 47<br />INT: 72<br />MND: 60<br />IceRes: 10<br />DarkRes: 10</td><td>When equipped by Saintly Theria, her costume will change during battle<br />Dark magic damage +20%</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/157.jpg" /><br /><strong>Robe of Zeluen</strong><br />(5* Clothes)<br />Gender: All</td><td>MP: 20<br />DEF: 43<br />INT: 80<br />MND: 148<br />SilenceRes: 1<br />LightRes: 10</td><td></td><td>Ark: Ghost of Zeluen (SR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/153/UNPFi9.jpg" /><br /><strong>Senku's Clothes</strong><br />(5* Robe)<br />Gender: All</td><td>DEF: 85<br />INT: 60<br />MND: 85</td><td>Senku only: Fire, Ice, Earth and Thunder attribute magic damage +10%. Science magic damage +10% stack</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/6352/lQrCgo.jpg" /><br /><strong>Gaiest Training Armor</strong><br />(4* Armor)<br />Gender: All</td><td>DEF: 55</td><td>Damage dealt by full-stock attack skills +25%</td><td>Ark: Geist Training Mountain (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/4445/ZEa8Fk.jpg" /><br /><strong>Armor of the Knights of Blue Lights</strong><br />(4* Armor)<br />Gender: All</td><td>DEF: 118<br />MND: 97</td><td></td><td>Ark: Knights of Blue Lights (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/8471/b2JODK.jpg" /><br /><strong>Mirage Armor</strong><br />(4* Armor)<br />Gender: All</td><td>DEF: 112</td><td>Chance to evade physical attacks</td><td>Ark: Sand Tower Mirage (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/9807/MJvVdI.jpg" /><br /><strong>Blessed White Armor</strong><br />(4* Armor)<br />Gender: All</td><td>DEF: 85<br />LightRes: 10</td><td>[Will only activate with Guard] A probability of recovering MP while guarding</td><td>Event</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/2406/4sVBSB.jpg" /><br /><strong>Researcher's Attire</strong><br />(4* Clothes)<br />Gender: All</td><td>DEF: 80<br />SilenceRes: 2<br />IllnessRes: 2<br />FireRes: 5<br />IceRes: 5<br />EarthRes: 5<br />ThunderRes: 5<br />DarkRes: 10</td><td></td><td>Ark: White Laboratory (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/8273/aGrrmY.jpg" /><br /><strong>Lilebette's Bathing Suit</strong><br />(4* Clothes)<br />Gender: </td><td>DEF: 5<br />IceRes: 20<br />ThunderRes: -10</td><td></td><td>Crimson Ore</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/6681/roHRJN.jpg" /><br /><strong>Theria's Bathing Suit</strong><br />(4* Clothes)<br />Gender: </td><td>DEF: 5<br />IceRes: 20<br />ThunderRes: -10</td><td></td><td>Crimson Ore</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/959/GKG6Co.jpg" /><br /><strong>Blaze Suit</strong><br />(4* Clothes)<br />Gender: All</td><td>DEF: 77<br />MND: 32</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/2177/SxAcdE.jpg" /><br /><strong>Beygandian Garb</strong><br />(4* Clothes)<br />Gender: All</td><td>DEF: 108</td><td></td><td>Ark: Gate Beyganda (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/2411/jq9gnK.jpg" /><br /><strong>Magical Robe</strong><br />(4* Robe)<br />Gender: All</td><td>MP: 15<br />DEF: 51<br />INT: 43<br />MND: 75</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/54.jpg" /><br /><strong>Blaze Armor</strong><br />(4* Armor)<br />Gender: All</td><td>DEF: 87</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/152.jpg" /><br /><strong>Ninja Apparel</strong><br />(4* Clothes)<br />Gender: All</td><td>DEF: 78<br />MND: 43<br />PoisonRes: 1<br />BlindRes: 1<br />DarkRes: 10</td><td>Boosts movement speed<br />A probability of avoiding physical attacks</td><td>Ark: Moonlit Murder (R)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/173.jpg" /><br /><strong>Tiger Suit</strong><br />(4* Clothes)<br />Gender: Male</td><td>DEF: 61<br />MND: 42<br />FireRes: -5<br />IceRes: 5</td><td>Slightly reduces the probability of fainting.<br />Add Beast to Unit types</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/174.jpg" /><br /><strong>Tiger Two-Piece</strong><br />(4* Clothes)<br />Gender: Female</td><td>DEF: 59<br />MND: 44<br />FireRes: 5<br />IceRes: -5</td><td>Slightly reduces the probability of fainting.<br />Add Beast to Unit types</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/143.jpg" /><br /><strong>Granada Navy Uniform</strong><br />(4* Clothes)<br />Gender: All</td><td>DEF: 75<br />MND: 42<br />FireRes: -10<br />IceRes: 10</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/144.jpg" /><br /><strong>Aeir Vex</strong><br />(4* Clothes)<br />Gender: All</td><td>DEF: 79<br />MND: 30<br />LightRes: 5</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/135.jpg" /><br /><strong>Coat of Light</strong><br />(4* Robe)<br />Gender: All</td><td>MP: 10<br />DEF: 59<br />MND: 93<br />CurseRes: 2<br />DarkRes: 10</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/130.jpg" /><br /><strong>Mithril Armor</strong><br />(4* Armor)<br />Gender: All</td><td>DEF: 89<br />MND: 25</td><td>Reduce magical damage by 7%</td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/131.jpg" /><br /><strong>Mithril Coat</strong><br />(4* Clothes)<br />Gender: All</td><td>DEF: 80<br />MND: 64</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/148.jpg" /><br /><strong>Dryad's Wear</strong><br />(4* Robe)<br />Gender: All</td><td>INT: 71<br />MND: 125<br />EarthRes: 10</td><td></td><td>Subquest</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/142.jpg" /><br /><strong>Armor of Gaia</strong><br />(4* Armor)<br />Gender: All</td><td>DEF: 103<br />EarthRes: 15</td><td></td><td>GranadaMembership</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/3617/5VWZp4.jpg" /><br /><strong>Suit of Hearts</strong><br />(4* Clothes)<br />Gender: Male</td><td>DEF: 70<br />MND: 30<br />EarthRes: -10<br />ThunderRes: 10</td><td>For Men Only: Increases movement speed and adds Beast type to Unit</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/4492/OCI9LQ.jpg" /><br /><strong>Rose Petal Gown</strong><br />(4* Clothes)<br />Gender: Female</td><td>DEF: 47<br />MND: 60<br />IceRes: 10</td><td>For Women Only: More likely to be targeted by enemies<br />Healing magic costs -1 MP (Can't go under 1MP)</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/160.jpg" /><br /><strong>Melza's Swimsuit</strong><br />(4* Clothes)<br />Gender: Female</td><td>DEF: 5<br />MND: 85<br />CurseRes: 2<br />IceRes: 20<br />ThunderRes: -10</td><td></td><td>Ark: White Knight's Vacation (SR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/323/nVeDzx.jpg" /><br /><strong>Crystal Mail</strong><br />(4* Armor)<br />Gender: </td><td>DEF: 105<br />MND: 35<br />BlindRes: 1<br />SilenceRes: 1<br />LightRes: 10</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/6909/4Cy1rk.jpg" /><br /><strong>Enriched Garb</strong><br />(4* Clothes)<br />Gender: Male</td><td>DEF: 25</td><td>For Men Only: More likely to be targeted by enemies</td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/7439/573lwt.jpg" /><br /><strong>Supreme Dress</strong><br />(4* Clothes)<br />Gender: Female</td><td>MND: 25</td><td>For Women Only: More likely to be targeted by enemies</td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/8697/uHTfFW.jpg" /><br /><strong>Amazoness Armor</strong><br />(4* Armor)<br />Gender: Female</td><td>STR: 12<br />DEF: 85<br />MND: 77</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/655/XdPJLh.jpg" /><br /><strong>Berserker King's Clothes</strong><br />(4* Clothes)<br />Gender: </td><td>STR: 43<br />DEF: 58<br />MND: 23</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/1280/YU71CM.jpg" /><br /><strong>Garment of the Earth</strong><br />(4* Robe)<br />Gender: </td><td>DEF: 68<br />INT: 30<br />MND: 99</td><td>Earth magic damage +15%</td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/2851/hOPZ2r.jpg" /><br /><strong>Celebratory Robe</strong><br />(4* Robe)<br />Gender: All</td><td>DEF: 6<br />MND: 6</td><td>MND boost equal to Lv (+100 MAX) (e.g. LV100 = 106 DEF/MND)</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/6598/b4BdZ1.jpg" /><br /><strong>Lightning Armor Alnard</strong><br />(4* Armor)<br />Gender: All</td><td>HP: 100<br />DEF: 66<br />MND: 40</td><td>Chance to recover some SCT when hit by Thunder attacks</td><td>Event</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/2475/PayzZn.jpg" /><br /><strong>Ancient Armor</strong><br />(3* Armor)<br />Gender: All</td><td>DEF: 48</td><td>Less likely to faint</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/9196/KRCPz1.jpg" /><br /><strong>Roseorden</strong><br />(3* Armor)<br />Gender: All</td><td>DEF: 75<br />MND: 63</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/2576/nrYkmG.jpg" /><br /><strong>Gorgeous Dress</strong><br />(3* Clothes)<br />Gender: Female</td><td>DEF: 38</td><td>For Women Only: More likely to be targeted by enemies</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/9233/jwbnP6.jpg" /><br /><strong>Coat of Thieves</strong><br />(3* Clothes)<br />Gender: All</td><td>DEF: 38</td><td>Less likely to be targeted by enemies</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/2285/4oKXog.jpg" /><br /><strong>Bandit Attire</strong><br />(3* Clothes)<br />Gender: All</td><td>DEF: 42</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/1712/4ib5lN.jpg" /><br /><strong>Lanzelian Coat</strong><br />(3* Clothes)<br />Gender: All</td><td>DEF: 48<br />MND: 16<br />IceRes: 10</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/810/wC3M7h.jpg" /><br /><strong>Coat of the Sage</strong><br />(3* Robe)<br />Gender: All</td><td>DEF: 24<br />INT: 22<br />MND: 53</td><td>Magic damage taken -10%</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/179/a0jlhf.jpg" /><br /><strong>Ocean Wind Garb</strong><br />(3* Robe)<br />Gender: All</td><td>DEF: 34<br />MND: 53<br />IceRes: 5</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/6310/rdFKcE.jpg" /><br /><strong>Imperial Army Armor</strong><br />(2* Armor)<br />Gender: All</td><td>DEF: 27</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/1824/Cns6G8.jpg" /><br /><strong>Sorcerer's Garments</strong><br />(2* Robe)<br />Gender: All</td><td>MP: 10<br />DEF: 15<br />INT: 12<br />MND: 26</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/4615/Toj7dj.jpg" /><br /><strong>Iron Armor</strong><br />(1* Armor)<br />Gender: All</td><td>DEF: 19</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/5772/psAKqL.jpg" /><br /><strong>Migalian Tunic</strong><br />(1* Clothes)<br />Gender: All</td><td>DEF: 14<br />MND: 6</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/3306/PjLc78.jpg" /><br /><strong>Traveler's Robe</strong><br />(1* Robes)<br />Gender: All</td><td>DEF: 6<br />MND: 22</td><td></td><td>Shop</td></tr>
+			</tbody>
+		  </table>
+		  </div>
+		<div class="tab-pane fade" id="equipAccessory">
+			<table id="table" data-toggle="table" data-search="true" table-layout="auto" class="table table-hover">
+			<thead class="thead-light">
+				<tr>
+				  <th class="text-center">Equipment</th>
+				  <th class="text-center w-25" data-formatter="equipmentNameStat">Stats</th>
+				  <th class="text-center w-25">Passives</th>
+				  <th class="text-center">Obtained from</th>
+			</tr>
+		  </thead>
+		  <tbody>
+		  <tr><td><img src="http://imageshack.com/a/img923/2126/H5p8gN.jpg" /><br /><strong>Crown of the Sun</strong><br />(6* Accessory)<br />Gender: All</td><td>HP: 300<br />MP: 40<br />DEF: 40<br />INT: 40<br />MND: 40</td><td></td><td>Ark: Sandwyrm (SSR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/9030/gI1FV5.jpg" /><br /><strong>Reynicle, Dragon's Treasure</strong><br />(6* Accessory)<br />Gender: All</td><td>HP: 200<br />STR: 45<br />INT: 30<br />FireRes: 10<br />IceRes: 5</td><td></td><td>Ark: Dragon Treasure Raynicle (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/124.jpg" /><br /><strong>Wings of the Archangel</strong><br />(6* Accessory)<br />Gender: All</td><td>MND: 50<br />DarkRes: 10</td><td>SCT speed +10%<br />After defeating a wave, recover some SCT</td><td>Ark: Archangel Smile (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/176.jpg" /><br /><strong>Mana Pendant</strong><br />(6* Accessory)<br />Gender: All</td><td>HP: 250<br />DEF: 50<br />MND: 50<br />FireRes: 5<br />IceRes: 5<br />EarthRes: 5<br />ThunderRes: 5<br />LightRes: 5<br />DarkRes: 5</td><td>Automatically deploys Speed, Protection, Magic Barrier and Regenerate one time when you are close to death</td><td>Ark: FINAL FANTASY Adventure (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/117.jpg" /><br /><strong>Shield of Aigis</strong><br />(6* Accessory)<br />Gender: All</td><td>DEF: 55<br />MND: 55</td><td>When Automatic Guard activates, damage taken -25%</td><td>Ark: Golem Core (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/181.jpg" /><br /><strong>Faerie Crown</strong><br />(6* Accessory)<br />Gender: All</td><td>MND: 15<br />IceRes: 5<br />ThunderRes: 5<br />DarkRes: 5</td><td>MND +10% when HP is 50% or below<br />Attack damage +50% during Event quests</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/116.jpg" /><br /><strong>Bangle of a Master Thief</strong><br />(6* Accessory)<br />Gender: All</td><td>STR: 20<br />DEF: 20</td><td>Chance to obtain an item upon defeating an enemy</td><td>Ark: Pirate Ship Legnis (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/206.jpg" /><br /><strong>Wreath of Wishes</strong><br />(6* Accessory)<br />Gender: All</td><td>MP: 20<br />INT: 24<br />MND: 24<br />BlindRes: 1<br />SilenceRes: 1<br />CurseRes: 1<br />DarkRes: 5</td><td>Near Death: Recover HP greatly. Effect can only be triggered once</td><td>Ark: Wishes on a Holy Night (SSR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/202.jpg" /><br /><strong>Phantom Crest</strong><br />(6* Accessory)<br />Gender: All</td><td>FireRes: 5<br />IceRes: 5<br />EarthRes: 5<br />ThunderRes: 5<br />LightRes: 5<br />DarkRes: 5</td><td>Special Gauge fills 30% faster in Phantom Tower battles</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/7236/1KtVfJ.jpg" /><br /><strong>Abyssal Silver</strong><br />(6* Accessory)<br />Gender: All</td><td>MP: 20<br />INT: 72<br />CurseRes: 1</td><td>Use MP to make magic attacks Dark element if an enemy's resistance to Dark is lower than resistance to the original attribute</td><td>Ark: Militia of the Departed (SSR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/5194/2dEDs4.jpg" /><br /><strong>Alt Defenser</strong><br />(6* Accessory)<br />Gender: All</td><td>DEF: 70<br />MND: 70</td><td>Activates automatic guard<br />On boss waves, DEF +10%</td><td>Ark: Ancient Weapon Lougahn (SSR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/7395/124DIn.jpg" /><br /><strong>Hunting Bandana</strong><br />(5* Accessory)<br />Gender: All</td><td>STR: 32<br />INT: 27</td><td>Damage dealt to enemies that have Fainted or are in break +10%</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/1792/Nzkftc.jpg" /><br /><strong>Purple Eye</strong><br />(5* Accessory)<br />Gender: All</td><td>MP: 10<br />INT: 15</td><td>When HP is 30% or less, INT and MND +20%</td><td>Ark: Secret Room of the Hermit (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/4039/94o7Wc.jpg" /><br /><strong>Norlean Flag</strong><br />(5* Accessory)<br />Gender: All</td><td>DEF: 31<br />MND: 31<br />StunRes: 1</td><td>Damage dealt to enemies that have Fainted or are in break +25%</td><td>Ark: Holy Flag of Norlean (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/8519/Hbpsrg.jpg" /><br /><strong>Cultist's Pendant</strong><br />(5* Accessory)<br />Gender: All</td><td>INT: 42<br />MND: -27</td><td>When using Dark magic, Damage +15%<br />Attack magic casting speed +30%</td><td>Ark: Shrine of Heresy (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/8782/l0z3S8.jpg" /><br /><strong>Hidden Treasure, Makyuodyne</strong><br />(5* Accessory)<br />Gender: All</td><td>STR: 35<br />DEF: 35<br />INT: 35<br />MND: 35</td><td></td><td>Ark: Hidden Treasure, Makyuodyne (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/4518/VE4mL6.jpg" /><br /><strong>Speed Shoes</strong><br />(5* Accessory)<br />Gender: All</td><td>DEF: 34<br />INT: 35<br />StunRes: 1</td><td>Boosts movement speed</td><td>Ark: Eternal Clock De=Rowe (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/7892/IvB4DA.jpg" /><br /><strong>The Hairpiece of Greatness</strong><br />(5* Accessory)<br />Gender: Female</td><td>MND: 30</td><td>Continuous regeneration effect (Gradual HP recovery)</td><td>Ark: Maiden's Prayer (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/9295/YuHqdY.jpg" /><br /><strong>Blessed Ale of Rigul</strong><br />(5* Accessory)<br />Gender: All</td><td>MP: 30<br />STR: 35<br />DarkRes: 10</td><td>Upon winning a battle, restores HP and MP +10%</td><td>Ark: Cavern Ale (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/9606/qtb6Zt.jpg" /><br /><strong>Magic Mirror Pomram</strong><br />(5* Accessory)<br />Gender: All</td><td>INT: 28<br />MND: 28</td><td>Duration of buffs activated by you +15%</td><td>Ark: Magic Mirror Pomram (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/5761/vWHWU3.jpg" /><br /><strong>The Spoon of the God of Feasts</strong><br />(5* Accessory)<br />Gender: All</td><td></td><td>Restore MP when crushing an inedible enemy</td><td>Ark: Grand Bargain (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/9782/yONh6C.jpg" /><br /><strong>Blood Ring</strong><br />(5* Accessory)<br />Gender: All</td><td>STR: 30<br />INT: 35</td><td>Regular attacks have a chance to absorb HP</td><td>Ark: Bloody Moon (SR)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/653/QXqlF9.jpg" /><br /><strong>Magic Tome, Veladoma</strong><br />(5* Accessory)<br />Gender: All</td><td>INT: 35<br />MND: -15<br />IllnessRes: 1</td><td>Criticals occur when using fire magic</td><td>Ark: Altar of the Forbidden Book (SR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/175.jpg" /><br /><strong>Mana Stone</strong><br />(5* Accessory)<br />Gender: All</td><td>MP: 20<br />INT: 30<br />MND: 30</td><td>Magic damage taken -10%</td><td>Ark: Trials of Mana (SR)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/182.jpg" /><br /><strong>Elemental Bracelet</strong><br />(5* Accessory)<br />Gender: All</td><td>DEF: 15<br />CurseRes: 1<br />IllnessRes: 1<br />FireRes: 5<br />EarthRes: 5<br />LightRes: 5</td><td>DEF +5% when HP is 50% or below<br />Attack damage +20% during Event quests</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/145.jpg" /><br /><strong>Howling Helm</strong><br />(5* Accessory)<br />Gender: All</td><td>MND: 66</td><td>Become easily targeted by the enemy<br />DEF -100%</td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/169.jpg" /><br /><strong>Pink Diamond</strong><br />(5* Accessory)<br />Gender: All</td><td>IllnessRes: 1</td><td>STR/DEF/INT/MND +5% (Applied pre-combat.)</td><td>Subquest</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/5594/m9ME3f.jpg" /><br /><strong>Black Temperance</strong><br />(5* Accessory)<br />Gender: All</td><td>MP: 20<br />INT: 35<br />SilenceRes: 1<br />LightRes: 5</td><td>Lily only: Dark Critical attacks lower enemies' Dark resistance and deal damage</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/4595/n3V4tE.jpg" /><br /><strong>White Temperance</strong><br />(5* Accessory)<br />Gender: All</td><td>MP: 20<br />INT: 35<br />StunRes: 1<br />DarkRes: 5</td><td>Lily only: Light Critical attacks lower enemies' Light resistance and deal damage</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/7825/20CApm.jpg" /><br /><strong>Stone Statue of a Bird</strong><br />(5* Accessory)<br />Gender: All</td><td>STR: 25<br />DEF: 40<br />ThunderRes: 10</td><td>Unable to faint from enemy attacks</td><td>Ark: Stone World (SR)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/9306/W5OEjL.jpg" /><br /><strong>Dilga Phantom</strong><br />(5* Accessory)<br />Gender: All</td><td>STR: 35<br />MND: 35</td><td>Zaix only: When the evasion effect is activated, STR +35% and boost movement speed for a certain amount of time</td><td>Paid gem certificate exchange</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/1195/DVBY17.jpg" /><br /><strong>Sky Dragon Earrings</strong><br />(4* Accessory)<br />Gender: All</td><td>INT: 10</td><td>Critical rate against Dragon Units +5%</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/7648/B36qUb.jpg" /><br /><strong>Sorcerer's Ring</strong><br />(4* Accessory)<br />Gender: All</td><td>INT: 30</td><td></td><td>Ark: Sorcerer's Eden (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/804/ZxZvaw.jpg" /><br /><strong>Ring of Life</strong><br />(4* Accessory)<br />Gender: All</td><td>EarthRes: 5</td><td>Continuous regeneration effect (Gradual HP recovery)</td><td>Ark: Giant Tree (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/5739/Z0EsxS.jpg" /><br /><strong>Cursed Ring</strong><br />(4* Accessory)<br />Gender: All</td><td>STR: 20<br />DEF: 20<br />INT: 20<br />MND: 20<br />PoisonRes: 1<br />BlindRes: 1<br />SilenceRes: -1<br />CurseRes: -1<br />StunRes: 1<br />IllnessRes: 1</td><td>When inflicted with curse or silence, incapacitates Unit</td><td>Ark: House of the Witch (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/8715/IaDWK5.jpg" /><br /><strong>The Flower of Falnia</strong><br />(4* Accessory)<br />Gender: All</td><td>MP: 20</td><td>Status effect recovery speed +25%</td><td>Ark: Flower of Falnia (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/5962/xgtviA.jpg" /><br /><strong>The Secret Hot Spring</strong><br />(4* Accessory)<br />Gender: All</td><td>HP: 100</td><td>The Status effect are healed, recover +3% HP</td><td>Ark: Beast Falls (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/4548/JHy3XU.jpg" /><br /><strong>Radmoon Stone</strong><br />(4* Accessory)<br />Gender: All</td><td>MP: 30<br />FireRes: 5<br />IceRes: 5<br />ThunderRes: 5<br />DarkRes: -20</td><td>Magic casting speed +20%</td><td>Ark: Radmoon Ruins (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/1864/V4sxTV.jpg" /><br /><strong>Secret Stone of the God of Wars</strong><br />(4* Accessory)<br />Gender: All</td><td>INT: 25<br />ThunderRes: 5</td><td>Damage dealt to Stunned enemies +25%</td><td>Ark: Crystal Castle (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/7286/VGsGap.jpg" /><br /><strong>Lightning Stone, Zel Logion</strong><br />(4* Accessory)<br />Gender: All</td><td>INT: 27<br />ThunderRes: 10</td><td>Thunder magic damage +15%</td><td>Ark: Thunderstone Luster (R)</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/3025/jKzmdS.jpg" /><br /><strong>Rainbow Talisman</strong><br />(4* Accessory)<br />Gender: All</td><td>MND: 25</td><td>All magic costs -1 MP</td><td>Chest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/8414/yoz7V5.jpg" /><br /><strong>Silver Bangles</strong><br />(4* Accessory)<br />Gender: All</td><td>DEF: 15<br />StunRes: 1</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/53/MqOE9m.jpg" /><br /><strong>Holy Water</strong><br />(4* Accessory)<br />Gender: All</td><td>MND: 20<br />CurseRes: 2</td><td>Curse Resistance +2</td><td>Chest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/7753/Ih84Zh.jpg" /><br /><strong>Guard Bell</strong><br />(4* Accessory)<br />Gender: All</td><td>DEF: 15</td><td>When equipped with automatic guard equipment, guard rate +5%</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/6063/gqTG5Q.jpg" /><br /><strong>Jelly Queen Ring</strong><br />(4* Accessory)<br />Gender: All</td><td>StunRes: 1<br />ThunderRes: 5</td><td></td><td>Event</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/672/i1mrqH.jpg" /><br /><strong>Armored Holy Shield</strong><br />(4* Accessory)<br />Gender: All</td><td>DEF: 25<br />MND: 18</td><td>Become easily targeted by the enemy</td><td>Event</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/4606/SJ5Fk7.jpg" /><br /><strong>Sylph's Cloak</strong><br />(4* Accessory)<br />Gender: All</td><td>DEF: 21</td><td>Reduces damage taken by Critical hits by 15%</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/4219/hERDMJ.jpg" /><br /><strong>Aqua Crown, Undyne</strong><br />(4* Accessory)<br />Gender: All</td><td>MND: 27<br />IceRes: 5</td><td>Reduces damage taken by Magic in water by 10%</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/6694/MwPLyh.jpg" /><br /><strong>Dragon Cloud</strong><br />(4* Accessory)<br />Gender: All</td><td>DEF: 22<br />MND: 22</td><td>Damage taken from Dragon Units -10%</td><td>Ark: Thundercloud Zellania (R)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/150.jpg" /><br /><strong>Lamp of Justice</strong><br />(4* Accessory)<br />Gender: All</td><td>MND: 15<br />BlindRes: 1<br />CurseRes: 1</td><td></td><td>Chest</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/151.jpg" /><br /><strong>Ice Ring</strong><br />(4* Accessory)<br />Gender: All</td><td>IceRes: 20</td><td>When recieving Ice magic, a chance to recover 20% of dmg</td><td>Subquest</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/136.jpg" /><br /><strong>Thunder Ring</strong><br />(4* Accessory)<br />Gender: All</td><td>ThunderRes: 20</td><td>When receiving Thunder magic, a chance to recover 20% of the dmg </td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/132.jpg" /><br /><strong>Mithril Bracelet</strong><br />(4* Accessory)<br />Gender: All</td><td>STR: 10<br />DEF: 19</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/155.jpg" /><br /><strong>Ladour Pendant</strong><br />(4* Accessory)<br />Gender: All</td><td>INT: 12<br />MND: 25</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/158.jpg" /><br /><strong>Gold Crown</strong><br />(4* Accessory)<br />Gender: All</td><td>HP: 400</td><td>Chance to counter physical attacks</td><td>Event</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/166.jpg" /><br /><strong>Manmade Ether</strong><br />(4* Accessory)<br />Gender: All</td><td>MP: 30<br />DarkRes: 10</td><td>Increase the damage of Soul Spark</td><td>Ark: Manmade Ether (R)</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/163.jpg" /><br /><strong>Pokkle Keychain</strong><br />(4* Accessory)<br />Gender: All</td><td>HP: 300<br />EarthRes: 10<br />ThunderRes: 10</td><td></td><td>Ark: Pokkle Eater (R)</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/748/2VdaTf.jpg" /><br /><strong>Lovely Headband</strong><br />(4* Accessory)<br />Gender: All</td><td>DEF: 10<br />MND: 10</td><td>While fighting in mountains, STR +10%</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/148/m7al4W.jpg" /><br /><strong>Whale Float</strong><br />(4* Accessory)<br />Gender: All</td><td>FireRes: 5</td><td>Reduce damage from Fire magic</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/5425/jGs4DL.jpg" /><br /><strong>Gold Bangles</strong><br />(4* Accessory)<br />Gender: All</td><td>STR: 10<br />DEF: 10<br />INT: 10<br />MND: 10<br />LightRes: 5</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/4831/B21tyE.jpg" /><br /><strong>Ogre Shield</strong><br />(4* Accessory)<br />Gender: </td><td>DEF: 29</td><td>Activates automatic Guard<br />Resist faint</td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/5055/EfXxVy.jpg" /><br /><strong>Flame Ring</strong><br />(4* Accessory)<br />Gender: </td><td>FireRes: 20</td><td>Chance to recover 20% of damage received from Fire magic</td><td>Shop</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img921/4950/gr1Wj3.jpg" /><br /><strong>Holy Grail of the Wisps</strong><br />(4* Accessory)<br />Gender: All</td><td>INT: 22</td><td>When using Light magic, +15% damage</td><td>Subquest</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/8652/HQayn0.jpg" /><br /><strong>Ruby Talisman</strong><br />(4* Accessory)<br />Gender: All</td><td>STR: 12<br />DEF: 12<br />EarthRes: 5</td><td>Physical damage taken -5%<br />Magical damage taken +5%</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img924/3574/Z6VnYf.png" /><br /><strong>Egg Cap</strong><br />(4* Accessory)<br />Gender: All</td><td>HP: 100<br />DEF: 10<br />MND: 7<br />LightRes: 5</td><td>Battle end: recovers HP +10%</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/1775/B4aKOH.jpg" /><br /><strong>Celebratory Ring</strong><br />(4* Accessory)<br />Gender: All</td><td></td><td>Special guage refill speed +6%. Under LV 40: Special gauge refill speed +6% (Total 12%)</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img922/2802/fgGh1C.jpg" /><br /><strong>Celebratory Medal</strong><br />(4* Accessory)<br />Gender: All</td><td></td><td>Chance to survive fatal magic attacks with 1 HP once only until the magic's effect ends</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/541/9G0yl9.jpg" /><br /><strong>Suika's Helmet</strong><br />(4* Accessory)<br />Gender: All</td><td>HP: 100<br />DEF: 20<br />BlindRes: 1</td><td>Critical power +10%</td><td>Event</td></tr>
+<tr><td><img src="https://imagizer.imageshack.com/img923/6938/XZHsFy.jpg" /><br /><strong>Kohaku's Shield</strong><br />(4* Accessory)<br />Gender: All</td><td>DEF: 30<br />MND: 10</td><td>Activates automatic guard<br />Guard break is less likely to occur</td><td>Event</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/9572/To7QeT.jpg" /><br /><strong>Golden Earrings</strong><br />(3* Accessory)<br />Gender: Female</td><td>INT: 10</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/2844/37yVSz.jpg" /><br /><strong>Ice Rose Corsage</strong><br />(3* Accessory)<br />Gender: Female</td><td>INT: 10<br />SilenceRes: 1</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/2607/XNomea.jpg" /><br /><strong>Deadly Choker</strong><br />(3* Accessory)<br />Gender: All</td><td></td><td>Critical Rate +3%</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img921/7591/NKh02h.jpg" /><br /><strong>Drift Stone</strong><br />(3* Accessory)<br />Gender: All</td><td>STR: 10</td><td>Damage dealth to airborne enemies +15%</td><td>Chest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/3122/WpaWpN.jpg" /><br /><strong>Power Wrist</strong><br />(3* Accessory)<br />Gender: All</td><td>STR: 15</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/9248/PVADDW.jpg" /><br /><strong>Ice Shield</strong><br />(3* Accessory)<br />Gender: All</td><td>DEF: 8<br />MND: 8<br />FireRes: 5</td><td>Activates automatic Guard</td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/3619/TwpjvQ.jpg" /><br /><strong>Manacle of a Giant</strong><br />(3* Accessory)<br />Gender: All</td><td>STR: 11<br />DEF: 5<br />IllnessRes: 1</td><td></td><td>Shop</td></tr>
+<tr><td><img src="https://img.altema.jp/lastcloudia/soubi/icon/154.jpg" /><br /><strong>Purple Pork T-Bone Steak</strong><br />(3* Accessory)<br />Gender: All</td><td>HP: 50</td><td>A probability to Faint while attacking Beasts</td><td>Subquest</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/6003/L5b2a5.jpg" /><br /><strong>Iron Bangle</strong><br />(2* Accessory)<br />Gender: All</td><td>DEF: 5</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img923/5089/ZZUcko.jpg" /><br /><strong>Royal Bracelet</strong><br />(2* Accessory)<br />Gender: All</td><td>STR: 5</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img924/834/SD2Rml.jpg" /><br /><strong>Night Vision Goggles</strong><br />(2* Accessory)<br />Gender: All</td><td>BlindRes: 1</td><td></td><td>Shop</td></tr>
+<tr><td><img src="http://imageshack.com/a/img922/230/psPpi5.jpg" /><br /><strong>Imperial Army Shield</strong><br />(2* Accessory)<br />Gender: All</td><td>DEF: 10</td><td>Activates automatic Guard</td><td>Shop</td></tr>
+		  </tbody>
+		  </table>
+		  </div>
+	</div>
+</div>
+	<!-- footer -->
+	<div data-html="./site/footer"></div>
+	<!-- back to top -->
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return to the top" data-toggle="tooltip" data-placement="left">▲</a>
+    <!-- javascript -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap-table.js"></script>
+	<script type="text/javascript" src="./js/dropdown.js"></script>
+	<script type="text/javascript" src="./js/collapse.js"></script>
+	<script type="text/javascript" src="./js/util.js"></script>
+	<script type="text/javascript" src="./js/html-load.js"></script>
+	<script>
+  function equipmentNameStat(value) {
+    return '<strong>' +
+      value.substring() +
+      '</strong>'
+  }
+	// plugging
+	$(document).ready(function(){
+	 $(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		$('#back-to-top').click(function () {
+			$('#back-to-top').tooltip('hide');
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+		$('#back-to-top').tooltip('show');
+	});
+	</script>
+</body>
+</html>
