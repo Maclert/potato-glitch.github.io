@@ -25,17 +25,8 @@
 		<div class="col-md-8">
 			<h2>New updates</h2>
 			<div class="p-3 bg-light border">
-				<div class="alert alert-danger" role="alert">
-					<strong>The <a href="https://potato-glitch.github.io/loottable">loot table guide</a> will be updated after the story update.</strong><br />Stage names need to be confirmed in-game before the loot table can be updated. We apologise in advance for the inconvenience.
-				</div>
 				<div class="alert alert-success" role="alert">
-					<strong>The website has been updated with both Tsukasa and Thunder Sevia updates!</strong><br />All guides on the website have been updated with new information. Please check them out!
-				</div>
-				<div class="alert alert-success" role="alert">
-					<strong>The <a href="https://potato-glitch.github.io/arkether">Ark ether guide</a> has been restructured.</strong> The glossary is now part of the beginner's guide, and the farming guide has been merged for a single page guide.
-				</div>
-				<div class="alert alert-success" role="alert">
-					<strong>The <a href="https://potato-glitch.github.io/equipment">equipment</a> and <a href="https://potato-glitch.github.io/arks">ark</a> datasets from the unit builder have been imported.</strong> These pages will be updated on a monthly schedule.
+					<strong>The <a href="https://potato-glitch.github.io/loottable">loot table guide</a> has ben updated with the new story content!</strong><br />The <a href="https://docs.google.com/spreadsheets/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">accompanying spreadsheet</a> has also been updated.
 				</div>
 				<div class="alert alert-warning" role="alert">
 					<strong>Always check the rate-up on a banner before pulling.</strong> Thunder Sevia's rate up is only 1% compared to 1.5% in past permanent unit banners.<br />
@@ -505,7 +496,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-05-25 14:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-05-29 00:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
