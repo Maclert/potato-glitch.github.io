@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A collated drop guide for Last Cloudia, a mobile smartphone RPG by AIDIS.">
     <title>Drop table | PotatoSack</title>
-    <!-- 
-    	bootstrap for basic css
-    	bootstrap-table for table styling and search functions
-    -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-table.css">
     <link rel="stylesheet" href="./css/bootstrap-table-sticky-header.min.css">
-    <link rel="stylesheet" href="./css/sticky-footer.css">
+	<link rel="stylesheet" href="./css/sticky-footer.css">
+    <style>
+    	.back-to-top { cursor: pointer; position: fixed; bottom: 20px; right: 20px; display:none; }
+    </style>
 </head>
 <body>
 	<!-- header -->
@@ -20,71 +19,122 @@
 	<!-- navigation buttons -->
 <div class="container">
 	<div class="alert alert-info" role="alert">
-	  <strong>Last updated May 25, 2020.</strong><br />
+	  <strong>Last updated May 29, 2020.</strong><br />
+	  Updated formatting for the page to match the rest of the website.<br />
+	  Added the May story update tables.<br />
 	  Future game updates may not be reflected here.
 	</div>
-    <!-- top content -->
-		<p><h1>Drops by difficulty and type</h1></p>
-		<p>This page contain the top 5 locations of each farmable material, sorted by difficulty and type.</p>
-		<ul>
-			<li><p><strong>For extended use:</strong> The <a href="https://docs.google.com/spreadsheets/u/1/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">loot table spreadsheet</a> has custom search functions (Query) and the translated dataset. <br />Make a copy while signed into your Google account to get started.</p></li>
-			<li><strong>List of data sources</strong>
-				<ul>
-					<li><a href="https://docs.google.com/spreadsheets/d/1kTrokbSyxHwolQ-m6Bp4L9_wgHIrfCOeYzBlBcGWncY/edit">JP loot table datamine</a> – Warning: 40000+ row tables.</li>
-					<li><a href="https://docs.google.com/spreadsheets/d/1MxMkjta23A059SNgBUi9CVpPcv15gk_WlCtsijGGu_g/edit">Toshy's translated Unit story stages</a></li>
-				</ul>
-			</li>
-		</ul>
-		<div class="alert alert-warning" role="alert">
-		  All drop rates shown here are <strong>quantitative per stage</strong> unless specified (i.e. Unit story stages).
+	<!-- top content -->
+	<div class="row">
+		<div class="col-md-8">
+			<h1>Drops by difficulty and type</h1>
+			<p>This page contain the top 5 locations of each farmable material, sorted by difficulty and type.</p>
+			<h4 class="mark">Important note</h4>
+	<p>All drop rates shown here are <strong>quantitative per stage</strong> unless specified (i.e. Unit story stages).</p>
+	<p><strong>Just because a stage has high drop rates does not mean that it's efficient.</strong> Everyone has different party setups, so don't be afraid to experiment.</p>
 		</div>
-		<div class="alert alert-warning" role="alert">
-		  <strong>Just because a stage has high drop rates does not mean that it's efficient.</strong> Everyone has different party setups, so don't be afraid to experiment.
+		<div class="col-md-4">
+			<h2>External links</h4>
+			<ul>
+				<li><p><strong>For extended use:</strong> The <a href="https://docs.google.com/spreadsheets/u/1/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">loot table spreadsheet</a> has custom search functions (Query) and the translated dataset. <br />Make a copy while signed into your Google account to get started.</p></li>
+				<li><strong>List of data sources</strong>
+					<ul>
+						<li><a href="https://docs.google.com/spreadsheets/d/1kTrokbSyxHwolQ-m6Bp4L9_wgHIrfCOeYzBlBcGWncY/edit">JP loot table datamine</a> – Warning: 40000+ row tables.</li>
+						<li><a href="https://docs.google.com/spreadsheets/d/1MxMkjta23A059SNgBUi9CVpPcv15gk_WlCtsijGGu_g/edit">Toshy's translated Unit story stages</a></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
+	</div>
 </div>
     <!-- tabs -->
-	<ul class="nav nav-tabs bg-light border pt-2">
-		<li class="nav-item"><a class="nav-link disabled">Navigation >></a></li>
-    <li class="nav-item border">
-        <a href="#storyNormalDrops" class="nav-link active" data-toggle="tab">Normal story stages</a>
-    </li>
-    <li class="nav-item border">
-        <a href="#storyHardDrops" class="nav-link" data-toggle="tab">Hard story stages</a>
-    </li>
-    <li class="nav-item border">
-        <a href="#eventDrops" class="nav-link" data-toggle="tab">Daily events</a>
-    </li>
-    <li class="nav-item border">
-        <a href="#unitStoryDrops" class="nav-link" data-toggle="tab">Unit story stages</a>
-    </li>
-    <li class="nav-item border">
-        <a href="#jan2020StoryNormalDrops" class="nav-link" data-toggle="tab">(Jan-2020) Normal story stages</a>
-    </li>
-    <li class="nav-item border">
-        <a href="#jan2020StoryHardDrops" class="nav-link" data-toggle="tab">(Jan-2020) Hard story stages</a>
-    </li>
-    <li class="nav-item border">
-        <a href="#oct2019StoryNormalDrops" class="nav-link" data-toggle="tab">(Oct-2019) Normal story stages</a>
-    </li>
-    <li class="nav-item border">
-        <a href="#oct2019StoryHardDrops" class="nav-link" data-toggle="tab">(Oct-2019) Hard story stages</a>
-    </li>
-</ul>
-    <!-- tab content -->
+<div class="bg-light border border-right-0 border-left-0">
 	<div class="container">
-<div class="tab-content">
-    <div class="tab-pane fade show active" id="storyNormalDrops">
-    <div class="alert alert-info alert-dismissable">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>New story maps!</strong> Added Moriana Plains, Kaldina Ruins and Gorde Mines.
+		<ul class="nav nav-tabs rounded-top pt-2 border-bottom-0">
+			<li class="nav-item"><a class="nav-link disabled">Navigation >></a></li>
+			<li class="nav-item border border-success border-bottom-0 rounded-top">
+				<a href="#may2020storyNormalDrops" class="nav-link active" data-toggle="tab">(May-2020) Normal story</a>
+			</li>
+			<li class="nav-item border border-success border-bottom-0 rounded-top">
+				<a href="#may2020storyHardDrops" class="nav-link" data-toggle="tab">(May-2020) Hard story</a>
+			</li>
+			<li class="nav-item border border-success border-bottom-0 rounded-top">
+				<a href="#eventDrops" class="nav-link" data-toggle="tab">Daily events</a>
+			</li>
+			<li class="nav-item border border-danger border-bottom-0 rounded-top">
+				<a href="#unitStoryDrops" class="nav-link" data-toggle="tab">Unit story</a>
+			</li>
+			<li class="nav-item border border-dark border-bottom-0 rounded-top">
+        		<a href="#mar2020storyNormalDrops" class="nav-link" data-toggle="tab">(Mar-2020) Normal</a>
+    		</li>
+			<li class="nav-item border border-dark border-bottom-0 rounded-top">
+        		<a href="#mar2020storyHardDrops" class="nav-link" data-toggle="tab">(Mar-2020) Hard</a>
+    		</li>
+			<li class="nav-item border border-dark border-bottom-0 rounded-top">
+				<a href="#jan2020StoryNormalDrops" class="nav-link" data-toggle="tab">(Jan-2020) Normal</a>
+			</li>
+			<li class="nav-item border border-dark border-bottom-0 rounded-top">
+				<a href="#jan2020StoryHardDrops" class="nav-link" data-toggle="tab">(Jan-2020) Hard</a>
+			</li>
+			<li class="nav-item border border-dark border-bottom-0 rounded-top">
+				<a href="#oct2019StoryNormalDrops" class="nav-link" data-toggle="tab">(Oct-2019) Normal</a>
+			</li>
+			<li class="nav-item border border-dark border-bottom-0 rounded-top">
+				<a href="#oct2019StoryHardDrops" class="nav-link" data-toggle="tab">(Oct-2019) Hard</a>
+			</li>
+		</ul>
 	</div>
-		<table 
-			id="table" 
-			data-toggle="table" 
-			data-search="true"
-			table-layout="fixed"
-			class="table table-hover">
-		  <thead class="thead-light">
+</div>
+    <!-- tab content -->
+<div class="container">
+	<div class="tab-content">
+		<div class="tab-pane fade show active" id="may2020storyNormalDrops">
+			<br />
+			<div class="alert border-info">
+				<strong>(May 2020 story update)</strong> These maps include 4 new stages: Badal Rainforest, Samel Village, Crimson Coastline and Holy Castle Odal.
+			</div>
+			<table id="table" data-toggle="table" data-search="true" table-layout="fixed" class="table table-hover">
+			  <thead class="thead-light">
+				<tr>
+				  <th data=field="map" scope="col">Map</th>
+				  <th data=field="stage" data-formatter="stageNameFormat" scope="col">Stage</th>
+				  <th data=field="material" data-formatter="itemNameFormat" scope="col">Material</th>
+				  <th scope="col">Drop rate</th>
+				  <th scope="col">Expected<br />quantity</th>
+				</tr>
+			  	</thead>
+				<tbody>
+					<tr><td>Aldana catacombs / Story</td><td>Back into the Light</td><td>Crystallite fragment</td><td>94.03%</td><td>2.627</td></tr><tr><td>Aldana catacombs / Story</td><td>Within the Blackness</td><td>Crystallite fragment</td><td>93.24%</td><td>2.51</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Crystallite fragment</td><td>93.08%</td><td>2.563</td></tr><tr><td>Aldana catacombs / Story</td><td>Cutting through</td><td>Crystallite fragment</td><td>92.38%</td><td>2.397</td></tr><tr><td>Aldana catacombs / Story</td><td>Shadow of the Empire</td><td>Crystallite fragment</td><td>92.33%</td><td>2.415</td></tr><tr><td>Midra Forest / Story</td><td>Search the Ruins</td><td>Magic beast meat</td><td>37.12%</td><td>0.463</td></tr><tr><td>Gragia Mountains / Story</td><td>Downslope</td><td>Magic beast meat</td><td>36.86%</td><td>0.457</td></tr><tr><td>Gragia Mountains / Story</td><td>The Empire's training ground</td><td>Magic beast meat</td><td>33.74%</td><td>0.412</td></tr><tr><td>Gragia Mountains / Story</td><td>An echoing voice</td><td>Magic beast meat</td><td>33.58%</td><td>0.41</td></tr><tr><td>Gragia Mountains / Story</td><td>Back on the trail</td><td>Magic beast meat</td><td>33.33%</td><td>0.406</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Drop of life</td><td>57.%</td><td>0.831</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Drop of life</td><td>53.01%</td><td>0.746</td></tr><tr><td>Badal Rainforest / Story</td><td>Because You Arrived</td><td>Drop of life</td><td>48.59%</td><td>0.656</td></tr><tr><td>Badal Rainforest / Story</td><td>Light Between the Leaves</td><td>Drop of life</td><td>46.83%</td><td>0.623</td></tr><tr><td>Badal Rainforest / Story</td><td>Tranquil Engagement</td><td>Drop of life</td><td>46.27%</td><td>0.613</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Ancient material</td><td>42.84%</td><td>0.555</td></tr><tr><td>Gorde Mines / Story</td><td>A Shadowy Twist</td><td>Ancient material</td><td>40.57%</td><td>0.517</td></tr><tr><td>Holy Castle Odal / Story</td><td>Away Game</td><td>Ancient material</td><td>38.1%</td><td>0.476</td></tr><tr><td>Holy Castle Odal / Story</td><td>Branching Paths</td><td>Ancient material</td><td>36.6%</td><td>0.452</td></tr><tr><td>Gorde Mines / Story</td><td>A Bestial Bounty</td><td>Ancient material</td><td>36.%</td><td>0.444</td></tr><tr><td>Moriana Lands / Story</td><td>Across the Plateau</td><td>Ominous horn</td><td>26.08%</td><td>0.3</td></tr><tr><td>Midra Forest / Story</td><td>Search the Ruins</td><td>Ominous horn</td><td>24.93%</td><td>0.284</td></tr><tr><td>Moriana Lands / Story</td><td>For the Sword</td><td>Ominous horn</td><td>24.3%</td><td>0.276</td></tr><tr><td>Gorde Mines / Story</td><td>Lurking in the Tunnels</td><td>Ominous horn</td><td>21.71%</td><td>0.242</td></tr><tr><td>Gragia Mountains / Story</td><td>An echoing voice</td><td>Ominous horn</td><td>20.85%</td><td>0.231</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Branah ore</td><td>33.81%</td><td>0.408</td></tr><tr><td>Holy Castle Odal / Story</td><td>Away Game</td><td>Branah ore</td><td>30.56%</td><td>0.36</td></tr><tr><td>Holy Castle Odal / Story</td><td>Branching Paths</td><td>Branah ore</td><td>28.69%</td><td>0.334</td></tr><tr><td>Holy Castle Odal / Story</td><td>Colossal Corridor</td><td>Branah ore</td><td>26.38%</td><td>0.303</td></tr><tr><td>Holy Castle Odal / Story</td><td>Through the Castle</td><td>Branah ore</td><td>25.82%</td><td>0.296</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Glowing phosphate</td><td>31.95%</td><td>0.382</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Glowing phosphate</td><td>31.62%</td><td>0.377</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Glowing phosphate</td><td>21.87%</td><td>0.243</td></tr><tr><td>Holy Castle Odal / Story</td><td>Knightly Loyalty</td><td>Glowing phosphate</td><td>21.12%</td><td>0.234</td></tr><tr><td>Crimson Coastline / Story</td><td>A Future of Cooperation</td><td>Glowing phosphate</td><td>18.1%</td><td>0.198</td></tr><tr><td>Badal Rainforest / Story</td><td>Because You Arrived</td><td>Golden fruit</td><td>36.58%</td><td>0.45</td></tr><tr><td>Badal Rainforest / Story</td><td>Light Between the Leaves</td><td>Golden fruit</td><td>33.28%</td><td>0.4</td></tr><tr><td>Badal Rainforest / Story</td><td>In Forest Dark and Dreary</td><td>Golden fruit</td><td>31.17%</td><td>0.369</td></tr><tr><td>Badal Rainforest / Story</td><td>Honesty and Trust</td><td>Golden fruit</td><td>30.86%</td><td>0.366</td></tr><tr><td>Badal Rainforest / Story</td><td>Forest Wandering</td><td>Golden fruit</td><td>30.71%</td><td>0.363</td></tr><tr><td>Moriana Lands / Story</td><td>Where the Beasts Are</td><td>Viscous liquid</td><td>30.34%</td><td>0.358</td></tr><tr><td>Gorde Mines / Story</td><td>Mining the Vein</td><td>Viscous liquid</td><td>25.7%</td><td>0.294</td></tr><tr><td>Gorde Mines / Story</td><td>With Magic and Bow</td><td>Viscous liquid</td><td>23.96%</td><td>0.272</td></tr><tr><td>Midra Forest / Story</td><td>Hate for the Forest</td><td>Viscous liquid</td><td>20.42%</td><td>0.225</td></tr><tr><td>Badal Rainforest / Story</td><td>A Light of Hope?</td><td>Viscous liquid</td><td>18.94%</td><td>0.206</td></tr><tr><td>Crimson Coastline / Story</td><td>A New Choice</td><td>Glowing bone</td><td>20.77%</td><td>0.23</td></tr><tr><td>Evria Ice caverns / Story</td><td>The silent ice cavern</td><td>Glowing bone</td><td>19.56%</td><td>0.215</td></tr><tr><td>Gorde Mines / Story</td><td>A Shadowy Twist</td><td>Glowing bone</td><td>19.53%</td><td>0.214</td></tr><tr><td>Grand Wall / Story</td><td>Positive spirit</td><td>Glowing bone</td><td>18.04%</td><td>0.197</td></tr><tr><td>Evria Ice caverns / Story</td><td>Dependable maiden</td><td>Glowing bone</td><td>16.15%</td><td>0.175</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Blushing Maiden</td><td>Ancient alchemy</td><td>6.65%</td><td>0.068</td></tr><tr><td>Kaldina Ruins / Story</td><td>To Stand Against a Deity</td><td>Ancient alchemy</td><td>6.04%</td><td>0.062</td></tr><tr><td>Holy Castle Odal / Story</td><td>Knightly Loyalty</td><td>Ancient alchemy</td><td>5.68%</td><td>0.058</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Ancient alchemy</td><td>5.65%</td><td>0.058</td></tr><tr><td>Moriana Lands / Story</td><td>Den of Fur and Fangs</td><td>Ancient alchemy</td><td>5.62%</td><td>0.058</td></tr><tr><td>Moriana Lands / Story</td><td>Across the Plateau</td><td>Metal plate</td><td>7.11%</td><td>0.073</td></tr><tr><td>Kaldina Ruins / Story</td><td>Stirring the Nest</td><td>Metal plate</td><td>6.17%</td><td>0.063</td></tr><tr><td>Holy Castle Odal / Story</td><td>Away Game</td><td>Metal plate</td><td>5.82%</td><td>0.06</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Metal plate</td><td>5.72%</td><td>0.059</td></tr><tr><td>Moriana Lands / Story</td><td>For the Sword</td><td>Metal plate</td><td>5.65%</td><td>0.058</td></tr><tr><td>Moriana Lands / Story</td><td>Where the Beasts Are</td><td>Mana extract</td><td>8.93%</td><td>0.093</td></tr><tr><td>Moriana Lands / Story</td><td>Beasts on Parade</td><td>Mana extract</td><td>7.22%</td><td>0.075</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Mana extract</td><td>6.82%</td><td>0.07</td></tr><tr><td>Gorde Mines / Story</td><td>A Shadowy Twist</td><td>Mana extract</td><td>6.7%</td><td>0.069</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Mana extract</td><td>6.57%</td><td>0.068</td></tr><tr><td>Gorde Mines / Story</td><td>Mining the Vein</td><td>Coagulated saltwater</td><td>7.69%</td><td>0.08</td></tr><tr><td>Badal Rainforest / Story</td><td>A Light of Hope?</td><td>Coagulated saltwater</td><td>6.77%</td><td>0.07</td></tr><tr><td>Crimson Coastline / Story</td><td>A New Choice</td><td>Coagulated saltwater</td><td>5.62%</td><td>0.058</td></tr><tr><td>Gorde Mines / Story</td><td>With Magic and Bow</td><td>Coagulated saltwater</td><td>5.54%</td><td>0.057</td></tr><tr><td>Crimson Coastline / Story</td><td>Dwellers on the Coast</td><td>Coagulated saltwater</td><td>4.67%</td><td>0.048</td></tr><tr><td>Crimson Coastline / Story</td><td>Terrors of the Coast</td><td>Stardust</td><td>6.53%</td><td>0.067</td></tr><tr><td>Kaldina Ruins / Story</td><td>Staying Positive</td><td>Stardust</td><td>6.12%</td><td>0.063</td></tr><tr><td>Kaldina Ruins / Story</td><td>Beasts at Twilight</td><td>Stardust</td><td>6.05%</td><td>0.062</td></tr><tr><td>Moriana Lands / Story</td><td>Hero in the Heart</td><td>Stardust</td><td>5.67%</td><td>0.058</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Maiden's Melancholy</td><td>Stardust</td><td>5.04%</td><td>0.051</td></tr><tr><td>Malboria Lava Caves / Story</td><td>Roaring mystery</td><td>Red crystallite</td><td>60.27%</td><td>0.892</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Red crystallite</td><td>59.51%</td><td>0.891</td></tr><tr><td>Malboria Lava Caves / Story</td><td>Two deadly foes</td><td>Red crystallite</td><td>55.66%</td><td>0.788</td></tr><tr><td>Midra Forest / Story</td><td>Search the Ruins</td><td>Red crystallite</td><td>54.18%</td><td>0.777</td></tr><tr><td>Dara Desert / Story</td><td>Searching for friends</td><td>Red crystallite</td><td>52.46%</td><td>0.718</td></tr><tr><td>Lanzelia snow plains / Story</td><td>The envy of others</td><td>Blue crystallite</td><td>56.62%</td><td>0.815</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Blushing Maiden</td><td>Blue crystallite</td><td>56.57%</td><td>0.82</td></tr><tr><td>Kaldina Ruins / Story</td><td>Stirring the Nest</td><td>Blue crystallite</td><td>55.18%</td><td>0.791</td></tr><tr><td>Lanzelia mountains / Story</td><td>Maiden of guidance</td><td>Blue crystallite</td><td>53.99%</td><td>0.756</td></tr><tr><td>Lanzelia snow plains / Story</td><td>Pocketing one's pride</td><td>Blue crystallite</td><td>52.92%</td><td>0.731</td></tr><tr><td>Gragia Mountains / Story</td><td>Seaside rain clouds</td><td>Green crystallite</td><td>46.5%</td><td>0.621</td></tr><tr><td>Badal Rainforest / Story</td><td>Unseen Exit</td><td>Green crystallite</td><td>46.06%</td><td>0.607</td></tr><tr><td>Moriana Lands / Story</td><td>Allied Perspective</td><td>Green crystallite</td><td>45.26%</td><td>0.599</td></tr><tr><td>Gragia Mountains / Story</td><td>Where's Medrone?</td><td>Green crystallite</td><td>43.9%</td><td>0.58</td></tr><tr><td>Badal Rainforest / Story</td><td>In Forest Dark and Dreary</td><td>Green crystallite</td><td>42.96%</td><td>0.551</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Purple crystallite</td><td>78.86%</td><td>1.517</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Purple crystallite</td><td>69.51%</td><td>1.166</td></tr><tr><td>Grand Wall / Story</td><td>Impatience</td><td>Purple crystallite</td><td>49.72%</td><td>0.682</td></tr><tr><td>Malboria Wetlands / Story</td><td>Devastating discomfort index</td><td>Purple crystallite</td><td>45.2%</td><td>0.58</td></tr><tr><td>Malboria Caverns / Story</td><td>Reflections in the Stream</td><td>Purple crystallite</td><td>43.31%</td><td>0.568</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Rainbow crystallite</td><td>45.16%</td><td>0.592</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Rainbow crystallite</td><td>41.24%</td><td>0.526</td></tr><tr><td>Crimson Coastline / Story</td><td>Terrors of the Coast</td><td>Rainbow crystallite</td><td>41.07%</td><td>0.522</td></tr><tr><td>Badal Rainforest / Story</td><td>Unseen Exit</td><td>Rainbow crystallite</td><td>39.99%</td><td>0.505</td></tr><tr><td>Badal Rainforest / Story</td><td>A Light of Hope?</td><td>Rainbow crystallite</td><td>39.46%</td><td>0.496</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Red crystal</td><td>62.75%</td><td>0.97</td></tr><tr><td>Crimson Coastline / Story</td><td>A Future of Cooperation</td><td>Red crystal</td><td>53.22%</td><td>0.751</td></tr><tr><td>Crimson Coastline / Story</td><td>Deceiving Appearances</td><td>Red crystal</td><td>52.9%</td><td>0.741</td></tr><tr><td>Crimson Coastline / Story</td><td>Following in Her Footsteps</td><td>Red crystal</td><td>51.83%</td><td>0.723</td></tr><tr><td>Crimson Coastline / Story</td><td>Beasts of the Venomsea</td><td>Red crystal</td><td>51.45%</td><td>0.713</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Blushing Maiden</td><td>Blue crystal</td><td>41.18%</td><td>0.523</td></tr><tr><td>Kaldina Ruins / Story</td><td>Stirring the Nest</td><td>Blue crystal</td><td>40.35%</td><td>0.51</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Blue crystal</td><td>33.87%</td><td>0.407</td></tr><tr><td>Holy Castle Odal / Story</td><td>Knightly Loyalty</td><td>Blue crystal</td><td>32.22%</td><td>0.383</td></tr><tr><td>Crimson Coastline / Story</td><td>A New Choice</td><td>Blue crystal</td><td>31.44%</td><td>0.373</td></tr><tr><td>Badal Rainforest / Story</td><td>Unseen Exit</td><td>Green crystal</td><td>49.49%</td><td>0.67</td></tr><tr><td>Badal Rainforest / Story</td><td>In Forest Dark and Dreary</td><td>Green crystal</td><td>42.96%</td><td>0.551</td></tr><tr><td>Badal Rainforest / Story</td><td>Light Between the Leaves</td><td>Green crystal</td><td>42.47%</td><td>0.543</td></tr><tr><td>Badal Rainforest / Story</td><td>Because You Arrived</td><td>Green crystal</td><td>39.06%</td><td>0.487</td></tr><tr><td>Badal Rainforest / Story</td><td>Tranquil Engagement</td><td>Green crystal</td><td>37.46%</td><td>0.462</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Purple crystal</td><td>71.7%</td><td>1.236</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Purple crystal</td><td>36.42%</td><td>0.451</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Purple crystal</td><td>34.63%</td><td>0.419</td></tr><tr><td>Holy Castle Odal / Story</td><td>Knightly Loyalty</td><td>Purple crystal</td><td>31.79%</td><td>0.383</td></tr><tr><td>Badal Rainforest / Story</td><td>A Light of Hope?</td><td>Purple crystal</td><td>30.65%</td><td>0.359</td></tr><tr><td>Gorde Mines / Story</td><td>A Shadowy Twist</td><td>Rainbow crystal</td><td>12.29%</td><td>0.131</td></tr><tr><td>Moriana Lands / Story</td><td>Where the Beasts Are</td><td>Rainbow crystal</td><td>12.08%</td><td>0.128</td></tr><tr><td>Moriana Lands / Story</td><td>Hero in the Heart</td><td>Rainbow crystal</td><td>11.71%</td><td>0.124</td></tr><tr><td>Moriana Lands / Story</td><td>Across the Plateau</td><td>Rainbow crystal</td><td>11.05%</td><td>0.117</td></tr><tr><td>Gorde Mines / Story</td><td>An Imposing Voice</td><td>Rainbow crystal</td><td>10.89%</td><td>0.115</td></tr><tr><td>Gorde Mines / Story</td><td>Lurking in the Tunnels</td><td>Red crystal cluster</td><td>0.04%</td><td>0.</td></tr><tr><td>Moriana Lands / Story</td><td>Your Average Vacation</td><td>Red crystal cluster</td><td>0.02%</td><td>0.</td></tr><tr><td>Moriana Lands / Story</td><td>Beasts on Parade</td><td>Red crystal cluster</td><td>0.02%</td><td>0.</td></tr><tr><td>Moriana Lands / Story</td><td>Maiden Maturity</td><td>Red crystal cluster</td><td>0.02%</td><td>0.</td></tr><tr><td>Gorde Mines / Story</td><td>Mining the Vein</td><td>Red crystal cluster</td><td>0.02%</td><td>0.</td></tr><tr><td>Moriana Lands / Story</td><td>Across the Plateau</td><td>Blue crystal cluster</td><td>0.04%</td><td>0.</td></tr><tr><td>Moriana Lands / Story</td><td>Hero in the Heart</td><td>Blue crystal cluster</td><td>0.03%</td><td>0.</td></tr><tr><td>Moriana Lands / Story</td><td>Your Average Vacation</td><td>Blue crystal cluster</td><td>0.01%</td><td>0.</td></tr><tr><td>Moriana Lands / Story</td><td>Allied Perspective</td><td>Blue crystal cluster</td><td>0.01%</td><td>0.</td></tr><tr><td>Moriana Lands / Story</td><td>Where the Beasts Are</td><td>Blue crystal cluster</td><td>0.01%</td><td>0.</td></tr><tr><td>Gorde Mines / Story</td><td>Looking for a Lilt</td><td>Green crystal cluster</td><td>0.06%</td><td>0.001</td></tr><tr><td>Moriana Lands / Story</td><td>For the Sword</td><td>Green crystal cluster</td><td>0.04%</td><td>0.</td></tr><tr><td>Gorde Mines / Story</td><td>Gold is Good</td><td>Green crystal cluster</td><td>0.04%</td><td>0.</td></tr><tr><td>Gorde Mines / Story</td><td>A Shadowy Twist</td><td>Green crystal cluster</td><td>0.04%</td><td>0.</td></tr><tr><td>Gorde Mines / Story</td><td>A Bestial Bounty</td><td>Green crystal cluster</td><td>0.04%</td><td>0.</td></tr><tr><td>Kaldina Ruins / Story</td><td>The Scent of Life</td><td>Purple crystal cluster</td><td>0.05%</td><td>0.</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Blushing Maiden</td><td>Purple crystal cluster</td><td>0.04%</td><td>0.</td></tr><tr><td>Kaldina Ruins / Story</td><td>Giving Chase</td><td>Purple crystal cluster</td><td>0.04%</td><td>0.</td></tr><tr><td>Kaldina Ruins / Story</td><td>Staying Positive</td><td>Purple crystal cluster</td><td>0.03%</td><td>0.</td></tr><tr><td>Kaldina Ruins / Story</td><td>Stirring the Nest</td><td>Purple crystal cluster</td><td>0.03%</td><td>0.</td></tr><tr><td>Holy Castle Odal / Story</td><td>When Knights Collide</td><td>Skill book</td><td>3.%</td><td>0.03</td></tr><tr><td>White laboratory / Story</td><td>Laboratory depths</td><td>Skill book</td><td>2.%</td><td>0.02</td></tr><tr><td>Lanzelia palace ruins / Story</td><td>Irritation</td><td>Skill book</td><td>1.5%</td><td>0.015</td></tr><tr><td>Underground Brahnda / Story</td><td>Zaix the Immortal Knight</td><td>Skill book</td><td>1.5%</td><td>0.015</td></tr><tr><td>Samel Village / Story</td><td>Jet Black Onslaught</td><td>Skill book</td><td>1.5%</td><td>0.015</td></tr><tr><td>Underground Brahnda / Story</td><td>The Origin and Roaring Flames</td><td>Magic book</td><td>3.%</td><td>0.03</td></tr><tr><td>Holy Castle Odal / Story</td><td>When Knights Collide</td><td>Magic book</td><td>3.%</td><td>0.03</td></tr><tr><td>Dara Desert / Story</td><td>That which rattles the desert</td><td>Magic book</td><td>2.%</td><td>0.02</td></tr><tr><td>White laboratory / Story</td><td>Laboratory depths</td><td>Magic book</td><td>2.%</td><td>0.02</td></tr><tr><td>Lanzelia palace ruins / Story</td><td>Irritation</td><td>Magic book</td><td>1.5%</td><td>0.015</td></tr><tr><td>Dara Desert / Story</td><td>To bustling Badaal</td><td>Silver piece</td><td>1.64%</td><td>0.017</td></tr><tr><td>Gragia Mountains / Story</td><td>Get stronger, o knights</td><td>Silver piece</td><td>1.63%</td><td>0.017</td></tr><tr><td>Gragia Mountains / Story</td><td>Voices of training</td><td>Silver piece</td><td>1.63%</td><td>0.017</td></tr><tr><td>Gragia Mountains / Story</td><td>Their growth</td><td>Silver piece</td><td>1.63%</td><td>0.017</td></tr><tr><td>Gragia Mountains / Story</td><td>Where's Medrone?</td><td>Silver piece</td><td>1.63%</td><td>0.017</td></tr><tr><td>Gorde Mines / Story</td><td>Going for the Gold</td><td>Gold piece</td><td>3.%</td><td>0.03</td></tr><tr><td>Evria Ice caverns / Story</td><td>Post-reflection combat</td><td>Gold piece</td><td>2.09%</td><td>0.021</td></tr><tr><td>Gragia Mountains / Story</td><td>Get stronger, o knights</td><td>Gold piece</td><td>1.11%</td><td>0.011</td></tr><tr><td>Gragia Mountains / Story</td><td>Voices of training</td><td>Gold piece</td><td>1.11%</td><td>0.011</td></tr><tr><td>Gragia Mountains / Story</td><td>Their growth</td><td>Gold piece</td><td>1.11%</td><td>0.011</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander</td><td>Power potion</td><td>10.93%</td><td>0.114</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander 2</td><td>Power potion</td><td>10.93%</td><td>0.114</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander 3</td><td>Power potion</td><td>10.93%</td><td>0.114</td></tr><tr><td>White laboratory / Story</td><td>Unerring enemy</td><td>Power potion</td><td>3.4%</td><td>0.035</td></tr><tr><td>White laboratory / Story</td><td>A dangerous invitation</td><td>Power potion</td><td>2.82%</td><td>0.029</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander</td><td>Great power potion</td><td>4.67%</td><td>0.048</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander 2</td><td>Great power potion</td><td>4.67%</td><td>0.048</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander 3</td><td>Great power potion</td><td>4.67%</td><td>0.048</td></tr><tr><td>Evria Ice caverns / Story</td><td>The Frostwyrm's nature</td><td>Great power potion</td><td>1.11%</td><td>0.011</td></tr><tr><td>Talon Tundra / Story</td><td>To the frozen cave</td><td>Great power potion</td><td>1.03%</td><td>0.011</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="tab-pane fade" id="may2020storyHardDrops">
+			<br />
+			<div class="alert border-info">
+				<strong>(May 2020 story update)</strong> These maps include 4 new stages: Badal Rainforest, Samel Village, Crimson Coastline and Holy Castle Odal.
+			</div>
+			<table id="table" data-toggle="table" data-search="true" table-layout="fixed" class="table table-hover">
+			  <thead class="thead-light">
+				<tr>
+				  <th data=field="map" scope="col">Map</th>
+				  <th data=field="stage" data-formatter="stageNameFormat" scope="col">Stage</th>
+				  <th data=field="material" data-formatter="itemNameFormat" scope="col">Material</th>
+				  <th scope="col">Drop rate</th>
+				  <th scope="col">Expected<br />quantity</th>
+				</tr>
+			  	</thead>
+				<tbody>
+					<tr><td>Aldana catacombs / Story</td><td>Back into the Light</td><td>Crystallite fragment</td><td>84.72%</td><td>1.795</td></tr><tr><td>Dogour caverns / story</td><td>Beast den</td><td>Crystallite fragment</td><td>83.37%</td><td>1.696</td></tr><tr><td>Aldana catacombs / Story</td><td>Within the Blackness</td><td>Crystallite fragment</td><td>83.29%</td><td>1.708</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Crystallite fragment</td><td>82.15%</td><td>1.673</td></tr><tr><td>Dara Desert / Story</td><td>To the lab</td><td>Crystallite fragment</td><td>82.04%</td><td>1.66</td></tr><tr><td>Gragia Mountains / Story</td><td>Downslope</td><td>Magic beast meat</td><td>36.39%</td><td>0.45</td></tr><tr><td>Midra Forest / Story</td><td>Search the Ruins</td><td>Magic beast meat</td><td>35.23%</td><td>0.434</td></tr><tr><td>Midra Forest / Story</td><td>Eastern Ruins in the Forest</td><td>Magic beast meat</td><td>32.22%</td><td>0.389</td></tr><tr><td>Gragia Mountains / Story</td><td>The Empire's training ground</td><td>Magic beast meat</td><td>32.01%</td><td>0.387</td></tr><tr><td>Gragia Mountains / Story</td><td>Back on the trail</td><td>Magic beast meat</td><td>31.68%</td><td>0.382</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Drop of life</td><td>43.97%</td><td>0.574</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Drop of life</td><td>43.04%</td><td>0.558</td></tr><tr><td>Badal Rainforest / Story</td><td>Because You Arrived</td><td>Drop of life</td><td>38.86%</td><td>0.487</td></tr><tr><td>Badal Rainforest / Story</td><td>Light Between the Leaves</td><td>Drop of life</td><td>37.65%</td><td>0.468</td></tr><tr><td>Badal Rainforest / Story</td><td>Tranquil Engagement</td><td>Drop of life</td><td>36.96%</td><td>0.457</td></tr><tr><td>Gorde Mines / Story</td><td>A Shadowy Twist</td><td>Ancient material</td><td>33.59%</td><td>0.408</td></tr><tr><td>Grand Wall / Story</td><td>Positive spirit</td><td>Ancient material</td><td>32.85%</td><td>0.396</td></tr><tr><td>Malboria Caverns / Story</td><td>The Clear Stream in the Cave</td><td>Ancient material</td><td>31.54%</td><td>0.379</td></tr><tr><td>Evria Ice caverns / Story</td><td>Dependable maiden</td><td>Ancient material</td><td>31.09%</td><td>0.372</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Ancient material</td><td>30.27%</td><td>0.359</td></tr><tr><td>Midra Forest / Story</td><td>Search the Ruins</td><td>Ominous horn</td><td>34.15%</td><td>0.414</td></tr><tr><td>Moriana Lands / Story</td><td>Across the Plateau</td><td>Ominous horn</td><td>28.36%</td><td>0.332</td></tr><tr><td>Midra Forest / Story</td><td>Eastern Ruins in the Forest</td><td>Ominous horn</td><td>28.16%</td><td>0.328</td></tr><tr><td>Moriana Lands / Story</td><td>For the Sword</td><td>Ominous horn</td><td>27.34%</td><td>0.317</td></tr><tr><td>Gragia Mountains / Story</td><td>An echoing voice</td><td>Ominous horn</td><td>27.01%</td><td>0.312</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Branah ore</td><td>35.02%</td><td>0.428</td></tr><tr><td>Holy Castle Odal / Story</td><td>Away Game</td><td>Branah ore</td><td>32.11%</td><td>0.383</td></tr><tr><td>Holy Castle Odal / Story</td><td>Branching Paths</td><td>Branah ore</td><td>32.06%</td><td>0.382</td></tr><tr><td>Holy Castle Odal / Story</td><td>Colossal Corridor</td><td>Branah ore</td><td>29.27%</td><td>0.343</td></tr><tr><td>Holy Castle Odal / Story</td><td>Through the Castle</td><td>Branah ore</td><td>27.47%</td><td>0.319</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Glowing phosphate</td><td>45.33%</td><td>0.598</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Glowing phosphate</td><td>31.95%</td><td>0.382</td></tr><tr><td>Crimson Coastline / Story</td><td>A Future of Cooperation</td><td>Glowing phosphate</td><td>20.93%</td><td>0.232</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Glowing phosphate</td><td>20.45%</td><td>0.227</td></tr><tr><td>Holy Castle Odal / Story</td><td>Knightly Loyalty</td><td>Glowing phosphate</td><td>19.34%</td><td>0.213</td></tr><tr><td>Badal Rainforest / Story</td><td>Because You Arrived</td><td>Golden fruit</td><td>40.88%</td><td>0.519</td></tr><tr><td>Badal Rainforest / Story</td><td>Forest Wandering</td><td>Golden fruit</td><td>39.88%</td><td>0.504</td></tr><tr><td>Badal Rainforest / Story</td><td>Light Between the Leaves</td><td>Golden fruit</td><td>37.98%</td><td>0.472</td></tr><tr><td>Badal Rainforest / Story</td><td>In Forest Dark and Dreary</td><td>Golden fruit</td><td>36.01%</td><td>0.441</td></tr><tr><td>Badal Rainforest / Story</td><td>Honesty and Trust</td><td>Golden fruit</td><td>34.62%</td><td>0.421</td></tr><tr><td>Moriana Lands / Story</td><td>Where the Beasts Are</td><td>Viscous liquid</td><td>33.%</td><td>0.397</td></tr><tr><td>Gorde Mines / Story</td><td>Mining the Vein</td><td>Viscous liquid</td><td>27.31%</td><td>0.316</td></tr><tr><td>Gorde Mines / Story</td><td>With Magic and Bow</td><td>Viscous liquid</td><td>26.91%</td><td>0.312</td></tr><tr><td>Midra Forest / Story</td><td>Hate for the Forest</td><td>Viscous liquid</td><td>24.38%</td><td>0.276</td></tr><tr><td>Midra Forest / Story</td><td>Improve yourselves</td><td>Viscous liquid</td><td>22.98%</td><td>0.259</td></tr><tr><td>Evria Ice caverns / Story</td><td>The silent ice cavern</td><td>Glowing bone</td><td>24.91%</td><td>0.284</td></tr><tr><td>Grand Wall / Story</td><td>Positive spirit</td><td>Glowing bone</td><td>24.22%</td><td>0.274</td></tr><tr><td>Crimson Coastline / Story</td><td>A New Choice</td><td>Glowing bone</td><td>21.75%</td><td>0.242</td></tr><tr><td>Evria Ice caverns / Story</td><td>Beasts lurking in the ice</td><td>Glowing bone</td><td>21.64%</td><td>0.241</td></tr><tr><td>Evria Ice caverns / Story</td><td>Dependable maiden</td><td>Glowing bone</td><td>21.15%</td><td>0.235</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Ancient alchemy</td><td>20.11%</td><td>0.223</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Blushing Maiden</td><td>Ancient alchemy</td><td>13.88%</td><td>0.148</td></tr><tr><td>Kaldina Ruins / Story</td><td>To Stand Against a Deity</td><td>Ancient alchemy</td><td>12.17%</td><td>0.128</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Ancient alchemy</td><td>11.28%</td><td>0.119</td></tr><tr><td>Moriana Lands / Story</td><td>Den of Fur and Fangs</td><td>Ancient alchemy</td><td>10.99%</td><td>0.115</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Metal plate</td><td>16.51%</td><td>0.179</td></tr><tr><td>Holy Castle Odal / Story</td><td>Away Game</td><td>Metal plate</td><td>15.79%</td><td>0.171</td></tr><tr><td>Holy Castle Odal / Story</td><td>Branching Paths</td><td>Metal plate</td><td>15.57%</td><td>0.168</td></tr><tr><td>Moriana Lands / Story</td><td>Across the Plateau</td><td>Metal plate</td><td>15.13%</td><td>0.163</td></tr><tr><td>Holy Castle Odal / Story</td><td>Colossal Corridor</td><td>Metal plate</td><td>14.57%</td><td>0.156</td></tr><tr><td>Badal Rainforest / Story</td><td>Because You Arrived</td><td>Mana extract</td><td>20.71%</td><td>0.23</td></tr><tr><td>Badal Rainforest / Story</td><td>Forest Wandering</td><td>Mana extract</td><td>20.13%</td><td>0.223</td></tr><tr><td>Moriana Lands / Story</td><td>Where the Beasts Are</td><td>Mana extract</td><td>19.09%</td><td>0.21</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Mana extract</td><td>18.89%</td><td>0.208</td></tr><tr><td>Badal Rainforest / Story</td><td>Tranquil Engagement</td><td>Mana extract</td><td>18.54%</td><td>0.204</td></tr><tr><td>Gorde Mines / Story</td><td>Mining the Vein</td><td>Coagulated saltwater</td><td>15.73%</td><td>0.17</td></tr><tr><td>Crimson Coastline / Story</td><td>A New Choice</td><td>Coagulated saltwater</td><td>13.78%</td><td>0.147</td></tr><tr><td>Badal Rainforest / Story</td><td>A Light of Hope?</td><td>Coagulated saltwater</td><td>12.98%</td><td>0.137</td></tr><tr><td>Gorde Mines / Story</td><td>With Magic and Bow</td><td>Coagulated saltwater</td><td>12.52%</td><td>0.133</td></tr><tr><td>Crimson Coastline / Story</td><td>Dwellers on the Coast</td><td>Coagulated saltwater</td><td>10.35%</td><td>0.108</td></tr><tr><td>Crimson Coastline / Story</td><td>Terrors of the Coast</td><td>Stardust</td><td>14.53%</td><td>0.155</td></tr><tr><td>Crimson Coastline / Story</td><td>A Future of Cooperation</td><td>Stardust</td><td>12.56%</td><td>0.133</td></tr><tr><td>Kaldina Ruins / Story</td><td>Staying Positive</td><td>Stardust</td><td>12.4%</td><td>0.131</td></tr><tr><td>Kaldina Ruins / Story</td><td>Beasts at Twilight</td><td>Stardust</td><td>12.19%</td><td>0.129</td></tr><tr><td>Moriana Lands / Story</td><td>Hero in the Heart</td><td>Stardust</td><td>11.12%</td><td>0.116</td></tr><tr><td>Badal Rainforest / Story</td><td>Forest Wandering</td><td>The large hand of time</td><td>0.21%</td><td>0.002</td></tr><tr><td>Gragia Mountains / Story</td><td>Get stronger, o knights</td><td>The large hand of time</td><td>0.14%</td><td>0.001</td></tr><tr><td>Gragia Mountains / Story</td><td>Voices of training</td><td>The large hand of time</td><td>0.14%</td><td>0.001</td></tr><tr><td>Gragia Mountains / Story</td><td>Their growth</td><td>The large hand of time</td><td>0.14%</td><td>0.001</td></tr><tr><td>Gragia Mountains / Story</td><td>Where's Medrone?</td><td>The large hand of time</td><td>0.14%</td><td>0.001</td></tr><tr><td>Gorde Mines / Story</td><td>Looking for a Lilt</td><td>Otherworldly matter</td><td>0.17%</td><td>0.002</td></tr><tr><td>Kaldina Ruins / Story</td><td>The Scent of Life</td><td>Otherworldly matter</td><td>0.14%</td><td>0.001</td></tr><tr><td>Badal Rainforest / Story</td><td>A Light of Hope?</td><td>Otherworldly matter</td><td>0.09%</td><td>0.001</td></tr><tr><td>Kaldina Ruins / Story</td><td>To Stand Against a Deity</td><td>Otherworldly matter</td><td>0.07%</td><td>0.001</td></tr><tr><td>Kaldina Ruins / Story</td><td>Staying Positive</td><td>Otherworldly matter</td><td>0.07%</td><td>0.001</td></tr><tr><td>Moriana Lands / Story</td><td>Across the Plateau</td><td>Sacred gem</td><td>0.13%</td><td>0.001</td></tr><tr><td>Evria Ice caverns / Story</td><td>The Frostwyrm's nature</td><td>Sacred gem</td><td>0.1%</td><td>0.001</td></tr><tr><td>Moriana Lands / Story</td><td>Hero in the Heart</td><td>Sacred gem</td><td>0.09%</td><td>0.001</td></tr><tr><td>Kaldina Ruins / Story</td><td>Beasts at Twilight</td><td>Sacred gem</td><td>0.09%</td><td>0.001</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Maiden's Melancholy</td><td>Sacred gem</td><td>0.09%</td><td>0.001</td></tr><tr><td>Crimson Coastline / Story</td><td>A New Choice</td><td>God-sealing stone</td><td>0.16%</td><td>0.002</td></tr><tr><td>Crimson Coastline / Story</td><td>Daydream Daybreak</td><td>God-sealing stone</td><td>0.07%</td><td>0.001</td></tr><tr><td>Crimson Coastline / Story</td><td>Castle on the Horizon</td><td>God-sealing stone</td><td>0.07%</td><td>0.001</td></tr><tr><td>Holy Castle Odal / Story</td><td>Standing in the Way</td><td>God-sealing stone</td><td>0.06%</td><td>0.001</td></tr><tr><td>Holy Castle Odal / Story</td><td>Colossal Corridor</td><td>God-sealing stone</td><td>0.04%</td><td>0.</td></tr><tr><td>Holy Castle Odal / Story</td><td>Standing in the Way</td><td>Dragoneye</td><td>0.1%</td><td>0.001</td></tr><tr><td>Holy Castle Odal / Story</td><td>Through the Castle</td><td>Dragoneye</td><td>0.09%</td><td>0.001</td></tr><tr><td>Holy Castle Odal / Story</td><td>Branching Paths</td><td>Dragoneye</td><td>0.09%</td><td>0.001</td></tr><tr><td>Holy Castle Odal / Story</td><td>Away Game</td><td>Dragoneye</td><td>0.09%</td><td>0.001</td></tr><tr><td>Holy Castle Odal / Story</td><td>Colossal Corridor</td><td>Dragoneye</td><td>0.09%</td><td>0.001</td></tr><tr><td>Crimson Coastline / Story</td><td>Beasts of the Venomsea</td><td>Specter Tears</td><td>0.14%</td><td>0.001</td></tr><tr><td>Lanzelia snow plains / Story</td><td>A missed encounter</td><td>Specter Tears</td><td>0.1%</td><td>0.001</td></tr><tr><td>Crimson Coastline / Story</td><td>Dwellers on the Coast</td><td>Specter Tears</td><td>0.1%</td><td>0.001</td></tr><tr><td>Crimson Coastline / Story</td><td>Terrors of the Coast</td><td>Specter Tears</td><td>0.1%</td><td>0.001</td></tr><tr><td>Crimson Coastline / Story</td><td>Daydream Daybreak</td><td>Specter Tears</td><td>0.1%</td><td>0.001</td></tr><tr><td>Gorde Mines / Story</td><td>Gold is Good</td><td>Galaxias crystal</td><td>0.11%</td><td>0.001</td></tr><tr><td>Underground Brahnda / Story</td><td>Relaxing</td><td>Galaxias crystal</td><td>0.1%</td><td>0.001</td></tr><tr><td>Underground Brahnda / Story</td><td>Be On Your Guard for Traps</td><td>Galaxias crystal</td><td>0.07%</td><td>0.001</td></tr><tr><td>Underground Brahnda / Story</td><td>Stones that Glitter in Ruin</td><td>Galaxias crystal</td><td>0.07%</td><td>0.001</td></tr><tr><td>Underground Brahnda / Story</td><td>Experiencing an Excavation</td><td>Galaxias crystal</td><td>0.07%</td><td>0.001</td></tr><tr><td>Aldana catacombs / Story</td><td>Shadow of the Empire</td><td>Red crystallite</td><td>57.44%</td><td>0.82</td></tr><tr><td>Malboria Lava Caves / Story</td><td>Roaring mystery</td><td>Red crystallite</td><td>56.93%</td><td>0.831</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Red crystallite</td><td>56.8%</td><td>0.828</td></tr><tr><td>Malboria Lava Caves / Story</td><td>Two deadly foes</td><td>Red crystallite</td><td>51.32%</td><td>0.712</td></tr><tr><td>Dara Desert / Story</td><td>Searching for friends</td><td>Red crystallite</td><td>49.29%</td><td>0.668</td></tr><tr><td>Lanzelia snow plains / Story</td><td>The envy of others</td><td>Blue crystallite</td><td>55.28%</td><td>0.797</td></tr><tr><td>Rubel coastline / Story</td><td>Around the bend</td><td>Blue crystallite</td><td>54.18%</td><td>0.761</td></tr><tr><td>Lanzelia snow plains / Story</td><td>Pocketing one's pride</td><td>Blue crystallite</td><td>53.24%</td><td>0.739</td></tr><tr><td>Lanzelia mountains / Story</td><td>Maiden of guidance</td><td>Blue crystallite</td><td>51.71%</td><td>0.712</td></tr><tr><td>Lanzelia mountains / Story</td><td>Ringing across the mountain</td><td>Blue crystallite</td><td>51.61%</td><td>0.71</td></tr><tr><td>Branah Plains / Story</td><td>Don't Give Up</td><td>Green crystallite</td><td>58.59%</td><td>0.845</td></tr><tr><td>Branah Plains / Story</td><td>Territorial Encroachment</td><td>Green crystallite</td><td>54.3%</td><td>0.749</td></tr><tr><td>Branah Plains / Story</td><td>Beauty, at what cost?</td><td>Green crystallite</td><td>50.44%</td><td>0.658</td></tr><tr><td>Branah Plains / Story</td><td>On One's Guard</td><td>Green crystallite</td><td>48.24%</td><td>0.64</td></tr><tr><td>Gragia Mountains / Story</td><td>Mountain path's end</td><td>Green crystallite</td><td>46.57%</td><td>0.619</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Purple crystallite</td><td>71.93%</td><td>1.243</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Purple crystallite</td><td>65.11%</td><td>1.036</td></tr><tr><td>Malboria Wetlands / Story</td><td>Devastating discomfort index</td><td>Purple crystallite</td><td>46.54%</td><td>0.608</td></tr><tr><td>Grand Wall / Story</td><td>Impatience</td><td>Purple crystallite</td><td>45.38%</td><td>0.603</td></tr><tr><td>Lanzelia palace ruins / Story</td><td>Fearful entrapment</td><td>Purple crystallite</td><td>42.45%</td><td>0.547</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Rainbow crystallite</td><td>33.51%</td><td>0.403</td></tr><tr><td>Crimson Coastline / Story</td><td>Terrors of the Coast</td><td>Rainbow crystallite</td><td>33.35%</td><td>0.4</td></tr><tr><td>Gorde Mines / Story</td><td>A Shadowy Twist</td><td>Rainbow crystallite</td><td>32.96%</td><td>0.395</td></tr><tr><td>Moriana Lands / Story</td><td>Where the Beasts Are</td><td>Rainbow crystallite</td><td>32.55%</td><td>0.389</td></tr><tr><td>Badal Rainforest / Story</td><td>A Light of Hope?</td><td>Rainbow crystallite</td><td>32.45%</td><td>0.388</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Red crystal</td><td>55.31%</td><td>0.793</td></tr><tr><td>Crimson Coastline / Story</td><td>A Future of Cooperation</td><td>Red crystal</td><td>47.9%</td><td>0.644</td></tr><tr><td>Crimson Coastline / Story</td><td>Deceiving Appearances</td><td>Red crystal</td><td>45.47%</td><td>0.598</td></tr><tr><td>Crimson Coastline / Story</td><td>Following in Her Footsteps</td><td>Red crystal</td><td>44.04%</td><td>0.574</td></tr><tr><td>Crimson Coastline / Story</td><td>Beasts of the Venomsea</td><td>Red crystal</td><td>42.88%</td><td>0.553</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Blushing Maiden</td><td>Blue crystal</td><td>47.02%</td><td>0.625</td></tr><tr><td>Kaldina Ruins / Story</td><td>Stirring the Nest</td><td>Blue crystal</td><td>46.08%</td><td>0.608</td></tr><tr><td>Lanzelia mountains / Story</td><td>The raging blizzard</td><td>Blue crystal</td><td>37.73%</td><td>0.468</td></tr><tr><td>Lanzelia snow plains / Story</td><td>Traversing the continent</td><td>Blue crystal</td><td>36.55%</td><td>0.45</td></tr><tr><td>Kaldina Ruins / Story</td><td>To Stand Against a Deity</td><td>Blue crystal</td><td>35.04%</td><td>0.427</td></tr><tr><td>Badal Rainforest / Story</td><td>Unseen Exit</td><td>Green crystal</td><td>43.45%</td><td>0.561</td></tr><tr><td>Badal Rainforest / Story</td><td>Forest Wandering</td><td>Green crystal</td><td>36.04%</td><td>0.44</td></tr><tr><td>Moriana Lands / Story</td><td>Hero in the Heart</td><td>Green crystal</td><td>35.91%</td><td>0.439</td></tr><tr><td>Gragia Mountains / Story</td><td>Where's Medrone?</td><td>Green crystal</td><td>35.03%</td><td>0.425</td></tr><tr><td>Moriana Lands / Story</td><td>Allied Perspective</td><td>Green crystal</td><td>34.77%</td><td>0.423</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Purple crystal</td><td>58.91%</td><td>0.877</td></tr><tr><td>Blaze Garden / Story</td><td>Blaze Garden</td><td>Purple crystal</td><td>43.97%</td><td>0.574</td></tr><tr><td>Lanzelia snow plains / Story</td><td>A missed encounter</td><td>Purple crystal</td><td>32.84%</td><td>0.393</td></tr><tr><td>Malboria Caverns / Story</td><td>Reflections in the Stream</td><td>Purple crystal</td><td>31.43%</td><td>0.374</td></tr><tr><td>Grand Wall / Story</td><td>Impatience</td><td>Purple crystal</td><td>30.94%</td><td>0.366</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Rainbow crystal</td><td>23.21%</td><td>0.263</td></tr><tr><td>Badal Rainforest / Story</td><td>Forest Wandering</td><td>Rainbow crystal</td><td>21.43%</td><td>0.24</td></tr><tr><td>Badal Rainforest / Story</td><td>Unseen Exit</td><td>Rainbow crystal</td><td>21.41%</td><td>0.24</td></tr><tr><td>Crimson Coastline / Story</td><td>Terrors of the Coast</td><td>Rainbow crystal</td><td>21.37%</td><td>0.239</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Rainbow crystal</td><td>21.27%</td><td>0.238</td></tr><tr><td>Crimson Coastline / Story</td><td>Ponderous Youth</td><td>Red crystal cluster</td><td>2.76%</td><td>0.028</td></tr><tr><td>Crimson Coastline / Story</td><td>A Future of Cooperation</td><td>Red crystal cluster</td><td>2.46%</td><td>0.025</td></tr><tr><td>Moriana Lands / Story</td><td>Across the Plateau</td><td>Red crystal cluster</td><td>2.28%</td><td>0.023</td></tr><tr><td>Holy Castle Odal / Story</td><td>Branching Paths</td><td>Red crystal cluster</td><td>2.03%</td><td>0.02</td></tr><tr><td>Holy Castle Odal / Story</td><td>Colossal Corridor</td><td>Red crystal cluster</td><td>2.03%</td><td>0.02</td></tr><tr><td>Kaldina Ruins / Story</td><td>Staying Positive</td><td>Blue crystal cluster</td><td>2.3%</td><td>0.023</td></tr><tr><td>Kaldina Ruins / Story</td><td>Stirring the Nest</td><td>Blue crystal cluster</td><td>2.3%</td><td>0.023</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Blue crystal cluster</td><td>2.3%</td><td>0.023</td></tr><tr><td>Kaldina Ruins / Story</td><td>A Blushing Maiden</td><td>Blue crystal cluster</td><td>2.28%</td><td>0.023</td></tr><tr><td>Crimson Coastline / Story</td><td>A New Choice</td><td>Blue crystal cluster</td><td>2.28%</td><td>0.023</td></tr><tr><td>Gorde Mines / Story</td><td>Mining the Vein</td><td>Green crystal cluster</td><td>2.76%</td><td>0.028</td></tr><tr><td>Badal Rainforest / Story</td><td>Unseen Exit</td><td>Green crystal cluster</td><td>2.39%</td><td>0.024</td></tr><tr><td>Moriana Lands / Story</td><td>Hero in the Heart</td><td>Green crystal cluster</td><td>2.28%</td><td>0.023</td></tr><tr><td>Badal Rainforest / Story</td><td>Forest Wandering</td><td>Green crystal cluster</td><td>2.22%</td><td>0.023</td></tr><tr><td>Gorde Mines / Story</td><td>A Bestial Bounty</td><td>Green crystal cluster</td><td>2.07%</td><td>0.021</td></tr><tr><td>Badal Rainforest / Story</td><td>A Light of Hope?</td><td>Purple crystal cluster</td><td>2.81%</td><td>0.028</td></tr><tr><td>Kaldina Ruins / Story</td><td>To Stand Against a Deity</td><td>Purple crystal cluster</td><td>1.61%</td><td>0.016</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Purple crystal cluster</td><td>1.59%</td><td>0.016</td></tr><tr><td>Badal Rainforest / Story</td><td>The Birds and the Bugs</td><td>Purple crystal cluster</td><td>1.57%</td><td>0.016</td></tr><tr><td>Moriana Lands / Story</td><td>Den of Fur and Fangs</td><td>Purple crystal cluster</td><td>1.49%</td><td>0.015</td></tr><tr><td>Royal Capital Aldana / Story</td><td>Find Theria!</td><td>Skill book</td><td>2.%</td><td>0.02</td></tr><tr><td>Arden border / Story</td><td>Natural stronghold</td><td>Skill book</td><td>2.%</td><td>0.026</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander</td><td>Skill book</td><td>2.%</td><td>0.02</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander 2</td><td>Skill book</td><td>2.%</td><td>0.02</td></tr><tr><td>Gragia Mountains / Story</td><td>Imperial guard commander 3</td><td>Skill book</td><td>2.%</td><td>0.02</td></tr><tr><td>Samel Village / Story</td><td>The Spiritual World</td><td>Magic book</td><td>0.5%</td><td>0.005</td></tr><tr><td>Dara Desert / Story</td><td>To bustling Badaal</td><td>Silver piece</td><td>6.88%</td><td>0.07</td></tr><tr><td>Lanzelia mountains / Story</td><td>Approaching limits</td><td>Silver piece</td><td>2.06%</td><td>0.022</td></tr><tr><td>Lanzelia mountains / Story</td><td>Ringing across the mountain</td><td>Silver piece</td><td>1.55%</td><td>0.017</td></tr><tr><td>Lanzelia mountains / Story</td><td>Brutal struggle</td><td>Silver piece</td><td>1.42%</td><td>0.015</td></tr><tr><td>Gragia Mountains / Story</td><td>Seaside rain clouds</td><td>Silver piece</td><td>1.39%</td><td>0.014</td></tr><tr><td>Evria Ice caverns / Story</td><td>Post-reflection combat</td><td>Gold piece</td><td>2.15%</td><td>0.022</td></tr><tr><td>Dara Desert / Story</td><td>To bustling Badaal</td><td>Gold piece</td><td>2.09%</td><td>0.021</td></tr><tr><td>Gragia Mountains / Story</td><td>Get stronger, o knights</td><td>Gold piece</td><td>1.32%</td><td>0.014</td></tr><tr><td>Gragia Mountains / Story</td><td>Voices of training</td><td>Gold piece</td><td>1.32%</td><td>0.014</td></tr><tr><td>Gragia Mountains / Story</td><td>Their growth</td><td>Gold piece</td><td>1.32%</td><td>0.014</td></tr><tr><td>Holy Castle Odal / Story</td><td>Through the Castle</td><td>Power potion</td><td>13.39%</td><td>0.142</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Power potion</td><td>13.23%</td><td>0.14</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Power potion</td><td>13.07%</td><td>0.138</td></tr><tr><td>Holy Castle Odal / Story</td><td>Knightly Loyalty</td><td>Power potion</td><td>13.07%</td><td>0.138</td></tr><tr><td>White laboratory / Story</td><td>Unerring enemy</td><td>Power potion</td><td>10.99%</td><td>0.115</td></tr><tr><td>Holy Castle Odal / Story</td><td>Through the Castle</td><td>Great power potion</td><td>7.06%</td><td>0.073</td></tr><tr><td>Holy Castle Odal / Story</td><td>Unbreakable Spirit</td><td>Great power potion</td><td>6.89%</td><td>0.071</td></tr><tr><td>Holy Castle Odal / Story</td><td>Best of the Best</td><td>Great power potion</td><td>6.72%</td><td>0.069</td></tr><tr><td>Holy Castle Odal / Story</td><td>Knightly Loyalty</td><td>Great power potion</td><td>6.72%</td><td>0.069</td></tr><tr><td>Holy Castle Odal / Story</td><td>Away Game</td><td>Great power potion</td><td>5.07%</td><td>0.052</td></tr>
+				</tbody>
+			</table>
+		</div>
+    <div class="tab-pane fade" id="mar2020storyNormalDrops">
+		<br />
+		<div class="alert border-info">
+			<strong>(March 2020 story update)</strong> These maps include up to the first 3 stages in the Odal Continent: Moriana Lands, Kaldina Ruins and Gorde Mines.
+		</div>
+		<table id="table" data-toggle="table" data-search="true" table-layout="fixed" class="table table-hover">
+		  <thead class="thead-dark">
 			<tr>
 			  <th data=field="map" scope="col">Map</th>
 			  <th data=field="stage" data-formatter="stageNameFormat" scope="col">Stage</th>
@@ -110,18 +160,18 @@
 		  </tbody>
 		</table>
     </div>
-    <div class="tab-pane fade" id="storyHardDrops">
-    <div class="alert alert-info alert-dismissable">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>New story maps!</strong> Added Moriana Plains, Kaldina Ruins and Gorde Mines.
-	</div>
+    <div class="tab-pane fade" id="mar2020storyHardDrops">
+		<br />
+		<div class="alert border-info">
+			<strong>(March 2020 story update)</strong> These maps include up to the first 3 stages in the Odal Continent: Moriana Lands, Kaldina Ruins and Gorde Mines.
+		</div>
 		<table 
 			id="table" 
 			data-toggle="table" 
 			data-search="true"
 			table-layout="fixed" 
 			class="table table-hover">
-		  <thead class="thead-light">
+		  <thead class="thead-dark">
 			<tr>
 			  <th data=field="field1" scope="col">Map</th>
 			  <th data=field="field2" data-formatter="stageNameFormat" scope="col">Stage</th>
@@ -136,10 +186,10 @@
 		</table>
     </div>
     <div class="tab-pane fade" id="eventDrops">
-    <div class="alert alert-warning alert-dismissable">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Warning!</strong> These event stages only cover Hard and Nightmare difficulties.
-	</div>
+		<br />
+		<div class="alert border-info">
+			<strong>This is not a full drop table!</strong> These event stages only cover Hard and Nightmare difficulties.
+		</div>
 		<table 
 			id="table" 
 			data-toggle="table" 
@@ -186,14 +236,13 @@
 </table>
     </div>
     <div class="tab-pane fade" id="unitStoryDrops">
-    <div class="alert alert-danger alert-dismissable">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Unit story stage data may be outdated.</strong> Last updated on 2020-05-25 using data from Toshy's sheet.
-	</div>
-    <div class="alert alert-warning alert-dismissable">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
- <strong>All the stages below are 1-wave only.</strong> That means that unit story stages exceeding 1 wave are not included, i.e. Saintly Theria's stage.
-	</div>
+		<br />
+		<div class="alert border-danger">
+			<strong>Unit story stage data may be outdated.</strong> Last updated on 2020-05-25 using data from Toshy's sheet.
+		</div>
+		<div class="alert border-info">
+			<strong>All the stages below are 1-wave only.</strong> That means that unit story stages exceeding 1 wave are not included, i.e. Saintly Theria's stage.
+		</div>
 		<table 
 			id="table" 
 			data-toggle="table" 
@@ -214,11 +263,9 @@
 		</table>
 </div>
     <div class="tab-pane fade" id="jan2020StoryNormalDrops">
-		<div class="alert alert-info alert-dismissible fade show" role="alert">
+		<br />
+		<div class="alert border-info">
 			<strong>(January 2020 story update)</strong> These maps only include up to Midra Forest, Underground Brahnda, and the updated Lanzelia/Dara Desert/Gragia Mountains. This table is for new players who need low level farming spots.
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
 		</div>
 		<table 
 			id="table" 
@@ -241,11 +288,9 @@
 		</table>
     </div>
 	<div class="tab-pane fade" id="jan2020StoryHardDrops">
-		<div class="alert alert-info alert-dismissible fade show" role="alert">
+		<br />
+		<div class="alert border-info">
 			<strong>(January 2020 story update)</strong> These maps only include up to Midra Forest, Underground Brahnda, and the updated Lanzelia/Dara Desert/Gragia Mountains. This table is for new players who need low level farming spots.
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
 		</div>
 		<table 
 			id="table" 
@@ -268,11 +313,9 @@
 		</table>
     </div>
 	<div class="tab-pane fade" id="oct2019StoryNormalDrops">
-		<div class="alert alert-info alert-dismissible fade show" role="alert">
+		<br />
+		<div class="alert border-info">
 			<strong>(Global version launch)</strong> These maps only include up to the first time players visit Blaze Garden. This table is for new players who need low level farming spots.
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
 		</div>
 		<table 
 			id="table" 
@@ -295,11 +338,9 @@
 		</table>
     </div>
 	<div class="tab-pane fade" id="oct2019StoryHardDrops">
-		<div class="alert alert-info alert-dismissible fade show" role="alert">
+		<br />
+		<div class="alert border-info">
 			<strong>(Global version launch)</strong> These maps only include up to the first time players visit Blaze Garden. This table is for new players who need low level farming spots.
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
 		</div>
 		<table 
 			id="table" 
@@ -325,6 +366,8 @@
 </div>
 	<!-- footer -->
 	<div data-html="./site/footer"></div>
+	<!-- back to top -->
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return to the top" data-toggle="tooltip" data-placement="left">▲</a>
     <!-- javascript -->
 	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -351,6 +394,29 @@
       value.substring() +
       '</strong>'
   }
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+	// plugging
+	$(document).ready(function(){
+	 $(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		$('#back-to-top').click(function () {
+			$('#back-to-top').tooltip('hide');
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	
+		$('#back-to-top').tooltip('show');
+
+	});
 	</script>
 </body>
 </html>
