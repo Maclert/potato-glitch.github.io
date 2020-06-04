@@ -314,13 +314,62 @@
 						</p>
 					</div>
 				</div>
+				<div class="countdownTwoStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img922/2114/pbh912.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<h5>The Blaze Bootcamp event will be released in</h5>
+						<p class="card-text">
+							<div id="clockTwoStart" class="h3"></div>
+							<div id="clockStringTwoStart" class="p text-muted small"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownTwoEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img922/2114/pbh912.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<h5>The Blaze Bootcamp event will end in</h5>
+						<p class="card-text">
+							<div id="clockTwoEnd" class="h3 text-danger"></div>
+							<div id="clockStringTwoEnd" class="p text-muted small"></div>
+						</p>
+					</div>
+				</div>
 			</div>
 			<br />
 			<h4 class="text-center">Gacha banners</h4>
 			<div class="card">
+				<div class="countdownBannerFourStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img922/992/yabFFQ.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5>Dilmordo will be released in</h5>
+							<div id="clockBannerFourStart" class="h3 text-center"></div>
+							<div id="clockStringBannerFourStart" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownBannerFourEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img922/992/yabFFQ.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<p class="card-text">
+						<h5>Dilmordo</h5>
+							<p>New semi-limited unit and permanent ark</p>
+							<div id="clockBannerFourEnd" class="h3 text-center text-info"></div>
+							<div id="clockStringBannerFourEnd" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
 				<div class="countdownBannerThreeStart">
 					<div class="card-header">
-						<image src="https://imagizer.imageshack.com/img924/7554/mXUcIY.png" class="card-img-top"></image>
+						<image src="https://imagizer.imageshack.com/img922/992/yabFFQ.png" class="card-img-top"></image>
 					</div>
 					<div class="card-body text-black text-center">
 						<p class="card-text">
@@ -396,8 +445,8 @@
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		// Maintenance
-		var dateMaintStart = moment.tz("2020-05-28 00:00", "America/Los_Angeles");
-		var dateMaintEnd = moment.tz("2020-05-28 03:00", "America/Los_Angeles");
+		var dateMaintStart = moment.tz("2020-06-04 00:00", "America/Los_Angeles");
+		var dateMaintEnd = moment.tz("2020-06-04 02:00", "America/Los_Angeles");
 		$('#clockMaintStart').countdown(dateMaintStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -433,6 +482,23 @@
 		document.getElementById("clockStringOneEnd").innerHTML=dateOneEndString;
 		if(moment(now).isBetween(dateOneStart, dateOneEnd) == false) {
 			$(".countdownOneEnd").wrap("<div class='d-none'></div>"); }
+		// Event #2
+		var dateTwoStart = moment.tz("2020-06-04 02:00", "America/Los_Angeles");
+		var dateTwoEnd = moment.tz("2020-06-18 00:00", "America/Los_Angeles");
+		$('#clockTwoStart').countdown(dateTwoStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateTwoStartString = moment.utc(dateTwoStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringTwoStart").innerHTML=dateTwoStartString;
+		if(moment(dateTwoStart.local()).isBefore(now) == true) {
+			$(".countdownTwoStart").wrap("<div class='d-none'></div>"); }
+		$('#clockTwoEnd').countdown(dateTwoEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateTwoEndString = moment.utc(dateTwoEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringTwoEnd").innerHTML=dateTwoEndString;
+		if(moment(now).isBetween(dateTwoStart, dateTwoEnd) == false) {
+			$(".countdownTwoEnd").wrap("<div class='d-none'></div>"); }
 		// Content update notice
 		var storyUpdateStart = moment.tz("2020-05-28 03:00", "America/Los_Angeles");
 		$('#clockStoryUpdateStart').countdown(storyUpdateStart.toDate(), function(event) {
@@ -478,6 +544,23 @@
 			$(".countdownBannerThreeStart").wrap("<div class='d-none'></div>"); }
 		if(moment(now).isBetween(dateBannerThreeStart, dateBannerThreeEnd) == false) {
 			$(".countdownBannerThreeEnd").wrap("<div class='d-none'></div>"); }
+		// Gacha #4
+		var dateBannerFourStart = moment.tz("2020-06-04 02:00", "America/Los_Angeles");
+		var dateBannerFourEnd = moment.tz("2020-06-10 00:00", "America/Los_Angeles");
+		$('#clockBannerFourStart').countdown(dateBannerFourStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerFourStartString = moment.utc(dateBannerFourStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerFourStart").innerHTML=dateBannerFourStartString;
+		$('#clockBannerFourEnd').countdown(dateBannerFourEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerFourEndString = moment.utc(dateBannerFourEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerFourEnd").innerHTML=dateBannerFourEndString;
+		if(moment(dateBannerFourStart.local()).isBefore(now) == true) {
+			$(".countdownBannerFourStart").wrap("<div class='d-none'></div>"); }
+		if(moment(now).isBetween(dateBannerFourStart, dateBannerFourEnd) == false) {
+			$(".countdownBannerFourEnd").wrap("<div class='d-none'></div>"); }
 		// Tower of Trials
 		var dateTowerStart = moment.tz("2020-05-20 00:00", "America/Los_Angeles");
 		var dateTowerEnd = moment.tz("2020-05-27 00:00", "America/Los_Angeles");
