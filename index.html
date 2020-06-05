@@ -26,20 +26,11 @@
 			<h2>New updates</h2>
 			<div class="p-3 bg-light border">
 				<div class="alert alert-success" role="alert">
-					<strong>The <a href="https://potato-glitch.github.io/loottable">loot table guide</a> has been updated with the new story content!</strong><br />The <a href="https://docs.google.com/spreadsheets/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">accompanying spreadsheet</a> has also been updated.
+					<strong>The <a href="https://potato-glitch.github.io/loottable">loot table guide</a> has been updated with the free quests!</strong><br />The <a href="https://docs.google.com/spreadsheets/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">accompanying spreadsheet</a> has also been updated.
 				</div>
 				<div class="alert alert-warning" role="alert">
-					<strong>Always check the rate-up on a banner before pulling.</strong> Thunder Sevia's rate up is only 1% compared to 1.5% in past permanent unit banners.<br />
+					<strong>Always check the banner before pulling.</strong> Dilmordo's banner does not include other Descent of Heroes units. This is a first for a DoH banner, and players should take note of it in case it happens again in the future.<br />
 					See the <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> for more information on gacha mechanics.
-				</div>
-				<div class="alert alert-warning" role="alert">
-					<strong>Mage AI on auto is bugged</strong><br />Mages tend to not use spells until late or at all. This means that mages such as Lily and Saintly Theria wiping stages with a single spell is not time-efficient at the moment.<br /><br /><strong>Run physical DPS units for farming if you can.</strong>
-					<br /><br />
-					<div class="alert alert-info" role="alert">
-						<strong>Update</strong>: This appears to only affect instant cast builds (with T3 spells?). It has also been confirmed to be a bug.<br />
-						<strong>Update 2</strong>: A significant bug fix patch will be pushed live by next week according to the community manager.<br />
-						<strong>Update 3</strong>: The May 21st patch and client update did not fix the mage AI bug. There is no ETA on the next possible fix yet.
-					</div>
 				</div>
 				<span class="text-muted small p text-right"><div id="dateSiteUpdateString"></div></span>
 			</div>
@@ -579,7 +570,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-05-29 00:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-06-05 12:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
