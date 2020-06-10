@@ -32,6 +32,10 @@
 					<strong>Always check the banner before pulling.</strong> Dilmordo's banner does not include other Descent of Heroes units. This is a first for a DoH banner, and players should take note of it in case it happens again in the future.<br />
 					See the <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> for more information on gacha mechanics.
 				</div>
+				<div class="alert alert-warning" role="alert">
+					<strong>Always check the banner before pulling.</strong> Dilmordo's banner does not include other Descent of Heroes units. This is a first for a DoH banner, and players should take note of it in case it happens again in the future.<br />
+					See the <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> for more information on gacha mechanics.
+				</div>
 				<span class="text-muted small p text-right"><div id="dateSiteUpdateString"></div></span>
 			</div>
 			<br />
@@ -358,31 +362,6 @@
 						</p>
 					</div>
 				</div>
-				<div class="countdownBannerThreeStart">
-					<div class="card-header">
-						<image src="https://imagizer.imageshack.com/img922/992/yabFFQ.png" class="card-img-top"></image>
-					</div>
-					<div class="card-body text-black text-center">
-						<p class="card-text">
-						<h5>Thunderbolt Sevia will be released in</h5>
-							<div id="clockBannerThreeStart" class="h3 text-center"></div>
-							<div id="clockStringBannerThreeStart" class="p text-muted small text-center"></div>
-						</p>
-					</div>
-				</div>
-				<div class="countdownBannerThreeEnd">
-					<div class="card-header">
-						<image src="https://imagizer.imageshack.com/img924/7554/mXUcIY.png" class="card-img-top"></image>
-					</div>
-					<div class="card-body text-center">
-						<p class="card-text">
-						<h5>Thunderbolt Sevia</h5>
-							<p>New permanent unit and arks</p>
-							<div id="clockBannerThreeEnd" class="h3 text-center text-info"></div>
-							<div id="clockStringBannerThreeEnd" class="p text-muted small text-center"></div>
-						</p>
-					</div>
-				</div>
 				<div class="countdownBannerOneStart">
 					<div class="card-header">
 						<image src="https://imagizer.imageshack.com/img924/6534/n3lfEI.png" class="card-img-top"></image>
@@ -405,6 +384,56 @@
 							<p>New permanent units and arks</p>
 							<div id="clockBannerOneEnd" class="h3 text-center text-info"></div>
 							<div id="clockStringBannerOneEnd" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownBannerThreeStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img923/9403/89en8m.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5>Zouglas will be rerun in</h5>
+							<div id="clockBannerThreeStart" class="h3 text-center"></div>
+							<div id="clockStringBannerThreeStart" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownBannerThreeEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img923/9403/89en8m.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<p class="card-text">
+						<h5>Zouglas</h5>
+							<p>Semi-limited unit and permanent ark rerun</p>
+							<div id="clockBannerThreeEnd" class="h3 text-center text-info"></div>
+							<div id="clockStringBannerThreeEnd" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownBannerTwoStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/7112/w1ZTUv.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5>Lily will be rerun in</h5>
+							<div id="clockBannerTwoStart" class="h3 text-center"></div>
+							<div id="clockStringBannerTwoStart" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownBannerTwoEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/7112/w1ZTUv.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<p class="card-text">
+						<h5>Lily</h5>
+							<p>Semi-limited unit and permanent ark rerun</p>
+							<div id="clockBannerTwoEnd" class="h3 text-center text-info"></div>
+							<div id="clockStringBannerTwoEnd" class="p text-muted small text-center"></div>
 						</p>
 					</div>
 				</div>
@@ -436,8 +465,8 @@
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		// Maintenance
-		var dateMaintStart = moment.tz("2020-06-04 00:00", "America/Los_Angeles");
-		var dateMaintEnd = moment.tz("2020-06-04 02:00", "America/Los_Angeles");
+		var dateMaintStart = moment.tz("2020-06-11 00:00", "America/Los_Angeles");
+		var dateMaintEnd = moment.tz("2020-06-11 02:00", "America/Los_Angeles");
 		$('#clockMaintStart').countdown(dateMaintStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -518,9 +547,26 @@
 			$(".countdownBannerOneStart").wrap("<div class='d-none'></div>"); }
 		if(moment(now).isBetween(dateBannerOneStart, dateBannerOneEnd) == false) {
 			$(".countdownBannerOneEnd").wrap("<div class='d-none'></div>"); }
+		// Gacha #2
+		var dateBannerTwoStart = moment.tz("2020-06-14 00:00", "America/Los_Angeles"); 
+		var dateBannerTwoEnd = moment.tz("2020-06-18 00:00", "America/Los_Angeles");
+		$('#clockBannerTwoStart').countdown(dateBannerTwoStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerTwoStartString = moment.utc(dateBannerTwoStart).local().format('[Local time: ]dddd, MMMM Do');
+		document.getElementById("clockStringBannerTwoStart").innerHTML=dateBannerTwoStartString;
+		$('#clockBannerTwoEnd').countdown(dateBannerTwoEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerTwoEndString = moment.utc(dateBannerTwoEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerTwoEnd").innerHTML=dateBannerTwoEndString;
+		if(moment(dateBannerTwoStart.local()).isBefore(now) == true) {
+			$(".countdownBannerTwoStart").wrap("<div class='d-none'></div>"); }
+		if(moment(now).isBetween(dateBannerTwoStart, dateBannerTwoEnd) == false) {
+			$(".countdownBannerTwoEnd").wrap("<div class='d-none'></div>"); }
 		// Gacha #3
-		var dateBannerThreeStart = moment.tz("2020-05-21 03:00", "America/Los_Angeles");
-		var dateBannerThreeEnd = moment.tz("2020-06-4 00:00", "America/Los_Angeles");
+		var dateBannerThreeStart = moment.tz("2020-06-11 02:00", "America/Los_Angeles");
+		var dateBannerThreeEnd = moment.tz("2020-06-14 00:00", "America/Los_Angeles");
 		$('#clockBannerThreeStart').countdown(dateBannerThreeStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
