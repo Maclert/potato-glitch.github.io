@@ -29,7 +29,7 @@
 					<strong>The <a href="https://potato-glitch.github.io/loottable">loot table guide</a> has been updated with the free quests!</strong><br />The <a href="https://docs.google.com/spreadsheets/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">accompanying spreadsheet</a> has also been updated.
 				</div>
 				<div class="alert alert-warning" role="alert">
-					<strong>Always check the banner before pulling.</strong> Dilmordo's banner does not include other Descent of Heroes units. This is a first for a DoH banner, and players should take note of it in case it happens again in the future.<br />
+					<strong>Always check the banner before pulling.</strong> The new Descent of Heroes rerun banners do not contain Dilmordo.<br />
 					See the <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> for more information on gacha mechanics.
 				</div>
 				<span class="text-muted small p text-right"><div id="dateSiteUpdateString"></div></span>
@@ -612,7 +612,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-06-05 12:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-06-11 20:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
