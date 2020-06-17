@@ -25,12 +25,9 @@
 		<div class="col-md-8">
 			<h2>New updates</h2>
 			<div class="p-3 bg-light border">
-				<div class="alert alert-success" role="alert">
-					<strong>The <a href="https://potato-glitch.github.io/loottable">loot table guide</a> has been updated with the free quests!</strong><br />The <a href="https://docs.google.com/spreadsheets/d/1h-G5jVkNfwWLFFZWlM3KNQ7zoun08_KlzzY8XSuB8WY/edit">accompanying spreadsheet</a> has also been updated.
-				</div>
-				<div class="alert alert-warning" role="alert">
-					<strong>Always check the banner before pulling.</strong> The new Descent of Heroes rerun banners do not contain Dilmordo.<br />
-					See the <a href="https://potato-glitch.github.io/beginner-guide">beginner's guide</a> for more information on gacha mechanics.
+				<div class="alert alert-danger" role="alert">
+					<strong>The website will be updated next week. Dark mode is currently being tested and will be released next week.</strong><br />
+					New lore, updates to the tier list, and guides will all be delayed until then. We apologise for the inconvenience.
 				</div>
 				<span class="text-muted small p text-right"><div id="dateSiteUpdateString"></div></span>
 			</div>
@@ -260,7 +257,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="countdownStoryUpdateStart">
+				<!--<div class="countdownStoryUpdateStart">
 					<div class="card-header">
 						<image src="https://imagizer.imageshack.com/img924/3131/CdEZwk.png" class="card-img-top"></image>
 					</div>
@@ -280,7 +277,7 @@
 						<h5>A new Story update has been released!</h5>
 						<p class="card-text small">The story continues at Badal Rainforest on the Odal Continent. Be prepared for strong monsters ahead.</p>
 					</div>
-				</div>
+				</div> -->
 				<div class="countdownOneStart">
 					<div class="card-header">
 						<image src="https://imagizer.imageshack.com/img923/8334/7Sqs1O.png" class="card-img-top"></image>
@@ -329,10 +326,59 @@
 						</p>
 					</div>
 				</div>
+				<div class="countdownThreeStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/2844/IdkRCh.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<h5>The Fragments of a Hero event will be released in</h5>
+						<p class="card-text">
+							<div id="clockThreeStart" class="h3"></div>
+							<div id="clockStringThreeStart" class="p text-muted small"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownThreeEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img924/2844/IdkRCh.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<h5>The Fragments of a Hero event will end in</h5>
+						<p class="card-text">
+							<div id="clockThreeEnd" class="h3 text-danger"></div>
+							<div id="clockStringThreeEnd" class="p text-muted small"></div>
+						</p>
+					</div>
+				</div>
 			</div>
 			<br />
 			<h4 class="text-center">Gacha banners</h4>
 			<div class="card">
+				<div class="countdownBannerFiveStart">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img923/336/J6n85Y.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-black text-center">
+						<p class="card-text">
+						<h5>Beyland will be released in</h5>
+							<div id="clockBannerFiveStart" class="h3 text-center"></div>
+							<div id="clockStringBannerFiveStart" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
+				<div class="countdownBannerFiveEnd">
+					<div class="card-header">
+						<image src="https://imagizer.imageshack.com/img923/336/J6n85Y.png" class="card-img-top"></image>
+					</div>
+					<div class="card-body text-center">
+						<p class="card-text">
+						<h5>Beyland</h5>
+							<p>New semi-limited unit and permanent ark</p>
+							<div id="clockBannerFiveEnd" class="h3 text-center text-info"></div>
+							<div id="clockStringBannerFiveEnd" class="p text-muted small text-center"></div>
+						</p>
+					</div>
+				</div>
 				<div class="countdownBannerFourStart">
 					<div class="card-header">
 						<image src="https://imagizer.imageshack.com/img922/992/yabFFQ.png" class="card-img-top"></image>
@@ -461,8 +507,8 @@
 		var dateDailyString = moment.utc(dateDaily).local().format('[Local time: ]dddd, MMMM Do h:mm a');
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		// Maintenance
-		var dateMaintStart = moment.tz("2020-06-11 00:00", "America/Los_Angeles");
-		var dateMaintEnd = moment.tz("2020-06-11 02:00", "America/Los_Angeles");
+		var dateMaintStart = moment.tz("2020-06-18 00:00", "America/Los_Angeles");
+		var dateMaintEnd = moment.tz("2020-06-18 03:00", "America/Los_Angeles");
 		$('#clockMaintStart').countdown(dateMaintStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -515,17 +561,34 @@
 		document.getElementById("clockStringTwoEnd").innerHTML=dateTwoEndString;
 		if(moment(now).isBetween(dateTwoStart, dateTwoEnd) == false) {
 			$(".countdownTwoEnd").wrap("<div class='d-none'></div>"); }
-		// Content update notice
-		var storyUpdateStart = moment.tz("2020-05-28 03:00", "America/Los_Angeles");
-		$('#clockStoryUpdateStart').countdown(storyUpdateStart.toDate(), function(event) {
+		// Event #3
+		var dateThreeStart = moment.tz("2020-06-18 03:00", "America/Los_Angeles");
+		var dateThreeEnd = moment.tz("2020-07-02 00:00", "America/Los_Angeles");
+		$('#clockThreeStart').countdown(dateThreeStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
-		var storyUpdateStartString = moment.utc(storyUpdateStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
-		document.getElementById("clockStringStoryUpdateStart").innerHTML=storyUpdateStartString;
-		if(moment(storyUpdateStart.local()).isBefore(now) == true) {
-			$(".countdownStoryUpdateStart").wrap("<div class='d-none'></div>"); }
-		if(moment(storyUpdateStart.local()).isAfter(now) == true) {
-			$(".countdownStoryUpdateRelease").wrap("<div class='d-none'></div>"); }
+		var dateThreeStartString = moment.utc(dateThreeStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringThreeStart").innerHTML=dateThreeStartString;
+		if(moment(dateThreeStart.local()).isBefore(now) == true) {
+			$(".countdownThreeStart").wrap("<div class='d-none'></div>"); }
+		$('#clockThreeEnd').countdown(dateThreeEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateThreeEndString = moment.utc(dateThreeEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringThreeEnd").innerHTML=dateThreeEndString;
+		if(moment(now).isBetween(dateThreeStart, dateThreeEnd) == false) {
+			$(".countdownThreeEnd").wrap("<div class='d-none'></div>"); }
+		// Content update notice
+		// var storyUpdateStart = moment.tz("2020-05-28 03:00", "America/Los_Angeles");
+		// $('#clockStoryUpdateStart').countdown(storyUpdateStart.toDate(), function(event) {
+		//   $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		// });
+		// var storyUpdateStartString = moment.utc(storyUpdateStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		// document.getElementById("clockStringStoryUpdateStart").innerHTML=storyUpdateStartString;
+		// if(moment(storyUpdateStart.local()).isBefore(now) == true) {
+		// 	$(".countdownStoryUpdateStart").wrap("<div class='d-none'></div>"); }
+		// if(moment(storyUpdateStart.local()).isAfter(now) == true) {
+		// 	$(".countdownStoryUpdateRelease").wrap("<div class='d-none'></div>"); }
 		// Gacha #1
 		var dateBannerOneStart = moment.tz("2020-05-28 03:00", "America/Los_Angeles"); 
 		var dateBannerOneEnd = moment.tz("2020-06-11 00:00", "America/Los_Angeles");
@@ -594,9 +657,26 @@
 			$(".countdownBannerFourStart").wrap("<div class='d-none'></div>"); }
 		if(moment(now).isBetween(dateBannerFourStart, dateBannerFourEnd) == false) {
 			$(".countdownBannerFourEnd").wrap("<div class='d-none'></div>"); }
+		// Gacha #5
+		var dateBannerFiveStart = moment.tz("2020-06-18 03:00", "America/Los_Angeles");
+		var dateBannerFiveEnd = moment.tz("2020-07-02 00:00", "America/Los_Angeles");
+		$('#clockBannerFiveStart').countdown(dateBannerFiveStart.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerFiveStartString = moment.utc(dateBannerFiveStart).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerFiveStart").innerHTML=dateBannerFiveStartString;
+		$('#clockBannerFiveEnd').countdown(dateBannerFiveEnd.toDate(), function(event) {
+		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
+		});
+		var dateBannerFiveEndString = moment.utc(dateBannerFiveEnd).local().format('[Local time: ]dddd, MMMM Do h:mm a');
+		document.getElementById("clockStringBannerFiveEnd").innerHTML=dateBannerFiveEndString;
+		if(moment(dateBannerFiveStart.local()).isBefore(now) == true) {
+			$(".countdownBannerFiveStart").wrap("<div class='d-none'></div>"); }
+		if(moment(now).isBetween(dateBannerFiveStart, dateBannerFiveEnd) == false) {
+			$(".countdownBannerFiveEnd").wrap("<div class='d-none'></div>"); }
 		// Tower of Trials
-		var dateTowerStart = moment.tz("2020-05-20 00:00", "America/Los_Angeles");
-		var dateTowerEnd = moment.tz("2020-05-27 00:00", "America/Los_Angeles");
+		var dateTowerStart = moment.tz("2020-06-18 03:00", "America/Los_Angeles");
+		var dateTowerEnd = moment.tz("2020-06-25 00:00", "America/Los_Angeles");
 		$('#clockTowerStart').countdown(dateTowerStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -612,7 +692,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-06-11 20:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-06-18 09:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
