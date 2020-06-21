@@ -29,6 +29,9 @@
 					<strong>The website will be updated next week. Dark mode is currently being tested and will be released next week.</strong><br />
 					New lore, updates to the tier list, and guides will all be delayed until then. We apologise for the inconvenience.
 				</div>
+				<div class="alert alert-success" role="alert">
+					<strong>God difficulty stages have been added to the <a href="https://potato-glitch.github.io/loottable">drop guide</a>.</strong>
+				</div>
 				<span class="text-muted small p text-right"><div id="dateSiteUpdateString"></div></span>
 			</div>
 			<br />
@@ -508,7 +511,7 @@
 		document.getElementById("clockStringDaily").innerHTML=dateDailyString;
 		// Maintenance
 		var dateMaintStart = moment.tz("2020-06-18 00:00", "America/Los_Angeles");
-		var dateMaintEnd = moment.tz("2020-06-18 03:00", "America/Los_Angeles");
+		var dateMaintEnd = moment.tz("2020-06-18 05:00", "America/Los_Angeles");
 		$('#clockMaintStart').countdown(dateMaintStart.toDate(), function(event) {
 		  $(this).html(event.strftime('%-D day%!D %-H:%-M:%-S'));
 		});
@@ -692,7 +695,7 @@
 		if(moment(now).isBetween(dateTowerStart, dateTowerEnd) == false) {
 			$(".countdownTowerEnd").wrap("<div class='d-none'></div>"); }
 		// Website update string
-		var dateSiteUpdate = moment.tz("2020-06-18 09:00", "Australia/Melbourne")
+		var dateSiteUpdate = moment.tz("2020-06-21 09:00", "Australia/Melbourne")
 		var dateSiteUpdateString = moment.utc(dateSiteUpdate).local().format('[Updated ]dddd, MMMM Do h:mm a');
 		document.getElementById("dateSiteUpdateString").innerHTML=dateSiteUpdateString;
 	</script>
